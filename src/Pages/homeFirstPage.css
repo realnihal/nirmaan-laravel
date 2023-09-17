@@ -1,0 +1,17 @@
+body {
+  /* position: absolute; */
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(0deg, #66bb6a 100%, #8fff95 0%),
+    url("/home/shradhabiradar/Desktop/nirmaan-frontend/src/images/HOME-BACKGROUND.png"); */
+  background-image:linear-gradient(
+    to bottom,
+    rgba(143, 255, 149, 0),
+    rgba(102, 187, 106, 0) 50%,
+    rgba(102, 187, 106, 1)
+  ), url("/home/shradhabiradar/Desktop/nirmaan-frontend/src/images/HOME-BACKGROUND.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* z-index: -1; */
+}
