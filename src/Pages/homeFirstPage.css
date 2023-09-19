@@ -75,6 +75,7 @@ body {
 /* footer part  */
 .rect {
   margin-top: 3rem;
+  position: relative;
 }
 
 /* horizontal scrolling */
@@ -82,4 +83,44 @@ body {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.vect {
+  position: absolute;
+  margin-top: -9.5rem;
+  margin-left: 85rem;
+}
+
+footer {
+  position: relative;
+}
+
+.rect {
+  position: absolute;
+}
+
+.inner-div {
+  position: absolute;
+  margin-top: 3.75rem;
+  width: 80%;
+  height: 120px;
+  background-image: linear-gradient(
+    to right,
+    rgba(143, 255, 149, 0),
+    rgba(0, 0, 0, 0) 1%,
+    rgb(0, 0, 0)
+  );
+}
+
+.inner-div ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.inner-div li{
+  margin-right: 3rem;
+  color: #ffffff;
+  font-size: 1.3rem;
 }

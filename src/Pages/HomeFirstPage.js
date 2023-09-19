@@ -41,11 +41,30 @@ function HomeFirstPage() {
         <SocialMediaIcons />
       </div>
       <footer>
-        <div className="rect">
-          <img src={rect} />
+        <div className="vect">
+          <img src={vect} />
         </div>
         <div className="rect">
           <img src={rect} />
+        </div>
+        <div className="inner-div">
+          <ul>
+            <li>
+              Nirmaan Studends Head <br></br>Applications Opens on January 23rd
+            </li>
+            <li>
+              January Cohort Application opens <br></br>on 13th January
+            </li>
+            <li>
+              Experts Talk 3.0 <br></br>February 4th
+            </li>
+            <li>
+              Mega Event February 24th <br></br>and 25th
+            </li>
+            <li>
+              OUR MOST <br></br> RECENT <br></br> EVENTS
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
