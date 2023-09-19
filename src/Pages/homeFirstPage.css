@@ -16,6 +16,24 @@ body {
 .full-page-container {
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+
+.vertical {
+  position: absolute;
+  height: 3.5rem;
+  width: 100vh;
+  text-align: center;
+  background-color: #d9d9d9;
+  right: 0;
+  top: 0;
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(-100%);
+  font-size: 3rem;
+  font-stretch: expanded;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-weight: bold;
 }
 
 .nirmaan-logo {
@@ -30,6 +48,7 @@ body {
   font-weight: 900;
   line-height: 8rem;
   margin-left: 15rem;
+  font-stretch: expanded;
 }
 
 .logo {
@@ -56,7 +75,7 @@ body {
 .iitmlogo {
   display: flex;
   justify-content: center;
-  margin-left: 22rem;
+  margin-left: 6rem;
   margin-top: 1.5rem;
 }
 
@@ -78,13 +97,6 @@ body {
   position: relative;
 }
 
-/* horizontal scrolling */
-.horizontal-scroll-container {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
 .vect {
   position: absolute;
   margin-top: -9.5rem;
@@ -102,25 +114,41 @@ footer {
 .inner-div {
   position: absolute;
   margin-top: 3.75rem;
-  width: 80%;
+  width: 68%;
   height: 120px;
   background-image: linear-gradient(
     to right,
     rgba(143, 255, 149, 0),
-    rgba(0, 0, 0, 0) 1%,
+    rgba(0, 0, 0, 0) 0.5%,
     rgb(0, 0, 0)
   );
 }
 
-.inner-div ul{
+.inner-div ul {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-.inner-div li{
+.inner-div li {
   margin-right: 3rem;
   color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.apply {
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: 81rem;
+  text-align: center;
+  background-color: #fff;
+  width: 23rem;
+  height: 5rem;
   font-size: 1.3rem;
+  font-style: italic;
+  color: #66bb6a;
+  border-bottom-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }

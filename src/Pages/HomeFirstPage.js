@@ -11,6 +11,9 @@ function HomeFirstPage() {
   return (
     <div className="full-page-container">
       {/* nirman logo */}
+      <div className="vertical">
+        WHO WE ARE
+      </div>
       <div className="nirmaan-logo">
         <div className="this-is text">
           <h1>
@@ -65,6 +68,9 @@ function HomeFirstPage() {
               OUR MOST <br></br> RECENT <br></br> EVENTS
             </li>
           </ul>
+        </div>
+        <div className="apply">
+          <h3>APPLY TO NIRMAAN</h3>
         </div>
       </footer>
     </div>
