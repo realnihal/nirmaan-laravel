@@ -1,4 +1,10 @@
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.full-page-container{
   margin: 0;
   padding: 0;
   background-image: linear-gradient(
@@ -10,13 +16,21 @@ body {
     url("/home/shradhabiradar/Desktop/nirmaan-frontend/src/images/HOME-BACKGROUND.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.full-page-container {
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.homeFirstPage{
+  width: 100vw;
 }
 
 .vertical {
@@ -30,7 +44,6 @@ body {
   transform-origin: top right;
   transform: rotate(-90deg) translateY(-100%);
   font-size: 3rem;
-  font-stretch: expanded;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   font-weight: bold;
@@ -48,7 +61,6 @@ body {
   font-weight: 900;
   line-height: 8rem;
   margin-left: 15rem;
-  font-stretch: expanded;
 }
 
 .logo {
