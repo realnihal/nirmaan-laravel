@@ -13,6 +13,11 @@ body {
   background-attachment: fixed;
 }
 
+.full-page-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .nirmaan-logo {
   display: flex;
   margin-top: 2.313rem;
@@ -27,7 +32,7 @@ body {
   margin-left: 15rem;
 }
 
-.logo{
+.logo {
   margin-left: 7.5rem;
 }
 
@@ -44,13 +49,37 @@ body {
 .subtitle h2 {
   font-size: 2.3rem;
 }
-.subtitle p{
+.subtitle p {
   font-size: 1.5rem;
 }
 
 .iitmlogo {
   display: flex;
   justify-content: center;
-  margin-left: 7rem;
+  margin-left: 22rem;
   margin-top: 1.5rem;
+}
+
+/* social medial icons */
+.social-icons {
+  list-style-type: none;
+  display: flex;
+  margin-top: 6rem;
+  margin-left: 7rem;
+}
+
+.social-icons li {
+  margin-right: 3.2rem;
+}
+
+/* footer part  */
+.rect {
+  margin-top: 3rem;
+}
+
+/* horizontal scrolling */
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
 }

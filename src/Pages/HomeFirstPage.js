@@ -3,10 +3,13 @@ import React from "react";
 import "./homeFirstPage.css";
 import nirmaanLogo from "../images/NIRMAAN-LOGO-NEW 1.png";
 import iitMadrasLogo from "../images/iitmLogo.png";
+import SocialMediaIcons from "./SocialMediaIcons";
+import rect from "../images/Rectangle.png";
+import vect from "../images/Vector.png";
 
 function HomeFirstPage() {
   return (
-    <div>
+    <div className="full-page-container">
       {/* nirman logo */}
       <div className="nirmaan-logo">
         <div className="this-is text">
@@ -24,7 +27,7 @@ function HomeFirstPage() {
           <p>
             Nirmaan, The Pre-Incubator,<br></br>at IIT Madras is the first of{" "}
             <br></br>its kind dedicated pre- <br></br>incubatore on a college{" "}
-            <br></br>campus in the country
+            <br></br>campus in the country.
           </p>
         </div>
       </div>
@@ -34,8 +37,17 @@ function HomeFirstPage() {
         <img src={iitMadrasLogo} />
       </div>
       {/* social media  */}
-      <div></div>
-      <footer></footer>
+      <div>
+        <SocialMediaIcons />
+      </div>
+      <footer>
+        <div className="rect">
+          <img src={rect} />
+        </div>
+        <div className="rect">
+          <img src={rect} />
+        </div>
+      </footer>
     </div>
   );
 }
