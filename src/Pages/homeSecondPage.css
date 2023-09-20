@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.HomeSecondPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d9d9d9;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.secondPage-container{
+    width: 100vw;
+}
+
+.whoWeAre-div {
+  display: flex;
+  margin-top: 61px;
+  margin-left: 62px;
+}
+
+.who-heading {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 10rem;
+  font-weight: bolder;
+  line-height: 8rem;
+  margin-top: 15px;
+  font-stretch: expanded;
+}
+
+.meetOurTeam-div{
+    position: relative;
+}
+.team-heading{
+    font-size: 2rem;
+    margin-top: 320px;
+    margin-left: -2rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 80px;
+    width: 280px;
+    color: #555555;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.team-heading, .vect2-logo{
+    position: absolute;
+}
+
+.vect2-logo{
+    margin-left: 12rem;
+}
+
+.about-nirmaan{
+    background-color: #FFFFFF;
+    width: 50rem;
+    height: 18rem;
+    margin-top: 4rem;
+    border-top-right-radius: 9rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    font-size: 24px;
+}
+
+.projects{
+    text-align: center;
+    width: 40rem;
+    height: 4rem;
+    font-size: 3rem;
+    background-color: #66BB6A;
+    border-bottom-left-radius: 4rem;
+    margin-left: 15rem;
+    font-style: italic;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
