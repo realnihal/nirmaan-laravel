@@ -14,9 +14,6 @@ function Home() {
       <div className="HomeSecondPage">
         <HomeSecondPage />
       </div>
-      <div className="HomeSecondPage">
-        <HomeSecondPage />
-      </div>
     </div>
   );
 }
