@@ -3,7 +3,9 @@ import React from "react";
 import HomeFirstPage from "./HomeFirstPage";
 import "./homeFirstPage.css";
 import "./homeSecondPage.css";
+import "./homeThirdPage.css";
 import HomeSecondPage from "./HomeSecondPage";
+import HomeThirdPage from "./HomeThirdPage";
 
 function Home() {
   return (
@@ -13,6 +15,9 @@ function Home() {
       </div>
       <div className="HomeSecondPage">
         <HomeSecondPage />
+      </div>
+      <div className="HomeThirdPage">
+        <HomeThirdPage/>
       </div>
     </div>
   );

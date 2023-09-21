@@ -1,0 +1,96 @@
+html,
+body {
+  top: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.HomeThirdPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #66bb6a;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+}
+
+.thirdPage-container {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.what-we-offer {
+  padding-left: 7rem;
+  padding-top: 2.5rem;
+  line-height: 130px;
+  font-size: 150px;
+  width: 1390px;
+  height: 337px;
+  background-color: white;
+  margin-top: 3rem;
+  font-weight: 900;
+  border-top-right-radius: 191.5px;
+  font-family: sans-serif;
+  font-stretch: expanded;
+  box-sizing: border-box;
+}
+
+.vect3,
+.nirmaanLogo {
+  position: absolute;
+}
+
+.sub-header {
+  display: flex;
+}
+
+.nirmaanLogo img {
+  height: 292px;
+  width: 287px;
+  margin-top: 19px;
+  margin-left: 8.3rem;
+}
+.logo-nirmaan {
+  margin-left: 89rem;
+  position: absolute;
+}
+
+.vect3 img {
+  width: 420px;
+  height: 600px;
+}
+.apply-subtitle {
+  display: flex;
+}
+
+.apply-to {
+  position: absolute;
+  margin-left: 13rem;
+  padding-left: 3.5rem;
+  padding-top: 1.5rem;
+  border-bottom-left-radius: 40.5px;
+  border-top-right-radius: 40.5px;
+  box-sizing: border-box;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  width: 437px;
+  height: 92px;
+  color: #66bb6a;
+  background-color: black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle-to {
+  background-image: linear-gradient(to right, #d9d9d9, #b6b6b6);
+  padding-top: 1rem;
+  width: 67%;
+  font-weight: 500;
+  font-size: 50px;
+  height: 92px;
+  text-align: center;
+  margin-left: 38rem;
+  box-sizing: border-box;
+}
