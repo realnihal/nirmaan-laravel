@@ -17,7 +17,7 @@ function Home() {
         <HomeSecondPage />
       </div>
       <div className="HomeThirdPage">
-        <HomeThirdPage/>
+        <HomeThirdPage />
       </div>
     </div>
   );

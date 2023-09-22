@@ -1,10 +1,12 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-.full-page-container{
+.full-page-container {
+  top: 0;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(
@@ -16,9 +18,9 @@ html, body {
     url("/home/shradhabiradar/Desktop/nirmaan-frontend/src/images/HOME-BACKGROUND.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   position: relative;
 }
 
@@ -29,7 +31,7 @@ html, body {
   flex-wrap: nowrap;
 }
 
-.homeFirstPage{
+.homeFirstPage {
   width: 100vw;
 }
 

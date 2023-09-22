@@ -3,6 +3,9 @@ import React from "react";
 import "./homeThirdPage.css";
 import vect3 from "../images/Vector3.png";
 import nirmaanLogo from "../images/NIRMAAN-LOGO-NEW 1.png";
+import mentoring from "../images/mentor.png";
+
+import ThirdPageSubComp from "./sub-components/ThirdPageSubComp";
 
 function HomeThirdPage() {
   return (
@@ -22,11 +25,63 @@ function HomeThirdPage() {
           </div>
         </div>
         <div className="apply-subtitle">
-            <div className="apply-to">APPLY TO NIRMAAN</div>
-            <div className="subtitle-to">THIS IS YOUR SUBTITLE</div>
+          <div className="apply-to">APPLY TO NIRMAAN</div>
+          <div className="subtitle-to">THIS IS YOUR SUBTITLE</div>
         </div>
       </div>
-      <div className="main"></div>
+      <div className="grey-div">
+        <div className="white-div">
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+          <ThirdPageSubComp
+            image={mentoring}
+            heading="Mentoring"
+            content="Project teams are connected with mentors,
+            who will guide and "
+          />
+        </div>
+      </div>
+      <div className="footer-third"></div>
     </div>
   );
 }

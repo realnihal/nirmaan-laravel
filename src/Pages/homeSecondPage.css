@@ -15,10 +15,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  flex: 0 0 auto;
 }
 
-.secondPage-container{
-    width: 100vw;
+.secondPage-container {
+  width: 100vw;
 }
 
 .whoWeAre-div {
@@ -36,50 +37,51 @@ body {
   font-stretch: expanded;
 }
 
-.meetOurTeam-div{
-    position: relative;
+.meetOurTeam-div {
+  position: relative;
 }
-.team-heading{
-    font-size: 2rem;
-    margin-top: 320px;
-    margin-left: -2rem;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: #FFFFFF;
-    height: 80px;
-    width: 280px;
-    color: #555555;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-}
-
-.team-heading, .vect2-logo{
-    position: absolute;
+.team-heading {
+  font-size: 2rem;
+  margin-top: 320px;
+  margin-left: -2rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  height: 80px;
+  width: 280px;
+  color: #555555;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
-.vect2-logo{
-    margin-left: 12rem;
+.team-heading,
+.vect2-logo {
+  position: absolute;
 }
 
-.about-nirmaan{
-    background-color: #FFFFFF;
-    width: 50rem;
-    height: 18rem;
-    margin-top: 4rem;
-    border-top-right-radius: 9rem;
-    padding-left: 5rem;
-    padding-top: 1rem;
-    font-size: 24px;
+.vect2-logo {
+  margin-left: 12rem;
 }
 
-.projects{
-    text-align: center;
-    width: 40rem;
-    height: 4rem;
-    font-size: 3rem;
-    background-color: #66BB6A;
-    border-bottom-left-radius: 4rem;
-    margin-left: 15rem;
-    font-style: italic;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+.about-nirmaan {
+  background-color: #ffffff;
+  width: 50rem;
+  height: 18rem;
+  margin-top: 4rem;
+  border-top-right-radius: 9rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  font-size: 24px;
+}
+
+.projects {
+  text-align: center;
+  width: 40rem;
+  height: 4rem;
+  font-size: 3rem;
+  background-color: #66bb6a;
+  border-bottom-left-radius: 4rem;
+  margin-left: 15rem;
+  font-style: italic;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
 }
