@@ -15,7 +15,7 @@ body {
       rgba(102, 187, 106, 0) 50%,
       rgba(102, 187, 106, 1)
     ),
-    url("/home/shradhabiradar/Desktop/nirmaan-frontend/src/images/HOME-BACKGROUND.png");
+    url("../images//HOME-BACKGROUND.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -27,12 +27,12 @@ body {
 .horizontal-scroll-container {
   display: flex;
   white-space: nowrap;
-  overflow-x: auto;
-  flex-wrap: nowrap;
 }
 
 .homeFirstPage {
   width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
 }
 
 .vertical {
