@@ -1,0 +1,11 @@
+.HomeSevenththPage {
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
+}
+
+.seventh-page-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

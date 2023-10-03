@@ -1,0 +1,164 @@
+.HomeFifthPage {
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
+}
+
+.fifth-page-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(102, 187, 106, 0) 10%,
+    rgba(120, 120, 120, 0.2)
+  );
+}
+
+.second-inner-div {
+  position: relative;
+  width: 300px;
+}
+.second-inner-div img,
+.switch-outer-div {
+  position: absolute;
+}
+
+.switch-outer-div {
+  border-radius: 2rem;
+  width: 210px;
+  height: 50px;
+  background-color: rgba(120, 120, 120, 0.7);
+  left: 3rem;
+  top: 4rem;
+  position: absolute;
+}
+
+.first-inner-div {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-right: 15rem;
+}
+
+.image-logo {
+  position: relative;
+}
+
+.image-logo img {
+  position: absolute;
+}
+
+.nir-small {
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.vect-small {
+  margin-left: 9rem;
+  margin-top: 5rem;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.switch-inner-div {
+  border-radius: 2rem;
+  width: 100px;
+  height: 50px;
+  background-color: rgba(102, 187, 106, 1);
+  animation: moveRight 5s linear;
+}
+
+.third-inner-div {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.what-div {
+  font-family: "GT America", sans-serif;
+  font-weight: 900;
+  font-size: 215px;
+  line-height: 87px;
+  text-align: right;
+  color: rgba(120, 120, 120, 0.8);
+  transform: scaleY(0.7);
+  margin-left: 3rem;
+}
+
+.happens-div {
+  font-family: "GT America", sans-serif;
+  font-weight: 900;
+  font-size: 130px;
+  line-height: 152.5px;
+  text-align: left;
+  color: rgba(120, 120, 120, 0.8);
+  margin-left: 8rem;
+}
+
+.they-capital {
+  font-family: "GT America", sans-serif;
+  font-size: 175px;
+  font-weight: 900;
+  line-height: 150px;
+  letter-spacing: 0;
+  text-align: left;
+  transform: scaleY(0.8);
+}
+
+.talking-div {
+  font-family: "GT America", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 72px;
+}
+.us-div {
+  font-family: "GT America";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 90px;
+  line-height: 72px;
+}
+
+.stacked-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rem;
+  margin-left: -1.5rem;
+}
+
+.stacked-div-2 {
+  margin-top: 20rem;
+  margin-left: -1.5rem;
+}
+
+.above-div {
+  padding: 3.5rem;
+  padding-top: 5.5rem;
+  width: 765px;
+  height: 248px;
+  margin-top: -20rem;
+  border-radius: 145.5px 0px 145.5px 0px;
+  background-color: white;
+  box-sizing: border-box;
+  white-space: pre-line;
+}
+
+.below-div {
+  width: 765px;
+  height: 308px;
+  border-radius: 145.5px 0px 145.5px 0px;
+  background-color: rgba(179, 179, 179, 1);
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 16.5rem;
+  
+}

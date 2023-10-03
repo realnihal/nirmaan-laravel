@@ -1,0 +1,17 @@
+.HomeSixthPage {
+    width: 100vw;
+    height: 100vh;
+    flex: 0 0 auto;
+  }
+  
+  .sixth-page-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(102, 187, 106, 0) 40%,
+    rgba(120, 120, 120, 0.2)
+  );
+  }
