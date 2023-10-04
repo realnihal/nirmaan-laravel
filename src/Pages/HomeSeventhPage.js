@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./homeSeventhPage.css";
 import nirmanLogo7 from "../images/nirmaan-logo-small.png";
@@ -65,7 +66,23 @@ function HomeSeventhPage() {
           />
         </form>
       </div>
-      <div></div>
+      <div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/teams">Teams</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/start-ups">Start-ups</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <Footer />
     </div>
   );
