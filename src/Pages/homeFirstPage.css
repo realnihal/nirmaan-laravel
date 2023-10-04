@@ -27,6 +27,7 @@ body {
 .horizontal-scroll-container {
   display: flex;
   white-space: nowrap;
+  transition: "transform ease";
 }
 
 .homeFirstPage {
