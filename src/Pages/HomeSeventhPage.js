@@ -66,23 +66,23 @@ function HomeSeventhPage() {
           />
         </form>
       </div>
-      <div>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/teams">Teams</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/start-ups">Start-ups</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div className="links">
+        <ul>
+          <li>
+            <Link to="/teams">Teams</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/start-ups">Startups</Link>
+          </li>
+          <li>
+            <Link to="/media">Media</Link>
+          </li>
+        </ul>
       </div>
+
       <Footer />
     </div>
   );

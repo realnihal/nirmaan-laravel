@@ -98,6 +98,9 @@ body {
 .social-icons {
   list-style-type: none;
   display: flex;
+}
+
+.social-icons-first {
   margin-top: 6rem;
   margin-left: 7rem;
 }

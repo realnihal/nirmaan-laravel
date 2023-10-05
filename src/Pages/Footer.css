@@ -1,0 +1,54 @@
+.common-footer {
+  width: 1920px;
+  height: 298px;
+  background-color: rgba(102, 187, 106, 1);
+  box-sizing: border-box;
+}
+
+.loc-mail {
+  padding-left: 220px;
+  padding-top: 5rem;
+  display: flex;
+}
+
+.mail-footer {
+  margin-bottom: 2rem;
+}
+
+.location {
+  padding-left: 0.5rem;
+}
+
+.mailId-loc {
+  margin-top: -0.1rem;
+  margin-left: 3rem;
+  font-family: "GT America", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0;
+  color: white;
+}
+
+.mail-id {
+  margin-bottom: 2.5rem;
+}
+
+.social-icons-footer {
+  margin-left: 10rem;
+}
+
+.copyright-footer {
+  font-family: "GT America", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: white;
+  justify-content: center;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.copyright-footer img{
+    margin-right: 0.5rem;
+}

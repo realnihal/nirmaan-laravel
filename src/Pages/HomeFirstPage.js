@@ -40,7 +40,7 @@ function HomeFirstPage() {
         <img src={iitMadrasLogo} />
       </div>
       {/* social media  */}
-      <div>
+      <div className="social-icons-first">
         <SocialMediaIcons />
       </div>
       <footer>
