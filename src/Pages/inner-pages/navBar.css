@@ -1,0 +1,72 @@
+.main-page-container {
+  height: 240px;
+  background-image: linear-gradient(
+    to top,
+    rgba(143, 255, 149, 0),
+    rgba(102, 187, 106, 0) 20%,
+    rgba(102, 187, 106, 1)
+  );
+  display: flex;
+}
+
+.main-navbar {
+  display: flex;
+  margin-left: 7rem;
+  margin-top: 2rem;
+}
+
+.black-nav {
+  display: flex;
+  height: 73px;
+  width: 1040px;
+  background-color: black;
+  margin-top: 0.6rem;
+  border-radius: 10px;
+}
+
+.nirm-nav img {
+  width: 95px;
+  height: 95px;
+}
+
+.iitm-logo-nav img {
+  width: 164.18px;
+  height: 36.22px;
+  margin-top: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 2rem;
+}
+
+.links-nav ul {
+  display: flex;
+}
+
+.links-nav li {
+  margin-right: 4rem;
+}
+
+.links-nav a {
+  font-family: "GT America", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33.74px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.links-nav a:hover {
+  color: rgba(102, 187, 106, 1);
+}
+.log-in {
+  width: 137px;
+  height: 90px;
+  border-radius: 12.9px;
+  background-color: black;
+  margin-left: 27rem;
+}
+
+.log-in img {
+  padding-top: 1.5rem;
+  padding-left: 5rem;
+}
