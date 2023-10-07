@@ -1,5 +1,5 @@
 .main-page-container {
-  height: 240px;
+  height: 300px;
   background-image: linear-gradient(
     to top,
     rgba(143, 255, 149, 0),
@@ -7,6 +7,7 @@
     rgba(102, 187, 106, 1)
   );
   display: flex;
+  width: 100%;
 }
 
 .main-navbar {

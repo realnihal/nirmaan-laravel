@@ -5,12 +5,7 @@
 
 .main-teams-container {
   height: 100%;
-}
-
-.teams-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .teams-content {
@@ -23,12 +18,13 @@
 
 .positioning-teams {
   position: relative;
+  width: 100%;
 }
 
 .teams-vect {
   position: absolute;
   margin-top: 138rem;
-  margin-left: 54rem;
+  margin-left: 51.8rem;
 }
 .second-comp-teams-content {
   padding-top: 7rem;

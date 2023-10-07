@@ -12,7 +12,7 @@ function Teams() {
   return (
     <div className="teams-container">
       <NavBar />
-      <img src={teamsVect} className="teams-vect"/>
+      <img src={teamsVect} className="teams-vect" />
       <div className="positioning-teams">
         <div className="main-teams-container">
           <TeamSubCompTitle
