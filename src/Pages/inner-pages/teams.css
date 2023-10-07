@@ -2,13 +2,69 @@
   padding: 0;
   margin: 0;
 }
-/* 
-.teams-container {
-  width: 100vw;
-} */
+
+.main-teams-container {
+  height: 100%;
+}
 
 .teams-footer {
   position: absolute;
   bottom: 0;
   width: 100vw;
+}
+
+.teams-content {
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 8rem 0 2rem 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-comp-teams-content {
+  padding-top: 7rem;
+}
+
+.third-comp-teams-content {
+  margin-top: 14rem;
+}
+
+.fourth-comp-teams-content {
+  margin-top: -9rem;
+}
+
+.sixth-comp-teams-content {
+  margin-top: 5rem;
+}
+
+.margin-bottom-3 {
+  margin-bottom: 8rem;
+}
+
+.margin-2 {
+  margin-top: 20rem;
+  margin-bottom: 8rem;
+}
+.margin-1{
+  margin-bottom: 7rem;
+}
+
+.second-comp-teams-content-2 {
+  margin-top: -7rem;
+}
+
+.third-comp-teams-content-2 {
+  margin-top: -14rem;
+}
+
+.fourth-comp-teams-content-2 {
+  margin-top: 5rem;
+}
+
+.fifth-comp-teams-content-2 {
+  margin-top: -1rem;
+}
+
+.sixth-comp-teams-content-2 {
+  margin-top: -9rem;
 }

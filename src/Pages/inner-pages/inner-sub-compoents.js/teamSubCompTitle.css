@@ -1,0 +1,31 @@
+.first-sutitle-div {
+  width: 741px;
+  height: 25px;
+  background-color: rgba(102, 187, 106, 1);
+}
+
+.second-sutitle-div {
+  width: 741px;
+  height: 220px;
+  background-color: rgba(121, 216, 127, 1);
+  border-radius: 0px 0px 110px 0px;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 44px;
+  padding: 4rem 6rem 6rem 4rem;
+  box-sizing: border-box;
+}
+
+.team-sub-main {
+  display: flex;
+}
+
+.sub-content {
+  box-sizing: border-box;
+  font-family: "GT America";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  padding: 5rem 15rem 0 4rem;
+}
