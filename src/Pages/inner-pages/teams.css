@@ -21,6 +21,15 @@
   justify-content: space-between;
 }
 
+.positioning-teams {
+  position: relative;
+}
+
+.teams-vect {
+  position: absolute;
+  margin-top: 138rem;
+  margin-left: 54rem;
+}
 .second-comp-teams-content {
   padding-top: 7rem;
 }
@@ -45,7 +54,7 @@
   margin-top: 20rem;
   margin-bottom: 8rem;
 }
-.margin-1{
+.margin-1 {
   margin-bottom: 7rem;
 }
 
