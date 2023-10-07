@@ -1,7 +1,12 @@
 import React from "react";
 
+import NavBar from "./NavBar";
+import Footer from "../Footer";
+
 function StartUps(props) {
-  return <div>STARTUPS</div>;
+  return <div><NavBar/>
+  <h1>StartUps</h1>
+  <Footer/></div>;
 }
 
 export default StartUps;

@@ -1,5 +1,5 @@
 .common-footer {
-  width: 1920px;
+  width: 100vw;
   height: 298px;
   background-color: rgba(102, 187, 106, 1);
   box-sizing: border-box;
@@ -49,6 +49,6 @@
   display: flex;
 }
 
-.copyright-footer img{
-    margin-right: 0.5rem;
+.copyright-footer img {
+  margin-right: 0.5rem;
 }

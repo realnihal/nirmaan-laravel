@@ -21,7 +21,7 @@
   width: 1040px;
   background-color: black;
   margin-top: 0.6rem;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
 }
 
 .nirm-nav img {
@@ -33,8 +33,12 @@
   width: 164.18px;
   height: 36.22px;
   margin-top: 1rem;
-  margin-left: 0.2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 5rem;
+}
+
+.links-nav {
+  margin-top: 1rem;
 }
 
 .links-nav ul {
