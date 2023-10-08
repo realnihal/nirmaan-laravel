@@ -50,6 +50,7 @@ function Teams() {
           <TeamSubCompTitle
             subtitle="THIS IS YOUR SUBTITLE"
             subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
+            flag = "true"
           />
         </div>
 

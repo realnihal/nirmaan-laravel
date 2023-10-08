@@ -29,3 +29,25 @@
   line-height: 29px;
   padding: 5rem 15rem 0 4rem;
 }
+
+.conditional-class {
+  -webkit-box-reflect: right;
+  transform: scaleX(-1);
+  display: flex;
+}
+
+#c-title {
+  transform: scaleX(-1);
+}
+
+.conditional-class-content {
+  transform: scaleX(-1);
+  box-sizing: border-box;
+  font-family: "GT America";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  padding-left: 12rem;
+  padding-right: 8rem;
+  padding-top: 4rem;
+}
