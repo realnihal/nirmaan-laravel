@@ -1,0 +1,31 @@
+.media-nav {
+  display: flex;
+}
+
+.media-list {
+  background-color: black;
+  width: 1134px;
+  height: 87px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 3rem;
+  text-decoration: none;
+  font-family: "GT America";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: white;
+  padding: 1.5rem 0 0 2rem;
+  box-sizing: border-box;
+  margin-left: -19rem;
+  margin-top: 3.5rem;
+}
+
+.media-list div {
+  margin-right: 7rem;
+}
+
+.nir-you {
+  margin-top: -1rem;
+}
