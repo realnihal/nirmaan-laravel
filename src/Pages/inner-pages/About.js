@@ -2,8 +2,6 @@ import React from "react";
 
 import "./about.css";
 
-import NavBar from "./NavBar";
-import Footer from "../Footer";
 import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
 import TimeLine from "./inner-sub-compoents.js/TimeLine";
 import nirmanLogo from "../../images/NIRMAAN-LOGO-NEW 1.png";
@@ -12,7 +10,6 @@ import iitmLogo from "../../images/iitmlogo-2.png";
 function About() {
   return (
     <div>
-      <NavBar />
       <div>
         <TeamSubCompTitle
           AboutSubtitle="THIS IS OUR"
@@ -60,7 +57,6 @@ function About() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

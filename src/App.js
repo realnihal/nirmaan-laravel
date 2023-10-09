@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import TeamsComp from "../src/Pages/inner-pages/Teams";
-import AboutComp from "../src/Pages/inner-pages/About";
+import AboutComp from "./Pages/inner-pages/AboutInteraction";
 import StartupsComp from "../src/Pages/inner-pages/StartUps";
 import Media from "./Pages/inner-pages/Media";
-import BlogsComp from "./Pages/inner-pages/Blogs";
+import BlogsComp from "./Pages/inner-pages/AboutUs";
 
 function App() {
   return (

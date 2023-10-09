@@ -1,7 +1,7 @@
 .nirman-numbers {
   display: flex;
   margin-top: 7rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .numbers-main {
@@ -26,7 +26,6 @@
   height: 400px;
   flex-wrap: wrap;
   display: flex;
-
   justify-content: space-around;
 }
 
@@ -94,4 +93,22 @@
 
 .total-margin {
   margin-left: 15rem;
+}
+
+/* wall of fame  */
+.fame {
+  width: 80%;
+  margin-top: 6rem;
+  margin-left: 246px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fame-second {
+  margin-top: 6rem;
+}
+
+.fame-third {
+  margin-top: 12rem;
+  margin-bottom: 6rem;
 }
