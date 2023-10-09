@@ -6,10 +6,13 @@ import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
 import TimeLine from "./inner-sub-compoents.js/TimeLine";
 import nirmanLogo from "../../images/NIRMAAN-LOGO-NEW 1.png";
 import iitmLogo from "../../images/iitmlogo-2.png";
+import aboutVect from "../../images/teams-vect.png";
+import aboutVectLeft from "../../images/teamsVectLeft.png";
 
 function About() {
   return (
     <div>
+      <img src={aboutVectLeft} className="about-vect-left" />
       <div>
         <TeamSubCompTitle
           AboutSubtitle="THIS IS OUR"
@@ -17,13 +20,15 @@ function About() {
           subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
         />
         <TimeLine />
-        <TeamSubCompTitle
-          AboutSubtitle="NIRMAAN IN"
-          AboutTopic="NUMBERS"
-          flag="true"
-          subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
-        />
-
+        <div className="sub-comp-about">
+          <TeamSubCompTitle
+            AboutSubtitle="NIRMAAN IN"
+            AboutTopic="NUMBERS"
+            flag="true"
+            subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
+          />
+        </div>
+        <img src={aboutVect} className="about-vect-right"/>
         <div className="nirman-numbers">
           <div className="nir-left">
             <img src={nirmanLogo} className="a-nir-logo" />

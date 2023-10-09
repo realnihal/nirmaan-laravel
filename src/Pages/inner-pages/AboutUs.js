@@ -4,6 +4,7 @@ import About from "./About";
 import TeamsFirstComp from "./inner-sub-compoents.js/TeamsFirstComp";
 import TeamsSecondComp from "./inner-sub-compoents.js/TeamsSecondComp";
 import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
+
 import NavBar from "./NavBar";
 import Footer from "../Footer";
 

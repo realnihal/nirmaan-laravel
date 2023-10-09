@@ -6,6 +6,7 @@
 .c-img {
   width: 756px;
   height: 456px;
+  position: relative;
 }
 
 .v-line {
