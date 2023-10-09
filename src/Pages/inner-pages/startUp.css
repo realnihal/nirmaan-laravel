@@ -93,11 +93,21 @@
 }
 
 .sub-sp-green {
-    margin-left: 2rem;
+  margin-left: 2rem;
   display: flex;
   justify-content: center;
 }
 
 .sp-cards {
   margin: 3rem 5rem 0 3rem;
+}
+
+/* last div  */
+.last-div-sp {
+    display: flex;
+    justify-content: space-between;
+  height: 522px;
+  background-color: rgba(157, 157, 157, 1);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }

@@ -15,6 +15,10 @@ import brief from "../../images/brief.png";
 import frame from "../../images/frame.png";
 import setting from "../../images/settings (2).png";
 import StartUpCard from "./inner-sub-compoents.js/StartUpCard";
+import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
+import halfLeft from "../../images/half-first.png"
+import halfRight from "../../images/halfRight.png"
+import secondImg from "../../images/middleimg.png"
 
 function StartUps(props) {
   return (
@@ -109,6 +113,18 @@ function StartUps(props) {
               />
             </div>
           </div>
+        </div>
+
+        <TeamSubCompTitle
+          AboutSubtitle="SEE HOW"
+          AboutTopic="WE WORK"
+          flag="true"
+        />
+
+        <div className="last-div-sp">
+          <div><img src={halfLeft}/></div>
+          <div><img src={secondImg}/></div>
+          <div><img src={halfRight}/></div>
         </div>
       </div>
       <Footer />
