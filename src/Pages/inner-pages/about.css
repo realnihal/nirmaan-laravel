@@ -1,0 +1,97 @@
+.nirman-numbers {
+  display: flex;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.numbers-main {
+  margin-left: 10rem;
+}
+
+.nir-left {
+  margin-left: 241px;
+}
+.a-nir-logo {
+  width: 393px;
+  height: 400px;
+}
+FUNDS RAISED .a-iitm-logo {
+  width: 383px;
+  height: 83px;
+  margin-top: 2rem;
+}
+
+.numbers-5 {
+  width: 800px;
+  height: 400px;
+  flex-wrap: wrap;
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.num-heading {
+  font-family: "GT America";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 4rem;
+}
+
+.num-info {
+  border-radius: 20.63px;
+  background-color: rgba(102, 187, 106, 1);
+  color: white;
+  font-family: "GT America";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 30px;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-top: 1.3rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.trained {
+  width: 160.08px;
+  height: 72.57px;
+  margin-left: 4rem;
+  margin-top: 0.7rem;
+}
+
+.grad {
+  width: 160.08px;
+  height: 72.57px;
+  margin-left: 7rem;
+  margin-top: 0.7rem;
+  padding-left: 4rem;
+}
+
+.active {
+  width: 160.08px;
+  height: 72.57px;
+  margin-left: 3rem;
+  margin-top: 0.7rem;
+  padding-left: 4rem;
+}
+
+.funds {
+  width: 195px;
+  height: 73px;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+
+.total {
+  width: 238.34px;
+  height: 73px;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  padding-left: 3.5rem;
+}
+
+.total-margin {
+  margin-left: 15rem;
+}
