@@ -14,6 +14,7 @@ import mentor from "../../images/mentor.png";
 import brief from "../../images/brief.png";
 import frame from "../../images/frame.png";
 import setting from "../../images/settings (2).png";
+import StartUpCard from "./inner-sub-compoents.js/StartUpCard";
 
 function StartUps(props) {
   return (
@@ -83,7 +84,31 @@ function StartUps(props) {
 
         {/* second section */}
         <div className="second-green-section">
-
+          <div className="sub-sp-green">
+            <div className="sp-cards">
+              <StartUpCard
+                heading="Investors"
+                apply="REACH TO US"
+                content1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                content2="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              />
+            </div>
+            <div className="sp-cards">
+              <StartUpCard
+                heading="Startups"
+                apply="WORK WITH US"
+                content1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                content2="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              />
+            </div>
+            <div className="sp-cards">
+              <StartUpCard
+                heading="Interns"
+                content1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                content2="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              />
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

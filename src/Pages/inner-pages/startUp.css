@@ -75,3 +75,29 @@
   padding-left: 4rem;
   margin-top: 4.5rem;
 }
+
+/* second section css  */
+
+.second-green-section {
+  height: 872px;
+  background: linear-gradient(
+    90deg,
+    #2e9635 -0.29%,
+    #66bb6a 11.2%,
+    #66bb6a 51.32%,
+    #66bb6a 89.3%,
+    #2e9635 100%
+  );
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sub-sp-green {
+    margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sp-cards {
+  margin: 3rem 5rem 0 3rem;
+}
