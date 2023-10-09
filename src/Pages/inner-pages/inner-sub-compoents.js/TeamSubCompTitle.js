@@ -8,6 +8,8 @@ function TeamSubCompTitle({
   flag,
   MediaSubtitle,
   topic,
+  AboutSubtitle,
+  AboutTopic,
 }) {
   return (
     <div className={flag ? "conditional-class" : "team-sub-main"}>
@@ -19,6 +21,16 @@ function TeamSubCompTitle({
             <div>
               <div className="media-title">{MediaSubtitle}</div>
               <div className="media-topic">{topic}</div>
+            </div>
+          ) : null}
+          {AboutSubtitle ? (
+            <div className="about-div">
+              <div className={flag ? "about-m about-title right-padding" : "about-title"}>
+                {AboutSubtitle}
+              </div>
+              <div className={flag ? "about-m about-topic right-padding" : "about-topic"}>
+                {AboutTopic}
+              </div>
             </div>
           ) : null}
         </div>

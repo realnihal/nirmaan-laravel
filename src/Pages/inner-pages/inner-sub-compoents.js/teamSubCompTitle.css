@@ -40,6 +40,10 @@
   transform: scaleX(-1);
 }
 
+.about-m {
+  transform: scaleX(-1);
+}
+
 .conditional-class-content {
   transform: scaleX(-1);
   box-sizing: border-box;
@@ -69,4 +73,28 @@
   line-height: 65.25px;
   padding-left: 13rem;
   text-align: center;
+}
+
+/* about div*/
+.about-title {
+  font-family: "GT America";
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 65.25px;
+  text-align: right;
+}
+.about-topic {
+  font-family: "GT America";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 75px;
+  line-height: 65.25px;
+  text-align: right;
+}
+
+/* for mirror image case  */
+
+.right-padding {
+  padding-right: 7rem;
+  text-align: left;
 }
