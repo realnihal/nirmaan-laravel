@@ -30,6 +30,11 @@
   margin-top: -1rem;
 }
 
+.media-list a{
+    text-decoration: none;
+    color: white;
+}
+
 .media-sub-comp{
     margin-top: 6rem;
     margin-left: 5rem;
