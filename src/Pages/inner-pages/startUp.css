@@ -71,9 +71,11 @@
 
 .sp-sub-img {
   width: 800px;
+  height: 230px;
   box-sizing: border-box;
   padding-left: 4rem;
-  margin-top: 4.5rem;
+  padding-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 /* second section css  */
@@ -104,10 +106,14 @@
 
 /* last div  */
 .last-div-sp {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   height: 522px;
   background-color: rgba(157, 157, 157, 1);
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.sp-white .sp-sub-img:nth-child(even) {
+  background-color: rgba(217, 217, 217, 0.25);
 }
