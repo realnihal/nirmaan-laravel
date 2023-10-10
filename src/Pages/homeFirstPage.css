@@ -58,12 +58,28 @@ body {
   width: 100%;
 }
 
-.this-is {
+.this-is-img {
   text-align: right;
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 8rem;
-  margin-left: 15rem;
+  width: 553px;
+  margin-top: 135px;
+  margin-left: 76px;
+}
+
+.sub-heading-first {
+  font-family: "GT America", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+.subtitle-content {
+  margin-top: 3rem;
+  box-sizing: border-box;
+  font-family: "GT America", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  white-space: pre-line;
 }
 
 .logo {
@@ -76,15 +92,9 @@ body {
 }
 
 .subtitle {
-  margin-top: 4.5rem;
+  width: 311px;
+  margin-top: 7rem;
   margin-left: 6rem;
-}
-
-.subtitle h2 {
-  font-size: 2.3rem;
-}
-.subtitle p {
-  font-size: 1.5rem;
 }
 
 .iitmlogo {
@@ -131,7 +141,7 @@ footer {
 
 .inner-div {
   position: absolute;
-  margin-top: 3.75rem;
+  margin-top: 4rem;
   width: 68%;
   height: 120px;
   background-image: linear-gradient(
@@ -142,17 +152,31 @@ footer {
   );
 }
 
-.inner-div ul {
-  list-style: none;
+.inner-list-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  color: white;
   margin-top: 2rem;
+  font-family: "GT America", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: left;
+  padding-left: 1rem;
 }
 
-.inner-div li {
-  margin-right: 3rem;
-  color: #ffffff;
-  font-size: 1.2rem;
+
+#last-list {
+  margin-top: -1rem;
+  font-family: "GT America", sans-serif;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .apply {

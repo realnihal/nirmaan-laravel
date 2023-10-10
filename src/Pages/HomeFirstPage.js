@@ -6,32 +6,29 @@ import iitMadrasLogo from "../images/iitmLogo.png";
 import SocialMediaIcons from "./SocialMediaIcons";
 import rect from "../images/Rectangle.png";
 import vect from "../images/Vector.png";
+import thisIsImg from "../images/THIS IS.png";
 
 function HomeFirstPage() {
   return (
     <div className="full-page-container">
       {/* nirman logo */}
-      <div className="vertical">
-        WHO WE ARE
-      </div>
+      <div className="vertical">WHO WE ARE</div>
       <div className="nirmaan-logo">
-        <div className="this-is text">
-          <h1>
-            THIS <br></br> IS
-          </h1>
+        <div className="this-is-img">
+          <img src={thisIsImg} />
         </div>
         <div className="logo">
           <img src={nirmaanLogo} />
         </div>
         <div className="text subtitle">
-          <h2>
-            THIS IS YOUR <br></br> SUBTITLE
-          </h2>
-          <p>
-            Nirmaan, The Pre-Incubator,<br></br>at IIT Madras is the first of{" "}
-            <br></br>its kind dedicated pre- <br></br>incubatore on a college{" "}
-            <br></br>campus in the country.
-          </p>
+          <div className="sub-heading-first">
+            <div>THIS IS YOUR</div>
+            <div>SUBTITLE</div>
+          </div>
+          <div className="subtitle-content">
+            Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind
+            dedicated pre-incubator on a college campus in the country.
+          </div>
         </div>
       </div>
 
@@ -51,23 +48,21 @@ function HomeFirstPage() {
           <img src={rect} />
         </div>
         <div className="inner-div">
-          <ul>
-            <li>
-              Nirmaan Studends Head <br></br>Applications Opens on January 23rd
-            </li>
-            <li>
+          <div className="inner-list-div">
+            <div>
+              Nirmaan Studends Head <br></br> Applications Opens on January 23rd
+            </div>
+            <div>
               January Cohort Application opens <br></br>on 13th January
-            </li>
-            <li>
-              Experts Talk 3.0 <br></br>February 4th
-            </li>
-            <li>
-              Mega Event February 24th <br></br>and 25th
-            </li>
-            <li>
-              OUR MOST <br></br> RECENT <br></br> EVENTS
-            </li>
-          </ul>
+            </div>
+            <div>
+              Experts Talk 3.0 <br></br> February 4th
+            </div>
+            <div>
+              Mega Event February 24th <br></br> and 25th
+            </div>
+            <div id="last-list">OUR MOST <br></br>RECENT <br></br>EVENTS</div>
+          </div>
         </div>
         <div className="apply">
           <h3>APPLY TO NIRMAAN</h3>
