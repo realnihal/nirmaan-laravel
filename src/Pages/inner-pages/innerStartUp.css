@@ -1,0 +1,158 @@
+.is-sub-main {
+  display: flex;
+}
+
+.is-left-first-heading {
+  width: 741px;
+  height: 150px;
+  background-color: rgba(121, 216, 127, 1);
+  border-radius: 0px 0px 75px 0px;
+  font-family: "GT America";
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.is-left-second-sub-heading {
+  padding-left: 230px;
+  padding-top: 1.5rem;
+}
+
+.is-left-first-sub-heading {
+  width: 741px;
+  height: 53px;
+  background-color: rgba(102, 187, 106, 1);
+  font-family: "GT America";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0em;
+  box-sizing: border-box;
+  padding-left: 230px;
+  padding-top: 0.5rem;
+}
+
+.is-content {
+  margin-left: 220px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 782px;
+  height: 204px;
+  font-family: "GT America";
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.is-member-main {
+  width: 719px;
+  height: 370px;
+  border-radius: 0px 0px 110px 0px;
+  background-color: rgba(121, 216, 127, 1);
+}
+
+.is-member-heading {
+  box-sizing: border-box;
+  width: 719px;
+  height: 68px;
+  background-color: rgba(102, 187, 106, 1);
+  font-family: "GT America";
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: 0em;
+  padding-left: 220px;
+  padding-top: 0.9rem;
+}
+
+.is-name-wrapper {
+  margin-left: 220px;
+  margin-top: 1.5rem;
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-members-name {
+  margin-top: 2rem;
+}
+
+.is-name {
+  font-family: "GT America";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.is-image {
+  width: 836px;
+}
+
+.funds-raised {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -12rem;
+  margin-left: -10rem;
+  width: 402px;
+  height: 120px;
+  border-radius: 0 75px 0 75px;
+  background-color: rgba(121, 216, 127, 1);
+}
+
+.inr {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.funds-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding-left: 2rem;
+}
+
+.name-startup {
+  box-sizing: border-box;
+  margin-left: 33rem;
+  margin-top: -4rem;
+  position: absolute;
+  width: 308px;
+  height: 120px;
+  border-bottom-left-radius: 75px;
+  background-color: rgba(121, 216, 127, 1);
+}
+
+.startup-title-is {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.start-main-name {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+}

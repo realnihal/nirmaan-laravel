@@ -19,16 +19,17 @@ function CheckBox({
 }) {
   const handleCheckboxClick = (e, category, value) => {
     console.log("value", value);
-    console.log("length", selectedYears.length);
 
     switch (category) {
       case "years":
-        if (selectedYears.includes(value)) {
+        if (selectedYears.includes(value) ) {
           console.log("if");
           setSelectedYears(selectedYears.filter((year) => year !== value));
         } else {
           console.log("else if");
-          console.log("years before", selectedYears);
+          if (selectedYears.length == 0) {
+            selectedYears = value;
+          }
           setSelectedYears([...selectedYears, value]);
           console.log("years after", selectedYears);
         }
@@ -55,6 +56,8 @@ function CheckBox({
       default:
         break;
     }
+
+    console.log("ans", selectedYears);
   };
   return (
     <div className="checkbox-outer-div">
