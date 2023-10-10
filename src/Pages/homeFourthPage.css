@@ -66,22 +66,31 @@
   padding-left: 2rem;
 }
 
-.numbers {
+.numbers-fourthPage {
   width: 1058px;
   height: 226px;
   border-radius: 30px;
   background-color: rgba(102, 187, 106, 1);
 }
 
-.nir {
-  font-family: "GT America", sans-serif;
-  font-size: 110px;
-  font-weight: 900;
-  letter-spacing: 0;
-  text-align: center;
+.nir-num-wrapper4 {
+  width: 676px;
+  height: 183px;
+  margin-left: 13rem;
+  white-space: pre-line;
+  box-sizing: border-box;
 }
 
-.num {
+.nir-fourthPge {
+  font-family: "GT America", sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.num-fourthPage {
+  margin-top: -2.5rem;
   font-family: "GT America";
   font-style: italic;
   font-size: 80px;
@@ -116,13 +125,13 @@
   top: 6rem;
   left: 20rem;
   z-index: 9;
-  clip-path: polygon(80% -10%, 100% 0%, 100% 100%, 0% 100%)
+  clip-path: polygon(80% -10%, 100% 0%, 100% 100%, 0% 100%);
 }
 .images img:nth-child(3) {
   top: 6rem;
   left: 60rem;
   z-index: 5;
-  clip-path: polygon(0% 0%, 25% 0%, 99% 100%, 0% 100%)
+  clip-path: polygon(0% 0%, 25% 0%, 99% 100%, 0% 100%);
 }
 .images img:nth-child(4) {
   top: 0.05rem;

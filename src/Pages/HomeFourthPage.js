@@ -12,7 +12,7 @@ import leftCut from "../images/left-num.png";
 import bottom1Cut from "../images/bottom1-num.png";
 import bottom2Cut from "../images/bottom2-num.png";
 import rightCut from "../images/right-num.png";
-import logoNir from "../images/logo-nir.png"
+import logoNir from "../images/logo-nir.png";
 
 function HomeFourthPage() {
   return (
@@ -26,9 +26,11 @@ function HomeFourthPage() {
           <div className="our-team common">
             SEE<br></br>OUR<br></br>TEAM
           </div>
-          <div className="numbers">
-            <div className="nir">NIRMAAN</div>
-            <div className="num">IN NUMBERS</div>
+          <div className="numbers-fourthPage">
+            <div className="nir-num-wrapper4">
+              <div className="nir-fourthPge">NIRMAAN</div>
+              <div className="num-fourthPage">IN NUMBERS</div>
+            </div>
           </div>
           <div className="journey common">
             SEE<br></br>OUR<br></br>JOURNEY
@@ -46,11 +48,11 @@ function HomeFourthPage() {
           <img src={bottom2} />
           <img src={rightImg} />
           <img src={leftCut} />
-          <img src={bottom1Cut}/>
-          <img src={bottom2Cut}/>
-          <img src={rightCut}/>
-          <img src={nirmaanlogo}/>
-          <img src={logoNir}/>
+          <img src={bottom1Cut} />
+          <img src={bottom2Cut} />
+          <img src={rightCut} />
+          <img src={nirmaanlogo} />
+          <img src={logoNir} />
         </div>
       </div>
     </div>
