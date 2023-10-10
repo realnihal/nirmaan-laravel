@@ -156,3 +156,77 @@
   letter-spacing: 0em;
   text-align: center;
 }
+
+.contact-section {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.contact-is {
+  width: 719px;
+  height: 150px;
+  border-radius: 0px 0px 75px 0px;
+  background-color: rgba(121, 216, 127, 1);
+  font-family: "GT America", sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.contact-us-is {
+  padding-left: 220px;
+  padding-top: 2rem;
+}
+
+.contact-green {
+  width: 719px;
+  height: 25px;
+  background-color: rgba(102, 187, 106, 1);
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  width: 1300px;
+  height: 150px;
+  background-color: rgba(217, 217, 217, 0.25);
+}
+
+.contact-div-2,
+.contact-div-3 {
+  box-sizing: border-box;
+  padding-top: 3.5rem;
+  margin-left: -2rem;
+}
+
+.mail-id {
+  margin-left: 2rem;
+  margin-top: 3.5rem;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.contact-div-1 {
+  display: flex;
+}
+
+.mail-img {
+  margin-top: 3.5rem;
+}
+
+.contact-div-2 a {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.gallery-comp {
+  margin: 7rem 0 7rem 5rem;
+}
