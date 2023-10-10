@@ -1,12 +1,32 @@
 import React, { useState } from "react";
+import axios from "axios";
+
+import "./startUpInteraction.css";
+
 import NavBar from "./NavBar";
 import Footer from "../Footer";
 import CheckBox from "./inner-sub-compoents.js/CheckBox";
+import SearchBar from "./inner-sub-compoents.js/SearchBar";
 
 function StartUpInteraction1() {
   const [selectedYears, setSelectedYears] = useState([]);
   const [selectedMonths, setSelectedMonths] = useState([]);
   const [selectedSectors, setSelectedSectors] = useState([]);
+
+  const [searchResult, setSearchResult] = useState(null);
+
+  const handleSearch = (searchTerm) => {
+    console.log("searchedItem - ", searchTerm);
+    const apiUrl = `https://api.example.com/search?q=${searchTerm}`;
+    axios
+      .get(apiUrl)
+      .then((response) => {
+        setSearchResult(response.data);
+      })
+      .catch((error) => {
+        console.error("API call error", error);
+      });
+  };
 
   const years = [
     { id: "2021-22", year: "2021-22" },
@@ -33,18 +53,24 @@ function StartUpInteraction1() {
   return (
     <div>
       <NavBar />
-      <div>
-        <CheckBox
-          years={years}
-          months={months}
-          sectors={sectors}
-          selectedYears={selectedYears}
-          setSelectedYears={setSelectedYears}
-          selectedMonths={selectedMonths}
-          setSelectedMonths={setSelectedMonths}
-          selectedSectors={selectedSectors}
-          setSelectedSectors={setSelectedSectors}
-        />
+      <div className="start-up-interaction">
+        <div className="checkbox-margin">
+          <CheckBox
+            years={years}
+            months={months}
+            sectors={sectors}
+            selectedYears={selectedYears}
+            setSelectedYears={setSelectedYears}
+            selectedMonths={selectedMonths}
+            setSelectedMonths={setSelectedMonths}
+            selectedSectors={selectedSectors}
+            setSelectedSectors={setSelectedSectors}
+          />
+        </div>
+        <div className="search-container">
+          <SearchBar onSearch={handleSearch} />
+          
+        </div>
       </div>
       <Footer />
     </div>

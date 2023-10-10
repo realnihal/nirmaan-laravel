@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./checkbox.css";
 import Form from "react-bootstrap/Form";
@@ -17,54 +17,69 @@ function CheckBox({
   selectedSectors,
   setSelectedSectors,
 }) {
-  const handleCheckboxClick = (e, category, value) => {
+  const handleCheckboxChange = (event, category) => {
+    const value = event.target.value;
     console.log("value", value);
 
     switch (category) {
       case "years":
-        if (selectedYears.includes(value) ) {
-          console.log("if");
-          setSelectedYears(selectedYears.filter((year) => year !== value));
-        } else {
-          console.log("else if");
-          if (selectedYears.length == 0) {
-            selectedYears = value;
-          }
+        if (event.target.checked) {
           setSelectedYears([...selectedYears, value]);
-          console.log("years after", selectedYears);
+        } else {
+          setSelectedYears(selectedYears.filter((year) => year !== value));
         }
+
         break;
 
       case "months":
-        if (selectedMonths.includes(value)) {
-          setSelectedMonths(selectedMonths.filter((month) => month !== value));
-        } else {
+        if (event.target.checked) {
           setSelectedMonths([...selectedMonths, value]);
+        } else {
+          setSelectedMonths(selectedMonths.filter((month) => month !== value));
         }
         break;
 
       case "sectors":
-        if (selectedSectors.includes(value)) {
+        if (event.target.checked) {
+          setSelectedSectors([...selectedSectors, value]);
+        } else {
           setSelectedSectors(
             selectedSectors.filter((sector) => sector !== value)
           );
-        } else {
-          setSelectedSectors([...selectedSectors, value]);
         }
         break;
 
       default:
         break;
     }
-
-    console.log("ans", selectedYears);
   };
+
+  useEffect(() => {
+    console.log("year", selectedYears);
+  }, [selectedYears]);
+
+  useEffect(() => {
+    console.log("months", selectedMonths);
+  }, [selectedMonths]);
+
+  useEffect(() => {
+    console.log("sector", selectedSectors);
+  }, [selectedSectors]);
+
+  const handleReset = () => {
+    setSelectedYears([]);
+    setSelectedMonths([]);
+    setSelectedSectors([]);
+  };
+
   return (
     <div className="checkbox-outer-div">
       <div className="checkbox-inner-div">
         <div className="checbox-heading-wrapper">
           <div className="filter-by">Filter by</div>
-          <div className="reset">Reset</div>
+          <div className="reset" onClick={handleReset}>
+            Reset
+          </div>
         </div>
         <img src={hcLine} className="checkbox-hLine" />
         <div className="checkbox-form">
@@ -82,9 +97,7 @@ function CheckBox({
                     id={yearObj.id}
                     value={yearObj.year}
                     checked={selectedYears.includes(yearObj.year)}
-                    onClick={(e) =>
-                      handleCheckboxClick(e, "years", yearObj.year)
-                    }
+                    onChange={(e) => handleCheckboxChange(e, "years")}
                     className="custom-label-font-size"
                   />
                 ))}
@@ -104,9 +117,7 @@ function CheckBox({
                     id={monthObj.id}
                     value={monthObj.month}
                     checked={selectedMonths.includes(monthObj.month)}
-                    onClick={(e) =>
-                      handleCheckboxClick(e, "months", monthObj.month)
-                    }
+                    onChange={(e) => handleCheckboxChange(e, "months")}
                     className="custom-label-font-size"
                   />
                 ))}
@@ -124,9 +135,7 @@ function CheckBox({
                     id={sectorObj.id}
                     value={sectorObj.sector}
                     checked={selectedSectors.includes(sectorObj.sector)}
-                    onClick={(e) =>
-                      handleCheckboxClick(e, "sectors", sectorObj.sector)
-                    }
+                    onChange={(e) => handleCheckboxChange(e, "sectors")}
                     className="custom-label-font-size"
                   />
                 ))}

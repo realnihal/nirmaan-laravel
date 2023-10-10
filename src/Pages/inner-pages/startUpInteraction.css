@@ -1,0 +1,13 @@
+.start-up-interaction {
+  display: flex;
+}
+
+.checkbox-margin {
+  margin-top: 4rem;
+  margin-left: 26px;
+}
+
+.search-container {
+  margin-top: -2rem;
+  margin-left: 5rem;
+}
