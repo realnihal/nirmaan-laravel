@@ -135,7 +135,86 @@ function WorkWithStartUp() {
                 />
               </div>
             </div>
-            <div></div>
+            <div className="open-roles-nirman">
+              Open roles to work with STARTUPS ASSSOCIATED
+            </div>
+            <div className="wws-startup-associated">
+              <div className="wws-list-with-nirman">
+                <ul>
+                  <li className="list-role-2">Role</li>
+                  <li className="wwnstart-up">StartUp</li>
+                  <li>Duration</li>
+                  <li>Remuneration</li>
+                  <li>Actions</li>
+                </ul>
+              </div>
+              <div className="wwn-details">
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="Unpaid"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                  startUp="Prayavaran Sodhal"
+                  tech="clean Technology"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

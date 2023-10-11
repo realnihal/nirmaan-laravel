@@ -11,16 +11,38 @@
   line-height: 26px;
 }
 
+.wwn-main-startUp {
+  font-size: 18px;
+}
+
 .wwn-role {
   margin-left: 2.5rem;
+  width: 270px;
+  /* border: 2px solid black; */
 }
 
-.wwn-duration {
-  margin-left: 5rem;
-}
+
 
 .wwn-stipend {
+  /* border: 2px solid black; */
   margin-left: 2rem;
+  text-align: center;
+  width: 190px;
+}
+
+.wwn-start-up {
+  /* border: 2px solid black; */
+  width: 230px;
+  margin-left: -1rem;
+}
+
+.wwn-tech {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #66bb6a;
+  margin-left: -1rem;
+
 }
 
 .wwn-apply {
