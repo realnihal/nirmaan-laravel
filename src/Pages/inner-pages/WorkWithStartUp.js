@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import CheckBox from "./inner-sub-compoents.js/CheckBox";
 import SearchBar from "./inner-sub-compoents.js/SearchBar";
 import axios from "axios";
+import WorkWithNirman from "./inner-sub-compoents.js/WorkWithNirman";
 
 function WorkWithStartUp() {
   const roles = [
@@ -106,14 +107,33 @@ function WorkWithStartUp() {
               </div>
               <div className="wws-list-with-nirman">
                 <ul>
-                  <li>Role</li>
+                  <li className="list-role">Role</li>
                   <li>Duration</li>
                   <li>Remuneration</li>
                   <li>Actions</li>
                 </ul>
               </div>
-
-              {/* call component  */}
+              <div className="wwn-details">
+                {/* //data from api response  */}
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                />
+                <WorkWithNirman
+                  role="Front End Developer"
+                  duration="3 months"
+                  Stipend="INR 12,000/month"
+                  link="https://ww.google.com"
+                />
+              </div>
             </div>
             <div></div>
           </div>

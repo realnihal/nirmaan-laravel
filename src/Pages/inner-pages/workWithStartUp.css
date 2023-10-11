@@ -28,8 +28,6 @@
     padding-top: 1.3rem;
 }
 
-
-
 .open-roles-nirman {
   font-size: 32px;
   font-style: italic;
@@ -42,4 +40,13 @@
 
 .wws-table {
   margin-top: 2rem;
+}
+
+.list-role{
+    margin-left: -3rem;
+    margin-right: 12rem;
+}
+
+.wwn-details{
+    margin-top: 4rem;
 }
