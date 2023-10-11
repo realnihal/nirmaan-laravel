@@ -16,6 +16,8 @@ function CheckBox({
   setSelectedMonths,
   selectedSectors,
   setSelectedSectors,
+  yearTitle,
+  monthTitle
 }) {
   const handleCheckboxChange = (event, category) => {
     const value = event.target.value;
@@ -86,7 +88,7 @@ function CheckBox({
           <Form>
             <Form.Group>
               <Form.Label className="common-heading-style year-margin">
-                Incubation Year
+                {yearTitle}
               </Form.Label>
               <div className="common-form-gap">
                 {years.map((yearObj) => (
@@ -106,7 +108,7 @@ function CheckBox({
 
             <Form.Group>
               <Form.Label className="common-heading-style">
-                Cohort Months
+                {monthTitle}
               </Form.Label>
               <div className="common-form-gap">
                 {months.map((monthObj) => (

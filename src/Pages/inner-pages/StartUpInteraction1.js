@@ -67,6 +67,8 @@ function StartUpInteraction1() {
             setSelectedMonths={setSelectedMonths}
             selectedSectors={selectedSectors}
             setSelectedSectors={setSelectedSectors}
+            yearTitle="Incubation Year"
+            monthTitle="Cohort Months"
           />
         </div>
         <div className="search-container">
