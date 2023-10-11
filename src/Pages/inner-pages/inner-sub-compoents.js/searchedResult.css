@@ -1,0 +1,65 @@
+.searched-result-main {
+  display: flex;
+  width: 1327px;
+  height: 203px;
+  background-color: #d9d9d940;
+  margin: 5rem 0 5rem 0;
+}
+
+.searched-img {
+  width: 284px;
+  height: 200px;
+  border-radius: 18px;
+}
+
+.searched-project-content-main {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1.4rem;
+  box-sizing: border-box;
+}
+
+.sr-name {
+  box-sizing: border-box;
+  font-family: "GT America";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.sr-content {
+  width: 700px;
+  height: 108px;
+  margin-top: 2rem;
+  font-family: "GT America";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.button-div {
+  width: 231px;
+  height: 81px;
+  top: 437px;
+  left: 1643px;
+  border-radius: 0px 40.5px 0px 40.5px;
+  background-color: black;
+  box-shadow: 8px 8px 6px 0px #00000033;
+  color: white;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 27px;
+  box-sizing: border-box;
+  padding: 0.7rem 0 0 2.8rem; /* top right bottom left */
+  margin: 3rem 0 0 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button-div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #66bb6a;
+}

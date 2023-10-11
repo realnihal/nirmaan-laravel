@@ -5,8 +5,10 @@ import "./startUpInteraction.css";
 
 import NavBar from "./NavBar";
 import Footer from "../Footer";
+import SearchedResult from "./inner-sub-compoents.js/SearchedResult";
 import CheckBox from "./inner-sub-compoents.js/CheckBox";
 import SearchBar from "./inner-sub-compoents.js/SearchBar";
+import demoImg from "../../images/chess.png";
 
 function StartUpInteraction1() {
   const [selectedYears, setSelectedYears] = useState([]);
@@ -69,7 +71,60 @@ function StartUpInteraction1() {
         </div>
         <div className="search-container">
           <SearchBar onSearch={handleSearch} />
-          
+          {/* map the searched result when api is ready  */}
+          {/* {searchResult.map((item) => {
+            <div>
+              
+            </div>
+          })} */}
+
+          <div className="searched-container-div">
+            <SearchedResult
+              demoImg={demoImg}
+              projectName="Project Name"
+              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
+            to practice the highs and lows of entrepreneurship with a deferred
+            placement. We strive to offer our students a firsthand experience of
+            what it takes to be an entrepreneur."
+              Projecturl="/your-target-page"
+            />
+            <SearchedResult
+              demoImg={demoImg}
+              projectName="Project Name"
+              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
+            to practice the highs and lows of entrepreneurship with a deferred
+            placement. We strive to offer our students a firsthand experience of
+            what it takes to be an entrepreneur."
+              Projecturl="/your-target-page"
+            />
+            <SearchedResult
+              demoImg={demoImg}
+              projectName="Project Name"
+              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
+            to practice the highs and lows of entrepreneurship with a deferred
+            placement. We strive to offer our students a firsthand experience of
+            what it takes to be an entrepreneur."
+              Projecturl="/your-target-page"
+            />
+            <SearchedResult
+              demoImg={demoImg}
+              projectName="Project Name"
+              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
+            to practice the highs and lows of entrepreneurship with a deferred
+            placement. We strive to offer our students a firsthand experience of
+            what it takes to be an entrepreneur."
+              Projecturl="/your-target-page"
+            />
+            <SearchedResult
+              demoImg={demoImg}
+              projectName="Project Name"
+              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
+            to practice the highs and lows of entrepreneurship with a deferred
+            placement. We strive to offer our students a firsthand experience of
+            what it takes to be an entrepreneur."
+              Projecturl="/your-target-page"
+            />
+          </div>
         </div>
       </div>
       <Footer />
