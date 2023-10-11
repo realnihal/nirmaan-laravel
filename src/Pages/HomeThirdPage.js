@@ -8,6 +8,9 @@ import mentoring from "../images/mentor.png";
 import StartUpSUbComp from "./inner-pages/inner-sub-compoents.js/StartUpSUbComp";
 
 function HomeThirdPage() {
+  const handleApplyToNirman = () => {
+    console.log("handled");
+  };
   return (
     <div className="thirdPage-container">
       <div className="header">
@@ -25,8 +28,10 @@ function HomeThirdPage() {
           </div>
         </div>
         <div className="apply-subtitle">
-          <div className="apply-to">APPLY TO NIRMAAN</div>
           <div className="subtitle-to">THIS IS YOUR SUBTITLE</div>
+          <div className="apply-to" onClick={handleApplyToNirman}>
+            APPLY TO NIRMAAN
+          </div>
         </div>
       </div>
       <div className="grey-div">
@@ -99,6 +104,8 @@ function HomeThirdPage() {
             </div>
           </div>
         </div>
+        <div className="third-more-about-us">SEE MORE ABOUT US</div>
+        <div className="third-nirman-in-numbers">NIRMAN IN NUMBERS</div>
       </div>
       <div className="footer-third"></div>
     </div>

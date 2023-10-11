@@ -82,11 +82,18 @@ body {
   color: #66bb6a;
   background-color: black;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.4s ease-in-out;
+}
+
+.apply-to:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .subtitle-to {
+  position: absolute;
   background-image: linear-gradient(to right, #d9d9d9, #b6b6b6);
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   width: 67%;
   font-weight: 500;
   font-size: 50px;
@@ -100,7 +107,7 @@ body {
   width: 1500px;
   height: 1879px;
   background-color: #d9d9d9;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 180px;
   border-radius: 3rem;
 }
@@ -126,6 +133,40 @@ body {
   margin-top: 5rem;
 }
 
+.third-more-about-us {
+  width: 437px;
+  height: 92px;
+  border-radius: 0px 40.5px 0px 40.5px;
+  background-color: black;
+  position: absolute;
+  margin-top: 118rem;
+  margin-left: 35rem;
+  box-shadow: 8px 8px 6px 0px #00000033;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 28px;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.third-nirman-in-numbers {
+  position: absolute;
+  width: 960px;
+  height: 80px;
+  border-radius: 60px 60px 0 0;
+  background-color: white;
+  transform: rotate(-90deg);
+  margin-left: 100rem;
+  margin-top: 126.4rem;
+  transform-origin: 0 0;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+}
 
 .footer-third {
   height: 150px;
