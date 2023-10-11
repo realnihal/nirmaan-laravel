@@ -9,6 +9,9 @@ import vect from "../images/Vector.png";
 import thisIsImg from "../images/THIS IS.png";
 
 function HomeFirstPage() {
+  const handleClickApplyTo = () => {
+    window.location.href = "www.google.com";
+  };
   return (
     <div className="full-page-container">
       {/* nirman logo */}
@@ -61,10 +64,12 @@ function HomeFirstPage() {
             <div>
               Mega Event February 24th <br></br> and 25th
             </div>
-            <div id="last-list">OUR MOST <br></br>RECENT <br></br>EVENTS</div>
+            <div id="last-list">
+              OUR MOST <br></br>RECENT <br></br>EVENTS
+            </div>
           </div>
         </div>
-        <div className="apply">
+        <div className="apply" onClick={handleClickApplyTo}>
           <h3>APPLY TO NIRMAAN</h3>
         </div>
       </footer>
