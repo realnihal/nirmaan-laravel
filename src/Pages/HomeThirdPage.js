@@ -5,7 +5,7 @@ import vect3 from "../images/Vector3.png";
 import nirmaanLogo from "../images/NIRMAAN-LOGO-NEW 1.png";
 import mentoring from "../images/mentor.png";
 
-import ThirdPageSubComp from "./sub-components/ThirdPageSubComp";
+import StartUpSUbComp from "./inner-pages/inner-sub-compoents.js/StartUpSUbComp";
 
 function HomeThirdPage() {
   return (
@@ -31,54 +31,73 @@ function HomeThirdPage() {
       </div>
       <div className="grey-div">
         <div className="white-div">
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
-          <ThirdPageSubComp
-            image={mentoring}
-            heading="Mentoring"
-            content="Project teams are connected with mentors,
-            who will guide and "
-          />
+          <div className="white-inner-div">
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Mentoring"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                thirdComp="true"
+              />
+            </div>
+
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Workshops"
+                thirdComp="true"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success "
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Workspace"
+                thirdComp="true"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Participation"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Tools & Resources"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Pre-Seed funding"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Secure Facility"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="OtherServices"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div className="footer-third"></div>

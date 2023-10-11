@@ -15,21 +15,10 @@ import HomeSeventhPage from "./HomeSeventhPage";
 function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [secondPageContent, setSecondPageContent] = useState(null);
 
   const pages = 7;
-
-  // useEffect(() => {
-  //   if (currentPage === 2) {
-  //     setSecondPageContent(
-  //       <div className="HomeThirdPage">
-  //         <HomeThirdPage />
-  //       </div>
-  //     );
-  //   }
-  // }, [currentPage]);
-
   const handleWheelScroll = (e) => {
+    console.log("e.deltax", e.target.scrollLeft);
     if (!isScrolling) {
       if (e.deltaX > 0 && currentPage < pages - 1) {
         scrollPage("right");
@@ -42,9 +31,11 @@ function Home() {
   const scrollPage = (direction) => {
     setIsScrolling(true);
     if (direction === "left") {
+      console.log("current", currentPage);
       setCurrentPage((prevPage) => prevPage - 1);
     } else if (direction === "right") {
       setCurrentPage((prevPage) => prevPage + 1);
+      console.log("current", currentPage + 1);
     }
 
     setTimeout(() => {
@@ -92,7 +83,10 @@ function Home() {
     </div>
   );
   // return (
-  //   <div className="horizontal-scroll-container">
+  //   <div
+  //     className="horizontal-scroll-container"
+  //     id="horizontal-scroll-container"
+  //   >
   //     <div className="homeFirstPage">
   //       <HomeFirstPage />
   //     </div>

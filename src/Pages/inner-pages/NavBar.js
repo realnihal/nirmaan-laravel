@@ -24,11 +24,41 @@ function NavBar() {
               <li>
                 <Link to="/teams">Team</Link>
               </li>
-              <li>
-                <Link to="/about">About</Link>
+              <li className="drop-down-nav">
+                <Link to="/about-us">About</Link>
+                <div className="dropdown-content">
+                  <div>
+                    <Link to="/about-us">About</Link>
+                  </div>
+                  <div>
+                    <Link to="/about-interaction">Interaction</Link>
+                  </div>
+                </div>
               </li>
-              <li>
-                <Link to="/start-ups">Startups</Link>
+              <li className="drop-down-nav">
+                <Link to="/start-ups-main">Startups</Link>
+
+                <div className="dropdown-content">
+                  <div>
+                    <Link to="/start-ups-main">startUps</Link>
+                  </div>
+                  <div>
+                    <Link to="/start-ups-interaction">Interaction</Link>
+                  </div>
+                  <div>
+                    <Link to="/work-with-start-ups">Work with Startups</Link>
+                  </div>
+                  <div>
+                    <Link to="/inner-start-up-pratham">
+                      Inner startUp - Pratham
+                    </Link>
+                  </div>
+                  <div>
+                    <Link to="/inner-start-up-akshar">
+                      Inner startUp - Akshar
+                    </Link>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link to="/media">Media</Link>

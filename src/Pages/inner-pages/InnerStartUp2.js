@@ -1,18 +1,16 @@
 import React from "react";
 
-import "./innerStartUp.css";
+import InnerStartUpComp from "./InnerStartUpComp";
 import NavBar from "./NavBar";
 import Footer from "../Footer";
-import InnerStartUpComp from "./InnerStartUpComp";
 
-function InnerStartUp() {
+function InnerStartUp2() {
   const teamMembers = [
     { name: "Sanjay Krishnan", link: "sanjay-profile-link" },
     { name: "Siraj Valeti", link: "siraj-profile-link" },
     { name: "Pranav Singh", link: "pranav-profile-link" },
     { name: "Teja S", link: "teja-profile-link" },
   ];
-
   return (
     <div>
       <NavBar />
@@ -27,12 +25,12 @@ function InnerStartUp() {
         projectName="PROJECT NAME"
         teamMembers={teamMembers}
         subTitle="Lorem Ipsum"
-        name="Pratham"
-        inr="INR 20 Cr"
+        name="Akshar"
+        inr="INR 80 Cr"
       />
       <Footer />
     </div>
   );
 }
 
-export default InnerStartUp;
+export default InnerStartUp2;
