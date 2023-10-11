@@ -100,7 +100,7 @@
 .iitmlogo-2 {
   position: absolute;
   margin-top: -14rem;
-  margin-left: 50rem;
+  margin-left: 51rem;
 }
 
 /* last section  */
@@ -118,7 +118,6 @@
 
 .images img:nth-child(1) {
   top: 0;
-  left: 1rem;
   z-index: 1;
 }
 .images img:nth-child(2) {
@@ -135,7 +134,7 @@
 }
 .images img:nth-child(4) {
   top: 0.05rem;
-  right: -1rem;
+  right: -2.5rem;
   z-index: 4;
 }
 .images img:nth-child(5) {
@@ -155,16 +154,16 @@
 }
 .images img:nth-child(8) {
   top: 0.05rem;
-  right: -1.8rem;
-  z-index: 14;
+  right: -2.7rem;
+  z-index: 12;
 }
 .images img:nth-child(9) {
   top: -6rem;
-  left: 48.5rem;
+  left: 49rem;
   z-index: 25;
 }
 .images img:nth-child(10) {
-  top: 0rem;
-  left: 35rem;
+  top: -0.3rem;
+  left: 34.8rem;
   z-index: 20;
 }

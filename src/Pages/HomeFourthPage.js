@@ -44,14 +44,23 @@ function HomeFourthPage() {
       <div className="info-num">
         <div className="images">
           <img src={leftImg} />
+
           <img src={bottom1} />
+
           <img src={bottom2} />
+
           <img src={rightImg} />
+
           <img src={leftCut} />
+
           <img src={bottom1Cut} />
+
           <img src={bottom2Cut} />
+
           <img src={rightCut} />
+
           <img src={nirmaanlogo} />
+
           <img src={logoNir} />
         </div>
       </div>
