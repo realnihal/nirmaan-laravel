@@ -21,14 +21,17 @@ body {
   z-index: -1;
 }
 
+.half-second-page {
+  display: flex;
+}
 .whoWeAre-div {
   display: flex;
   margin-top: 61px;
-  margin-left: 62px;
+  margin-left: 30px;
 }
 
 .who-heading {
-  margin-left: 62px;
+  margin-left: 55px;
   margin-top: 15px;
 }
 
@@ -96,7 +99,13 @@ body {
   font-size: 3rem;
   background-color: #66bb6a;
   border-bottom-left-radius: 4rem;
-  margin-left: 15rem;
+  margin-left: 24rem;
   font-style: italic;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/* carousel  */
+.carousel-secondPage{
+  margin-left: 12rem;
 }

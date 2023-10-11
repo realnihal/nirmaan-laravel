@@ -27,7 +27,6 @@ body {
 .horizontal-scroll-container {
   display: flex;
   white-space: nowrap;
-  transition: "transform ease";
 }
 
 .homeFirstPage {
@@ -110,7 +109,7 @@ body {
   display: flex;
 }
 
-.social-icons img:hover{
+.social-icons img:hover {
   transform: scale(1.1);
 }
 
@@ -203,5 +202,5 @@ footer {
 
 .apply:hover {
   cursor: pointer;
-  transform: scale(1.01);
+  transform: scale(1.03);
 }

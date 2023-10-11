@@ -1,0 +1,23 @@
+.vertical-carousel-container {
+  width: 500px;
+  height: 100vh;
+  border-left: 5px solid #3ece45;
+  border-right: 5px solid #3ece45;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-carousel-container div {
+  margin-left: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: verticalCarousel 8s infinite;
+}
+
+.vertical-carousel-container img {
+  width: 445px;
+  height: 445px;
+  margin-top: 2rem;
+}

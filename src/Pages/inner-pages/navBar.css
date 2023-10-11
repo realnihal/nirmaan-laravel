@@ -48,6 +48,7 @@
 
 .links-nav li {
   margin-right: 4rem;
+  list-style: none;
 }
 
 .links-nav a {
