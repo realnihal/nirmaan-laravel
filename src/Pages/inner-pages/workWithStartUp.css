@@ -1,0 +1,45 @@
+.wws-checkbox {
+  margin-left: 2rem;
+}
+
+.wws-right-div {
+  margin-left: 5rem;
+}
+
+.wws-main {
+  display: flex;
+}
+
+.wws-list-with-nirman {
+  width: 1300px;
+  height: 72px;
+  border-radius: 66px;
+  background-color: black;
+}
+
+.wws-list-with-nirman ul{
+    list-style: none;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 1.3rem;
+}
+
+
+
+.open-roles-nirman {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 38.56px;
+  color: #05192d;
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.wws-table {
+  margin-top: 2rem;
+}

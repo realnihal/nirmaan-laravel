@@ -16,6 +16,7 @@ function StartUpInteraction1() {
   const [selectedSectors, setSelectedSectors] = useState([]);
 
   const [searchResult, setSearchResult] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (searchTerm) => {
     console.log("searchedItem - ", searchTerm);
@@ -52,6 +53,7 @@ function StartUpInteraction1() {
     { id: "edTech", sector: "Ed Tech" },
     { id: "eCommerce", sector: "E Commerce" },
   ];
+
   return (
     <div>
       <NavBar />
@@ -67,12 +69,16 @@ function StartUpInteraction1() {
             setSelectedMonths={setSelectedMonths}
             selectedSectors={selectedSectors}
             setSelectedSectors={setSelectedSectors}
-            yearTitle="Incubation Year"
-            monthTitle="Cohort Months"
+            Title1="Incubation Year"
+            Title2="Cohort Months"
           />
         </div>
         <div className="search-container">
-          <SearchBar onSearch={handleSearch} />
+          <SearchBar
+            onSearch={handleSearch}
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+          />
           {/* map the searched result when api is ready  */}
           {/* {searchResult.map((item) => {
             <div>

@@ -16,8 +16,22 @@ function CheckBox({
   setSelectedMonths,
   selectedSectors,
   setSelectedSectors,
-  yearTitle,
-  monthTitle
+  Title1,
+  Title2,
+  roles,
+  Remunerations,
+  sectors2,
+  selectedRole,
+  setSelectedRole,
+  selectedRemuneration,
+  setSelectedRemuneration,
+  selectedSectors2,
+  setSelectedSectors2,
+  initialVisibleRoles,
+  showAll,
+  setShowAll,
+  visibleRoles,
+  setVisibleRoles,
 }) {
   const handleCheckboxChange = (event, category) => {
     const value = event.target.value;
@@ -56,6 +70,57 @@ function CheckBox({
     }
   };
 
+  // for work with startups
+  const handleCheckboxChange2 = (event, category) => {
+    const value = event.target.value;
+    console.log("value", value);
+
+    switch (category) {
+      case "roles":
+        if (event.target.checked) {
+          setSelectedRole([...selectedRole, value]);
+        } else {
+          setSelectedRole(selectedRole.filter((role) => role !== value));
+        }
+
+        break;
+
+      case "remunerations":
+        if (event.target.checked) {
+          setSelectedRemuneration([...selectedRemuneration, value]);
+        } else {
+          setSelectedRemuneration(
+            selectedRemuneration.filter(
+              (remuneration) => remuneration !== value
+            )
+          );
+        }
+        break;
+
+      case "sectors2":
+        if (event.target.checked) {
+          setSelectedSectors2([...selectedSectors2, value]);
+        } else {
+          setSelectedSectors2(
+            selectedSectors2.filter((sector2) => sector2 !== value)
+          );
+        }
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const handleViewMoreClick = () => {
+    if (showAll) {
+      setVisibleRoles(roles.slice(0, initialVisibleRoles));
+    } else {
+      setVisibleRoles(roles);
+    }
+    setShowAll(!showAll);
+  };
+
   useEffect(() => {
     console.log("year", selectedYears);
   }, [selectedYears]);
@@ -68,10 +133,29 @@ function CheckBox({
     console.log("sector", selectedSectors);
   }, [selectedSectors]);
 
+  // work with startups
+  useEffect(() => {
+    console.log("role", selectedRole);
+  }, [selectedRole]);
+
+  useEffect(() => {
+    console.log("remuneration", selectedRemuneration);
+  }, [selectedRemuneration]);
+
+  useEffect(() => {
+    console.log("sector2", selectedSectors2);
+  }, [selectedSectors2]);
+
   const handleReset = () => {
     setSelectedYears([]);
     setSelectedMonths([]);
     setSelectedSectors([]);
+  };
+
+  const handleReset2 = () => {
+    setSelectedRemuneration([]);
+    setSelectedRole([]);
+    setSelectedSectors2([]);
   };
 
   return (
@@ -79,69 +163,140 @@ function CheckBox({
       <div className="checkbox-inner-div">
         <div className="checbox-heading-wrapper">
           <div className="filter-by">Filter by</div>
-          <div className="reset" onClick={handleReset}>
-            Reset
-          </div>
+          {years ? (
+            <div className="reset" onClick={handleReset}>
+              Reset
+            </div>
+          ) : null}
+
+          {roles ? (
+            <div className="reset" onClick={handleReset2}>
+              Reset
+            </div>
+          ) : null}
         </div>
         <img src={hcLine} className="checkbox-hLine" />
         <div className="checkbox-form">
           <Form>
             <Form.Group>
               <Form.Label className="common-heading-style year-margin">
-                {yearTitle}
+                {Title1}
               </Form.Label>
-              <div className="common-form-gap">
-                {years.map((yearObj) => (
-                  <Form.Check
-                    key={yearObj.id}
-                    type="checkbox"
-                    label={yearObj.year}
-                    id={yearObj.id}
-                    value={yearObj.year}
-                    checked={selectedYears.includes(yearObj.year)}
-                    onChange={(e) => handleCheckboxChange(e, "years")}
-                    className="custom-label-font-size"
-                  />
-                ))}
-              </div>
+              {years ? (
+                <div className="common-form-gap">
+                  {years.map((yearObj) => (
+                    <Form.Check
+                      key={yearObj.id}
+                      type="checkbox"
+                      label={yearObj.year}
+                      id={yearObj.id}
+                      value={yearObj.year}
+                      checked={selectedYears.includes(yearObj.year)}
+                      onChange={(e) => handleCheckboxChange(e, "years")}
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                </div>
+              ) : null}
+              {roles ? (
+                <div className="common-form-gap">
+                  {visibleRoles.map((roleObj) => (
+                    <Form.Check
+                      key={roleObj.id}
+                      type="checkbox"
+                      label={roleObj.role}
+                      id={roleObj.id}
+                      value={roleObj.role}
+                      checked={selectedRole.includes(roleObj.role)}
+                      onChange={(e) => handleCheckboxChange2(e, "roles")}
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                  {roles.length > initialVisibleRoles && (
+                    <div onClick={handleViewMoreClick} className="view-more">
+                      {showAll ? "View Less " : "View More"}
+                    </div>
+                  )}
+                </div>
+              ) : null}
             </Form.Group>
 
             <Form.Group>
-              <Form.Label className="common-heading-style">
-                {monthTitle}
-              </Form.Label>
-              <div className="common-form-gap">
-                {months.map((monthObj) => (
-                  <Form.Check
-                    key={monthObj.id}
-                    type="checkbox"
-                    label={monthObj.month}
-                    id={monthObj.id}
-                    value={monthObj.month}
-                    checked={selectedMonths.includes(monthObj.month)}
-                    onChange={(e) => handleCheckboxChange(e, "months")}
-                    className="custom-label-font-size"
-                  />
-                ))}
-              </div>
+              <Form.Label className="common-heading-style">{Title2}</Form.Label>
+              {months ? (
+                <div className="common-form-gap">
+                  {months.map((monthObj) => (
+                    <Form.Check
+                      key={monthObj.id}
+                      type="checkbox"
+                      label={monthObj.month}
+                      id={monthObj.id}
+                      value={monthObj.month}
+                      checked={selectedMonths.includes(monthObj.month)}
+                      onChange={(e) => handleCheckboxChange(e, "months")}
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                </div>
+              ) : null}
+
+              {Remunerations ? (
+                <div className="common-form-gap">
+                  {Remunerations.map((RemunerationObj) => (
+                    <Form.Check
+                      key={RemunerationObj.id}
+                      type="checkbox"
+                      label={RemunerationObj.remuneration}
+                      id={RemunerationObj.id}
+                      value={RemunerationObj.remuneration}
+                      checked={selectedRemuneration.includes(
+                        RemunerationObj.remuneration
+                      )}
+                      onChange={(e) =>
+                        handleCheckboxChange2(e, "remunerations")
+                      }
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                </div>
+              ) : null}
             </Form.Group>
 
             <Form.Group>
               <Form.Label className="common-heading-style">Sector</Form.Label>
-              <div>
-                {sectors.map((sectorObj) => (
-                  <Form.Check
-                    key={sectorObj.id}
-                    type="checkbox"
-                    label={sectorObj.sector}
-                    id={sectorObj.id}
-                    value={sectorObj.sector}
-                    checked={selectedSectors.includes(sectorObj.sector)}
-                    onChange={(e) => handleCheckboxChange(e, "sectors")}
-                    className="custom-label-font-size"
-                  />
-                ))}
-              </div>
+              {sectors ? (
+                <div>
+                  {sectors.map((sectorObj) => (
+                    <Form.Check
+                      key={sectorObj.id}
+                      type="checkbox"
+                      label={sectorObj.sector}
+                      id={sectorObj.id}
+                      value={sectorObj.sector}
+                      checked={selectedSectors.includes(sectorObj.sector)}
+                      onChange={(e) => handleCheckboxChange(e, "sectors")}
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                </div>
+              ) : null}
+
+              {sectors2 ? (
+                <div>
+                  {sectors2.map((sector2Obj) => (
+                    <Form.Check
+                      key={sector2Obj.id}
+                      type="checkbox"
+                      label={sector2Obj.sector}
+                      id={sector2Obj.id}
+                      value={sector2Obj.sector}
+                      checked={selectedSectors2.includes(sector2Obj.sector)}
+                      onChange={(e) => handleCheckboxChange2(e, "sectors2")}
+                      className="custom-label-font-size"
+                    />
+                  ))}
+                </div>
+              ) : null}
             </Form.Group>
           </Form>
         </div>

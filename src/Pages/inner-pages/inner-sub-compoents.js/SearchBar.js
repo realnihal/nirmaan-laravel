@@ -3,8 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./searchBar.css";
 import search from "../../../images/search 1.png";
 
-function SearchBar({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState("");
+function SearchBar({ onSearch, searchTerm, setSearchTerm }) {
   const searchContainerRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +28,7 @@ function SearchBar({ onSearch }) {
       onSearch(searchTerm);
     }
   };
-  
+
   return (
     <div className="search-bar" ref={searchContainerRef}>
       <img src={search} className="search-img" />
