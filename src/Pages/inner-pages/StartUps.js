@@ -20,7 +20,7 @@ import halfLeft from "../../images/half-first.png";
 import halfRight from "../../images/halfRight.png";
 import secondImg from "../../images/middleimg.png";
 
-function StartUps(props) {
+function StartUps() {
   return (
     <div>
       <NavBar />

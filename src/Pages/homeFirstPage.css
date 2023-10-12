@@ -39,12 +39,6 @@ body {
   position: relative;
 }
 
-.first-page-div {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
 .vertical {
   position: absolute;
   height: 3.5rem;
@@ -63,15 +57,19 @@ body {
 
 .nirmaan-logo {
   display: flex;
+  /* justify-content: space-between; */
   margin-top: 2.313rem;
-  width: 90%;
+  width: 95%;
 }
 
 .this-is-img img {
   text-align: right;
-  padding-left: 8rem;
+  margin-left: 7rem;
   margin-top: 5rem;
-  /* border: 2px solid white; */
+}
+
+.subtitle-styling-fp {
+  white-space: pre-line;
 }
 
 .sub-heading-first {
@@ -92,29 +90,51 @@ body {
 }
 
 .logo img {
-  height: 100%;
-  margin-left: 7.5rem;
-  /* border: 2px solid white; */
+  margin-left: 7rem;
 }
 
 .text {
   color: #ffffff;
   font-family: "GT America";
-  /* border: 2px solid white; */
 }
 
 .subtitle {
   width: 20%;
   margin-top: 5rem;
-  margin-left: 6rem;
-  /* border: 2px solid white; */
+  margin-left: 5rem;
 }
 
 .iitmlogo {
   display: flex;
   justify-content: center;
-  margin-left: 8rem;
   margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .this-is-img img {
+    width: 25rem;
+  }
+  .logo img {
+    width: 22rem;
+  }
+  .subtitle {
+    width: 20%;
+    margin-left: 6.5rem;
+  }
+  .sub-heading-first {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+  .subtitle-content {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    white-space: pre-line;
+  }
+  .iitmlogo {
+    margin-left: 6rem;
+  }
 }
 
 /* social medial icons */
