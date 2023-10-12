@@ -2,7 +2,7 @@ html,
 body {
   top: 0;
   margin: 0;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .HomeThirdPage {
@@ -10,6 +10,7 @@ body {
   overflow-y: scroll;
   height: 100%;
   flex: 0 0 auto;
+  position: relative;
 }
 
 .thirdPage-container {

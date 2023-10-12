@@ -14,36 +14,39 @@ function HomeFirstPage() {
   };
   return (
     <div className="full-page-container">
-      {/* nirman logo */}
       <div className="vertical">WHO WE ARE</div>
-      <div className="nirmaan-logo">
-        <div className="this-is-img">
-          <img src={thisIsImg} />
-        </div>
-        <div className="logo">
-          <img src={nirmaanLogo} />
-        </div>
-        <div className="text subtitle">
-          <div className="sub-heading-first">
-            <div>THIS IS YOUR</div>
-            <div>SUBTITLE</div>
+      {/* nirman logo */}
+      <div className="first-page-div">
+        <div className="nirmaan-logo">
+          <div className="this-is-img">
+            <img src={thisIsImg} />
           </div>
-          <div className="subtitle-content">
-            Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind
-            dedicated pre-incubator on a college campus in the country.
+          <div className="logo">
+            <img src={nirmaanLogo} />
+          </div>
+          <div className="text subtitle">
+            <div className="sub-heading-first">
+              <div>THIS IS YOUR</div>
+              <div>SUBTITLE</div>
+            </div>
+            <div className="subtitle-content">
+              Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind
+              dedicated pre-incubator on a college campus in the country.
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* iit madras logo  */}
-      <div className="iitmlogo">
-        <img src={iitMadrasLogo} />
+        {/* iit madras logo  */}
+        <div className="iitmlogo">
+          <img src={iitMadrasLogo} />
+        </div>
       </div>
       {/* social media  */}
       <div className="social-icons-first">
         <SocialMediaIcons />
       </div>
-      <footer>
+
+      <div className="first-page-footer">
         <div className="vect">
           <img src={vect} />
         </div>
@@ -72,7 +75,7 @@ function HomeFirstPage() {
         <div className="apply" onClick={handleClickApplyTo}>
           <h3>APPLY TO NIRMAAN</h3>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }

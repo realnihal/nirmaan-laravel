@@ -125,7 +125,7 @@
 
 .about-vect-right {
   position: absolute;
-  margin-left: 72.5rem;
+  right: 0;
   width: 677px;
   height: 790px;
 }
