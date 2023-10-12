@@ -51,29 +51,21 @@ function HomeFirstPage() {
           <img src={vect} />
         </div>
         <div className="rect">
-          <img src={rect} />
-        </div>
-        <div className="inner-div">
-          <div className="inner-list-div">
-            <div>
-              Nirmaan Studends Head <br></br> Applications Opens on January 23rd
-            </div>
-            <div>
-              January Cohort Application opens <br></br>on 13th January
-            </div>
-            <div>
-              Experts Talk 3.0 <br></br> February 4th
-            </div>
-            <div>
-              Mega Event February 24th <br></br> and 25th
-            </div>
-            <div id="last-list">
-              OUR MOST <br></br>RECENT <br></br>EVENTS
-            </div>
+          <div>
+            <img src={rect} />
           </div>
         </div>
         <div className="apply" onClick={handleClickApplyTo}>
           <h3>APPLY TO NIRMAAN</h3>
+        </div>
+      </div>
+      <div className="inner-div-fp">
+        <div className="inner-list-div">
+          <div>Nirmaan Studends Head Applications Opens on January 23rd</div>
+          <div>January Cohort Application opens on 13th January</div>
+          <div>Experts Talk 3.0 February 4th</div>
+          <div>Mega Event February 24th and 25th</div>
+          <div id="last-list">OUR MOST EVENTS</div>
         </div>
       </div>
     </div>
