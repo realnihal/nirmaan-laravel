@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import "./homeFirstPage.css";
 import "./homeSecondPage.css";
 import "./homeThirdPage.css";
 import "./homeFourthPage.css";
+import "./st.css";
 import HomeFirstPage from "./HomeFirstPage";
 import HomeSecondPage from "./HomeSecondPage";
 import HomeThirdPage from "./HomeThirdPage";
@@ -11,105 +12,94 @@ import HomeFourthPage from "./HomeFourthPage";
 import HomeFifthPage from "./HomeFifthPage";
 import HomeSixthPage from "./HomeSixthPage";
 import HomeSeventhPage from "./HomeSeventhPage";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
-  const [currentPage, setCurrentPage] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+  const containerRef = useRef(null);  // ref to the main container
+  const thirdPageRef = useRef(null);  // ref to the third component
+  const sectionsRef = useRef([]);  // ref to array of all sections
 
-  const pages = 7;
-  const handleWheelScroll = (e) => {
-    console.log("e.deltax", e.target.scrollLeft);
-    if (!isScrolling) {
-      if (e.deltaX > 0 && currentPage < pages - 1) {
-        scrollPage("right");
-      } else if (e.deltaX < 0 && currentPage > 0) {
-        scrollPage("left");
-      }
-    }
+  useEffect(() => {
+    const container = containerRef.current;  // current element of main container
+    const sections = sectionsRef.current;  // current array of all sections
+    const thirdPage = thirdPageRef.current;  // current element of the third component
+
+    const initializeAnimation = () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          pin: true,
+          // snap: 1 / (7 - 1),
+          start: "top top",
+          end: () => "+=" + (container.scrollWidth - window.innerWidth),
+          scrub: 0.3,
+        },
+      });
+    
+      tl.to(container, {
+        x: `-${thirdPage.offsetLeft}px`,
+        ease: "none",
+      })
+        .to(thirdPage, {
+          y: () => `-${thirdPage.scrollHeight - window.innerHeight}px`,
+          ease: "power1.inOut",
+        })
+        .set(thirdPage, { autoAlpha: 0 })
+        .to(sections, {
+          x: () => `-${container.scrollWidth - window.innerWidth - thirdPage.offsetLeft}px`,
+          ease: "none",
+          immediateRender: false,
+        }, "+=0")  // adjust the timing here
+        .set(thirdPage, { autoAlpha: 1 }, "<");
+    };
+
+    // return // for testing ppss
+    if (isMobile) return;  // if mobile device, then return
+
+    window.addEventListener("load", initializeAnimation);  // initialization of animation on page load
+
+    return () => {
+      window.removeEventListener("load", initializeAnimation);  // clearing event worker on unmount of the component
+    };
+  }, []);
+
+
+
+
+  const addRef = (el) => {
+    sectionsRef.current.push(el);  // function for adding ref on each component in the array sectionsRef
   };
 
-  const scrollPage = (direction) => {
-    setIsScrolling(true);
-    if (direction === "left") {
-      console.log("current", currentPage);
-      setCurrentPage((prevPage) => prevPage - 1);
-    } else if (direction === "right") {
-      setCurrentPage((prevPage) => prevPage + 1);
-      console.log("current", currentPage + 1);
-    }
 
-    setTimeout(() => {
-      setIsScrolling(false);
-    }, 500);
-  };
+  // return <div className="homeFirstPage"><HomeFirstPage /></div>
 
-  return (
-    <div className="horizontal-scroll-container" onWheel={handleWheelScroll}>
-      {currentPage === 0 && (
-        <div className="homeFirstPage">
-          <HomeFirstPage />
-        </div>
-      )}
-      {currentPage === 1 && (
-        <div className="HomeSecondPage">
-          <HomeSecondPage />
-        </div>
-      )}
-      {currentPage === 2 && (
-        <div className="HomeThirdPage">
-          <HomeThirdPage />
-        </div>
-      )}
-      {currentPage === 3 && (
-        <div className="HomeFourthPage">
-          <HomeFourthPage />
-        </div>
-      )}
-      {currentPage === 4 && (
-        <div className="HomeFifthPage">
-          <HomeFifthPage />
-        </div>
-      )}
-      {currentPage === 5 && (
-        <div className="HomeSixthPage">
-          <HomeSixthPage />
-        </div>
-      )}
-      {currentPage === 6 && (
-        <div className="HomeSevenththPage">
-          <HomeSeventhPage />
-        </div>
-      )}
-    </div>
-  );
-  // return (
-  //   <div
-  //     className="horizontal-scroll-container"
-  //     id="horizontal-scroll-container"
-  //   >
-  //     <div className="homeFirstPage">
-  //       <HomeFirstPage />
-  //     </div>
-  //     <div className="HomeSecondPage">
-  //       <HomeSecondPage />
-  //     </div>
-  //     <div className="HomeThirdPage">
-  //       <HomeThirdPage />
-  //     </div>
-  //     <div className="HomeFourthPage">
-  //       <HomeFourthPage />
-  //     </div>
-  //     <div className="HomeFifthPage">
-  //       <HomeFifthPage />
-  //     </div>
-  //     <div className="HomeSixthPage">
-  //       <HomeSixthPage />
-  //     </div>
-  //     <div className="HomeSevenththPage">
-  //       <HomeSeventhPage />
-  //     </div>
-  //   </div>
-  // );
+  return isMobile ? (
+    <>
+      <div className="homeFirstPage"><HomeFirstPage /></div>
+      <div className="homeSecondPage"><HomeSecondPage /></div>
+      <div className="homeThirdPage"><HomeThirdPage /></div>
+      <div className="homeFourthPage"><HomeFourthPage /></div>
+      <div className="homeFifthPage"><HomeFifthPage /></div>
+      <div className="homeSixthPage"><HomeSixthPage /></div>
+      <div className="homeSeventhPage"><HomeSeventhPage /></div>
+    </>
+  ) : (
+    <div className="container" ref={containerRef}>
+      <div className="panel homeFirstPage" ref={addRef}><HomeFirstPage /></div>
+      <div className="panel homeSecondPage" ref={addRef}><HomeSecondPage /></div>
+      <div className="panel homeThirdPage" ref={thirdPageRef}><HomeThirdPage /></div>
+      <div className="panel homeFourthPage" ref={addRef}><HomeFourthPage /></div>
+      <div className="panel homeFifthPage"
+        style={{ height: "150vh" }}
+        ref={addRef}><HomeFifthPage /></div>
+      <div className="panel homeSixthPage" ref={addRef}><HomeSixthPage /></div>
+      <div className="panel homeSeventhPage" ref={addRef}><HomeSeventhPage /></div>
+    </div>);
 }
 
 export default Home;

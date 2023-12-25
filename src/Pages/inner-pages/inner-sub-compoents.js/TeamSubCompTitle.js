@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import "./teamSubCompTitle.css";
 
 function TeamSubCompTitle({
@@ -12,33 +12,37 @@ function TeamSubCompTitle({
   AboutTopic,
 }) {
   return (
-    <div className={flag ? "conditional-class" : "team-sub-main"}>
-      <div>
-        <div className="first-sutitle-div"></div>
-        <div className="second-sutitle-div">
-          <div id={flag ? "c-title" : ""}>{subtitle}</div>
-          {MediaSubtitle ? (
-            <div>
-              <div className="media-title">{MediaSubtitle}</div>
-              <div className="media-topic">{topic}</div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 1 }}
+      className={flag ? "conditional-class" : "team-sub-main"}>
+
+      <div className="second-sutitle-div">
+        <div id={flag ? "c-title" : "fame-title"}>{subtitle}</div>
+        {MediaSubtitle ? (
+          <div className="blog-titles">
+            <div className="media-title">{MediaSubtitle}</div>
+            <div className="media-topic">{topic}</div>
+          </div>
+        ) : null}
+        {AboutSubtitle ? (
+          <div className="about-div">
+            <div className={flag ? "about-m about-title right-padding" : "about-title"}>
+              {AboutSubtitle}
             </div>
-          ) : null}
-          {AboutSubtitle ? (
-            <div className="about-div">
-              <div className={flag ? "about-m about-title right-padding" : "about-title"}>
-                {AboutSubtitle}
-              </div>
-              <div className={flag ? "about-m about-topic right-padding" : "about-topic"}>
-                {AboutTopic}
-              </div>
+            <div className={flag ? "about-m about-topic right-padding" : "about-topic"}>
+              {AboutTopic}
             </div>
-          ) : null}
-        </div>
+          </div>
+        ) : null}
       </div>
-      <div className={flag ? "conditional-class-content" : "sub-content"}>
+      <div
+        className={flag ? "conditional-class-content" : "sub-content"}>
         {subContent}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

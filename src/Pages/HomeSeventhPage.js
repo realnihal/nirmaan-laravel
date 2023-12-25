@@ -12,6 +12,7 @@ function HomeSeventhPage() {
     email: "",
     subject: "",
   });
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 576);
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -29,7 +30,7 @@ function HomeSeventhPage() {
         <img src={getToKnow} className="page7-heading" />
       </div>
       <div className="user-info7">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="user-info7__form">
           <input
             type="text"
             id="name"
@@ -49,21 +50,36 @@ function HomeSeventhPage() {
             onChange={handleInputChange}
             className="email-input common-style7"
           />
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="Subject"
-            value={formData.subject}
-            onChange={handleInputChange}
-            className="subject-input common-style7"
-          />
+          <div className="fsubmit-input">
+            {isMobile ? (
+              <textarea name=""
+                value={formData.subject}
+                id="subject"
+                cols="30"
+                rows="8"
+                onChange={handleInputChange}
+                className="subject-input common-style7"
 
-          <input
-            type="submit"
-            value="Send"
-            className="send-input common-style7"
-          />
+              ></textarea>
+            ) : (
+              <input
+                type="text" text
+                id="subject"
+                name="subject"
+
+                placeholder="Subject"
+                value={formData.subject}
+                onChange={handleInputChange}
+                className="subject-input common-style7"
+              />
+            )}
+
+            <input
+              type="submit"
+              value="Send"
+              className="send-input common-style7"
+            />
+          </div>
         </form>
       </div>
       <div className="links">

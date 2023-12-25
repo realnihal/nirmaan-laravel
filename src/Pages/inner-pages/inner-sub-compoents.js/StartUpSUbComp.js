@@ -1,10 +1,15 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import "./startSubComp.css";
 
 function StartUpSUbComp({ image, heading, content, thirdComp }) {
   return (
-    <div className="sp-flex">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 1 }}
+      className="sp-flex">
       <div className="green-sp">
         <img src={image} />
       </div>
@@ -20,7 +25,7 @@ function StartUpSUbComp({ image, heading, content, thirdComp }) {
           {content}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

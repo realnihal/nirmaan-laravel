@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
 import "./checkbox.css";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { motion } from "framer-motion";
 import hcLine from "../../../images/hLine.png";
 
 function CheckBox({
@@ -32,10 +33,12 @@ function CheckBox({
   setShowAll,
   visibleRoles,
   setVisibleRoles,
+  setProjects,
+  setJobs
 }) {
-  const handleCheckboxChange = (event, category) => {
+  const handleCheckboxChange = async (event, category) => {
     const value = event.target.value;
-    console.log("value", value);
+    // console.log("value", value);
 
     switch (category) {
       case "years":
@@ -67,13 +70,14 @@ function CheckBox({
 
       default:
         break;
+        
     }
   };
 
   // for work with startups
   const handleCheckboxChange2 = (event, category) => {
     const value = event.target.value;
-    console.log("value", value);
+    // console.log("value", value);
 
     switch (category) {
       case "roles":
@@ -122,28 +126,112 @@ function CheckBox({
   };
 
   useEffect(() => {
-    console.log("year", selectedYears);
+    const data = {
+      incubation_years: selectedYears,
+      cohort_months:selectedMonths,
+      sectors:selectedSectors
+    }
+    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+      .then(response => {
+        // Handle successful API response
+        setProjects(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("year", selectedYears);
   }, [selectedYears]);
 
   useEffect(() => {
-    console.log("months", selectedMonths);
+    const data = {
+      incubation_years: selectedYears,
+      cohort_months:selectedMonths,
+      sectors:selectedSectors
+    }
+    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+      .then(response => {
+        // Handle successful API response
+        setProjects(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("months", selectedMonths);
   }, [selectedMonths]);
 
   useEffect(() => {
-    console.log("sector", selectedSectors);
+    const data = {
+      incubation_years: selectedYears,
+      cohort_months:selectedMonths,
+      sectors:selectedSectors
+    }
+    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+      .then(response => {
+        // Handle successful API response
+        setProjects(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("sector", selectedSectors);
   }, [selectedSectors]);
 
   // work with startups
   useEffect(() => {
-    console.log("role", selectedRole);
+    const data = {
+      role: selectedRole,
+      remuneration:selectedRemuneration,
+      sectors:selectedSectors2
+    }
+    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+      .then(response => {
+        // Handle successful API response
+        setJobs(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("role", selectedRole);
   }, [selectedRole]);
 
   useEffect(() => {
-    console.log("remuneration", selectedRemuneration);
+    const data = {
+      role: selectedRole,
+      remuneration:selectedRemuneration,
+      sectors:selectedSectors2
+    }
+    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+      .then(response => {
+        // Handle successful API response
+        setJobs(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("remuneration", selectedRemuneration);
   }, [selectedRemuneration]);
 
   useEffect(() => {
-    console.log("sector2", selectedSectors2);
+    const data = {
+      role: selectedRole,
+      remuneration:selectedRemuneration,
+      sectors:selectedSectors2
+    }
+    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+      .then(response => {
+        // Handle successful API response
+        setJobs(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+    // console.log("sector2", selectedSectors2);
   }, [selectedSectors2]);
 
   const handleReset = () => {
@@ -159,8 +247,14 @@ function CheckBox({
   };
 
   return (
-    <div className="checkbox-outer-div">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 1 }}
+      className="checkbox-outer-div">
       <div className="checkbox-inner-div">
+    
         <div className="checbox-heading-wrapper">
           <div className="filter-by">Filter by</div>
           {years ? (
@@ -188,7 +282,7 @@ function CheckBox({
                     <Form.Check
                       key={yearObj.id}
                       type="checkbox"
-                      label={yearObj.year}
+                      label={yearObj.id}
                       id={yearObj.id}
                       value={yearObj.year}
                       checked={selectedYears.includes(yearObj.year)}
@@ -301,7 +395,7 @@ function CheckBox({
           </Form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

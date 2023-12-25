@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   flex: 0 0 auto;
+  background-color: #fff;
 }
 
 .fifth-page-container {
@@ -9,12 +10,8 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(102, 187, 106, 0) 10%,
-    rgba(120, 120, 120, 0.2)
-  );
+  background-color: #fff;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(102, 187, 106, 0) 10%, rgba(120, 120, 120, 0.2));
 }
 
 .second-inner-div {
@@ -37,9 +34,14 @@
 }
 
 .first-inner-div {
-  margin-left: 4rem;
-  margin-top: 1rem;
-  margin-right: 15rem;
+  background-image: url("../images/fifth-bg-center.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 100vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 45px 45px 0;
 }
 
 .image-logo {
@@ -149,7 +151,7 @@
   background-color: white;
   box-sizing: border-box;
   white-space: pre-line;
-  font-family: 'GT America', sans-serif;
+  font-family: "GT America", sans-serif;
   font-size: 22px;
   font-weight: 300;
   line-height: 27px;
@@ -165,12 +167,184 @@
   box-sizing: border-box;
   padding: 1rem;
   padding-top: 16rem;
-  font-family: 'GT America', sans-serif;
+  font-family: "GT America", sans-serif;
   font-size: 32px;
   font-style: italic;
   font-weight: 275;
   line-height: 28px;
   letter-spacing: 0;
   text-align: left;
-  
+}
+
+/* testing hybrid scroll */
+
+.fifth-screen__right {
+  position: relative;
+  padding-top: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40vw;
+}
+
+.fifth-screeen__what-happens {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  font-size: 8.5vw;
+  /* max-width: 50%; */
+  line-height: 0.8;
+  font-weight: 900;
+  margin-left: auto;
+  color: #a0a0a0;
+  letter-spacing: 4px;
+}
+.what-happens-small {
+  font-size: 6vw;
+  display: block;
+}
+
+.toggler {
+  position: relative;
+  width: 207px;
+  height: 52px;
+  background-color: #d9d9d9;
+  border-radius: 26px;
+}
+.toggler-green {
+  position: absolute;
+  background-color: #66bb6a;
+  max-width: 95px;
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+  animation: moveRight 1s ease-in-out forwards;
+}
+
+/* refactoring */
+
+.fifth-screen__left {
+  max-width: calc(55vw - 250px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 90px;
+}
+
+.fifth-screen__left-titles h1,
+.fifth-screen__left-titles h2 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.fifth-screen__left-titles h1 {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+.fifth-screen__left-titles h2 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.left-title-small {
+  font-weight: 300;
+}
+
+.fifth-screen__left-logo {
+  max-width: 402px;
+  max-height: 373px;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+.fifth-screen__left-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0;
+    /* right:auto; Start position at the left edge */
+  }
+  100% {
+    left: calc(100% - 95px); /* End position at the right edge */
+    /* right: 100%; End position at the right edge */
+  }
+}
+
+@media (max-width: 1440px) {
+  .fifth-screen__right {
+    padding-top: 130px;
+    gap: 28px;
+  }
+
+  .fifth-screen__left-titles h1 { 
+    font-size: 121px; 
+  }
+  .fifth-screen__left-titles h2 {
+    font-size: 54px;
+  }
+  .fifth-screen__left-logo{
+    max-width: 269px;
+  }
+  .toggler{
+    left: 2.5rem;
+  }
+  .fifth-screen__left{
+    padding-left: 64px;
+  }
+  .toggler{
+    width: 147px;
+    height: 37px;
+  }
+  .toggler-green{
+    max-width: 68px;
+  }
+}
+
+
+@media (max-width:1200px){
+  .first-inner-div{
+    padding: 1rem;
+  }
+  .fifth-screen__center,
+  .fifth-screeen__what-happens{
+    display: none;
+  }
+  .first-inner-div{
+    flex-direction: column;
+  }
+  .fifth-screen__left,
+  .fifth-screen__right{
+    width: 100%;
+    max-width: 100%;
+  }
+  .fifth-screen__left{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fifth-screen__left-logo img{
+    object-fit: contain;
+  }
+  .fifth-screen__right{
+    padding-top: 0px;
+  }
+  .fifth-screen__left-titles h1{
+    font-size: 75px;
+  }
+  .fifth-screen__left-titles h2{
+    font-size: 35px;
+  }
+}
+
+@media (max-width:756px){
+  .fifth-screen__left{
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }

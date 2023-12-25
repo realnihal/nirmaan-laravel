@@ -1,3 +1,6 @@
+body{
+  scroll-behavior: smooth;
+}
 .nirman-numbers {
   display: flex;
   margin-top: 7rem;
@@ -6,25 +9,33 @@
 }
 
 .numbers-main {
-  margin-left: 10rem;
+  margin-left: 8.35vw;
 }
 
 .nir-left {
-  margin-left: 241px;
+  margin-left: 12.5vw;
 }
 .a-nir-logo {
-  width: 393px;
-  height: 400px;
+  width: 20.5vw;
+  height: 21vw;
+  min-width: 10rem;
+  min-height: 11rem;
+}
+.a-iitm-logo-box {
+  max-width: 383px;
+  max-height: 83px;
+  margin-top: 2rem;
 }
 .a-iitm-logo {
-  width: 383px;
-  height: 83px;
-  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .numbers-5 {
-  width: 800px;
-  height: 400px;
+  max-width: 800px;
+  max-height: 400px;
+  height: 100%;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
@@ -36,7 +47,7 @@
   font-style: italic;
   font-weight: 700;
   line-height: 30px;
-  margin-right: 4rem;
+  margin-right: 3.337vw;
 }
 
 .num-info {
@@ -99,8 +110,10 @@
 /* wall of fame  */
 .fame {
   width: 80%;
-  margin-top: 6rem;
-  margin-left: 246px;
+  /* margin-top: 6rem;
+  margin-left: 246px; */
+  margin-top: 6.5vw;
+  margin-left: 16.5vw;
   display: flex;
   justify-content: space-between;
 }
@@ -115,12 +128,13 @@
 }
 
 .sub-comp-about {
-  margin-top: 3rem;
+  margin-top: 13.75rem;
 }
 
 .about-vect-left {
   position: absolute;
   margin-top: 25rem;
+  z-index: -1;
 }
 
 .about-vect-right {
@@ -128,4 +142,75 @@
   right: 0;
   width: 677px;
   height: 790px;
+}
+
+@media (max-width: 1440px) {
+  .nirman-numbers {
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    justify-content: center;
+  }
+  .nir-left {
+    margin-left: 3vw;
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+  }
+  .fame{
+    gap: 1rem;
+    margin-left: 0;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    justify-content: center;
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 998px) {
+  .num-heading,
+  .num-info {
+    font-size: 25px;
+  }
+  .num-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .num-info.grad {
+    margin-left: 0;
+  }
+  .total-margin {
+    margin-left: 0;
+  }
+  .fame-second,
+  .fame-third{
+    margin-top: 0;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+  .num-heading,
+  .num-info {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 568px) {
+  .numbers-main {
+    margin-left: 0;
+  }
+  .num-info.active {
+    margin-left: 0;
+  }
+  .num-info.trained {
+    margin-left: 0;
+  }
+  .num-info.funds {
+    max-width: 160px;
+  }
+  .num-heading {
+    margin-right: 0;
+  }
 }

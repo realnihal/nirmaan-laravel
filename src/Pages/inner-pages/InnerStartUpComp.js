@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import "./innerStartUp.css";
 import linkedIn from "../../images/XMLID_801_ (1).png";
 import img from "../../images/innerStartUpImg.png";
@@ -17,19 +17,36 @@ function InnerStartUpComp({
   inr,
 }) {
   return (
-    <div className="is-main">
+    <div
+
+      className="is-main">
       <div className="is-sub-main">
         <div className="is-sub-left">
-          <div className="is-left-first-heading">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            exit={{ opacity: 1 }}
+            className="is-left-first-heading">
             <div className="is-left-first-sub-heading">{title}</div>
             <div className="is-left-second-sub-heading">{projectName}</div>
-          </div>
-          <div className="is-content">{content}</div>
-          <div className="is-member-main">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            exit={{ opacity: 1 }}
+            className="is-content">{content}</motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            exit={{ opacity: 1 }}
+            className="is-member-main">
             <div className="is-member-heading">MEMBERS OF THIS PROJECT</div>
             <div className="is-members-name">
-              {teamMembers.map((item) => (
-                <div className="is-name-wrapper">
+              {teamMembers.map((item,index) => (
+                <div key={index} className="is-name-wrapper">
                   <div className="is-name">{item.name}</div>
                   <div>
                     <a href={item.link}>
@@ -39,9 +56,14 @@ function InnerStartUpComp({
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="is-sub-right">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          exit={{ opacity: 1 }}
+          className="is-sub-right">
           <div className="name-startup">
             <div className="startup-title-is">{subTitle}</div>
             <div className="start-main-name">{name}</div>
@@ -51,13 +73,17 @@ function InnerStartUpComp({
             <div className="inr">{inr}</div>
             <div className="funds-heading">Funds Raised</div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* contact us  */}
-      <div className="contact-section">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        exit={{ opacity: 1 }}
+        className="contact-section">
         <div className="contact-is">
-          <div className="contact-green"></div>
           <div className="contact-us-is">CONTACT US</div>
         </div>
         <div className="contact-details">
@@ -76,7 +102,7 @@ function InnerStartUpComp({
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       <TeamSubCompTitle MediaSubtitle="SEE OUR" topic="GALLERY" />
       <div className="gallery-comp">
         <MediaSubComp />

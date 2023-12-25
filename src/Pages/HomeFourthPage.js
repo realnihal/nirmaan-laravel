@@ -13,18 +13,25 @@ import bottom1Cut from "../images/bottom1-num.png";
 import bottom2Cut from "../images/bottom2-num.png";
 import rightCut from "../images/right-num.png";
 import logoNir from "../images/logo-nir.png";
+import forthBgLaptop from '../images/fourth-screen/fourth-bg-lap.png'
+import Highlights from "./sub-components/Highlights";
 
 function HomeFourthPage() {
   return (
     <div className="fourth-page-container">
       <div className="team-jour">
-        <div className="dotted-line">
+        {/* <div className="dotted-line">
           <img src={dotted} alt="pattern" />
           <img src={dotted} alt="pattern" />
-        </div>
+        </div> */}
         <div className="nirmaan-numerical">
           <div className="our-team common">
+          <span className="our-team__desktop">
             SEE<br></br>OUR<br></br>TEAM
+          </span>
+          <span className="our-team__mobile">
+            SEE OUR <br/> TEAM
+          </span>
           </div>
           <div className="numbers-fourthPage">
             <div className="nir-num-wrapper4">
@@ -33,7 +40,12 @@ function HomeFourthPage() {
             </div>
           </div>
           <div className="journey common">
-            SEE<br></br>OUR<br></br>JOURNEY
+          <span className="our-team__desktop">
+          SEE<br></br>OUR<br></br>JOURNEY
+          </span>
+          <span className="our-team__mobile">
+            SEE OUR <br/> JOURNEY
+          </span>
           </div>
         </div>
         <div className="iitmlogo-2">
@@ -43,25 +55,14 @@ function HomeFourthPage() {
       </div>
       <div className="info-num">
         <div className="images">
-          <img src={leftImg} />
-
-          <img src={bottom1} />
-
-          <img src={bottom2} />
-
-          <img src={rightImg} />
-
-          <img src={leftCut} />
-
-          <img src={bottom1Cut} />
-
-          <img src={bottom2Cut} />
-
-          <img src={rightCut} />
-
-          <img src={nirmaanlogo} />
-
-          <img src={logoNir} />
+        <div className="images__top">
+        <Highlights modificator={'images__first'} title={"TEAMS TRAINED"} description={"141"}/>
+        <Highlights modificator={'images__second'} title={"FUNDS RAISED"} description={"60+ Cr"}/>
+        </div>
+        <div className="images__bottom">
+        <Highlights modificator={'images__third'} title={"ACTIVE TEAMS"} description={"48"}/>
+        <Highlights modificator={'images__fourth'} title={"TOTAL VALUATION"} description={"405+ Cr"}/>
+        </div>
         </div>
       </div>
     </div>

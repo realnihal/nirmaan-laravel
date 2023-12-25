@@ -4,8 +4,12 @@ import "./innerStartUp.css";
 import NavBar from "./NavBar";
 import Footer from "../Footer";
 import InnerStartUpComp from "./InnerStartUpComp";
+import { useLocation } from "react-router-dom";
 
 function InnerStartUp() {
+  const location = useLocation();
+  const project = location.state.project;
+  console.log(project);
   const teamMembers = [
     { name: "Sanjay Krishnan", link: "sanjay-profile-link" },
     { name: "Siraj Valeti", link: "siraj-profile-link" },
@@ -14,24 +18,19 @@ function InnerStartUp() {
   ];
 
   return (
-    <div>
+    <>
       <NavBar />
       <InnerStartUpComp
-        content="Nirmaan, The Pre-incubator, IIT Madras, aims to provide the
-            experience of Entrepreneurship to the student community. NIRMAAN
-            acts as a sandbox for aspiring entrepreneurs of IIT Madras to
-            practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-        title="Edtech"
-        projectName="PROJECT NAME"
+        content={project.description}
+        title={project.sector}
+        projectName={project.project_name}
         teamMembers={teamMembers}
         subTitle="Lorem Ipsum"
-        name="Pratham"
+        name={project.start_up_name}
         inr="INR 20 Cr"
       />
       <Footer />
-    </div>
+    </>
   );
 }
 

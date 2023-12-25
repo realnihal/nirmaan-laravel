@@ -1,19 +1,18 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "./searchedResult.css";
 
-function SearchedResult({ demoImg, projectName, projectContent, Projecturl}) {
-  const handleButtonClick = () => {
-    // Define the URL you want to navigate to when the button is clicked
-    const url ={Projecturl}; // Replace with the actual URL
-
-    // Navigate to the specified URL
-    window.location.href = url;
-  };
+function SearchedResult({ demoImg, projectName, projectContent, project}) {
   return (
-    <div className="searched-result-main">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 1 }}
+      className="searched-result-main">
       <div>
-        <img src={demoImg} className="searched-img" />
+        <img src={'http://127.0.0.1:8000/api/images/'+demoImg} className="searched-img" />
       </div>
       <div className="searched-project-content-main">
         <div>
@@ -22,11 +21,11 @@ function SearchedResult({ demoImg, projectName, projectContent, Projecturl}) {
             {projectContent}
           </div>
         </div>
-        <div className="button-div" onClick={handleButtonClick}>
-          SEE THIS PROJECT
+        <div className="button-div" >
+          <Link to="/inner-start-up-pratham" state={{project:project}}>SEE THIS PROJECT</Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

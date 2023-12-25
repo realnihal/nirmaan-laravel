@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import axios from "axios";
-
+import { motion } from "framer-motion";
 import "./startUpInteraction.css";
 
 import NavBar from "./NavBar";
@@ -9,6 +9,9 @@ import SearchedResult from "./inner-sub-compoents.js/SearchedResult";
 import CheckBox from "./inner-sub-compoents.js/CheckBox";
 import SearchBar from "./inner-sub-compoents.js/SearchBar";
 import demoImg from "../../images/chess.png";
+import filterToggle from "../../images/icons/filter-icon.png";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function StartUpInteraction1() {
   const [selectedYears, setSelectedYears] = useState([]);
@@ -17,32 +20,48 @@ function StartUpInteraction1() {
 
   const [searchResult, setSearchResult] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [toggleFilter, setToggleFilter] = useState(false);
+  const [projects, setProjects] = useState([]);
 
-  const handleSearch = (searchTerm) => {
-    console.log("searchedItem - ", searchTerm);
-    const apiUrl = `https://api.example.com/search?q=${searchTerm}`;
-    axios
-      .get(apiUrl)
-      .then((response) => {
-        setSearchResult(response.data);
-      })
-      .catch((error) => {
-        console.error("API call error", error);
-      });
+  useEffect(() => {
+    // Fetch projects from Laravel API
+    fetch('http://127.0.0.1:8000/api/projects')
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error(error));
+  }, []);
+  const handleToggleFilter = () => {
+    setToggleFilter(!toggleFilter);
   };
 
+  //api call http://127.0.0.1:8000/api/search-projects
+  useEffect(() => {
+    const data = {
+      search : searchTerm,
+    }
+    axios.post("http://127.0.0.1:8000/api/search-projects", data)
+      .then(response => {
+        // Handle successful API response
+        setProjects(response.data);
+      })
+      .catch(error => {
+        // Handle error cases
+        console.error('Error making API call:', error);
+      });
+  }, [searchTerm]);
+
   const years = [
-    { id: "2021-22", year: "2021-22" },
-    { id: "2020-21", year: "2020-21" },
-    { id: "2019-20", year: "2019-20" },
-    { id: "2018-19", year: "2018-19" },
-    { id: "2017-18", year: "2017-18" },
+    { id: "2021-22", year: "2021" },
+    { id: "2020-21", year: "2020" },
+    { id: "2019-20", year: "2019" },
+    { id: "2018-19", year: "2018" },
+    { id: "2017-18", year: "2017" },
   ];
 
   const months = [
     { id: "jan", month: "january" },
     { id: "july", month: "july" },
-    { id: "aug", month: "August" },
+    { id: "aug", month: "august" },
   ];
 
   const sectors = [
@@ -58,7 +77,10 @@ function StartUpInteraction1() {
     <div>
       <NavBar />
       <div className="start-up-interaction">
-        <div className="checkbox-margin">
+        <div className={`checkbox-margin ${toggleFilter ? "active-filter" : ""}`}>
+          <button className="filter-toggle-btn" onClick={handleToggleFilter}>
+            <img src={filterToggle} alt="" />
+          </button>
           <CheckBox
             years={years}
             months={months}
@@ -71,11 +93,11 @@ function StartUpInteraction1() {
             setSelectedSectors={setSelectedSectors}
             Title1="Incubation Year"
             Title2="Cohort Months"
+            setProjects={setProjects}
           />
         </div>
         <div className="search-container">
           <SearchBar
-            onSearch={handleSearch}
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
           />
@@ -87,51 +109,20 @@ function StartUpInteraction1() {
           })} */}
 
           <div className="searched-container-div">
-            <SearchedResult
-              demoImg={demoImg}
-              projectName="Project Name"
-              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
-            to practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-              Projecturl="/your-target-page"
-            />
-            <SearchedResult
-              demoImg={demoImg}
-              projectName="Project Name"
-              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
-            to practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-              Projecturl="/your-target-page"
-            />
-            <SearchedResult
-              demoImg={demoImg}
-              projectName="Project Name"
-              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
-            to practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-              Projecturl="/your-target-page"
-            />
-            <SearchedResult
-              demoImg={demoImg}
-              projectName="Project Name"
-              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
-            to practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-              Projecturl="/your-target-page"
-            />
-            <SearchedResult
-              demoImg={demoImg}
-              projectName="Project Name"
-              projectContent="NIRMAAN acts as a sandbox for aspiring entrepreneurs of IIT Madras
-            to practice the highs and lows of entrepreneurship with a deferred
-            placement. We strive to offer our students a firsthand experience of
-            what it takes to be an entrepreneur."
-              Projecturl="/your-target-page"
-            />
+            {/* <button className="filter-toggle-btn" onClick={handleToggleFilter}>
+              <img src={filterToggle} alt="" />
+            </button> */}
+            {projects.map((project)=>{
+              return(
+                <SearchedResult
+                demoImg={project.profile_photo}
+                projectName={project.project_name}
+                projectContent={project.description}
+                id = {project.id}
+                project={project}
+              />
+              )
+            })}
           </div>
         </div>
       </div>

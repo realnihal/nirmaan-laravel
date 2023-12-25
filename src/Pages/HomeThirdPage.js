@@ -12,7 +12,106 @@ function HomeThirdPage() {
     console.log("handled");
   };
   return (
-    <div className="thirdPage-container">
+    <>
+
+      <div className="thirdPage-container">
+        <div className="thirdPage-container__header">
+          <div className="main-page__heading">
+            <h1>WHAT WE OFFER</h1>
+          </div>
+          <div className="main-page__sub-wrapper">
+            <button className="main-page__apply-to" onClick={handleApplyToNirman}>
+              APPLY TO NIRMAAN
+            </button>
+            <h2 className="main-page__subtitle">THIS IS YOUR SUBTITLE</h2>
+            <div className="main-page__logo">
+              <img src={nirmaanLogo} alt="" />
+            </div>
+          </div>
+
+
+        </div>
+        <div className="offer-list-container">
+          <div className="offer-list">
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Mentoring"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                thirdComp="true"
+              />
+            </div>
+
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Workshops"
+                thirdComp="true"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success "
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                image={mentoring}
+                heading="Workspace"
+                thirdComp="true"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Participation"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Tools & Resources"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Pre-Seed funding"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="Secure Facility"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="white-inner-div-common-style">
+              <StartUpSUbComp
+                thirdComp="true"
+                image={mentoring}
+                heading="OtherServices"
+                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+              />
+            </div>
+            <div className="offer-btn__wrapper">
+            <div className="offer-list__more-btn">
+              SEE MORE ABOUT US
+            </div>
+            </div>
+            <div className="offer-list__more-btn mobile-about">ABOUT US</div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* <div className="thirdPage-container">
       <div className="header">
         <div className="sub-header">
           <div className="what-we-offer">
@@ -108,8 +207,10 @@ function HomeThirdPage() {
         <div className="third-nirman-in-numbers">NIRMAN IN NUMBERS</div>
       </div>
       <div className="footer-third"></div>
-    </div>
-  );
-}
+    </div> */}
 
+    </>
+  );
+
+}
 export default HomeThirdPage;

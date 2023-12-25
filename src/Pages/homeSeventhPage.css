@@ -1,25 +1,37 @@
 .HomeSevenththPage {
   width: 100vw;
-  height: 100vh;
   flex: 0 0 auto;
 }
 
 .seventh-page-container {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+
+  background-color: #fff;
+
+}
+
+@media (min-width: 1000px) {
+  .HomeSevenththPage {
+    height: 100vh;
+  }
+
+  .seventh-page-container {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .page7-logo {
-  width: 272px;
-  height: 277px;
-  margin-left: 436px;
+  width: 14.2vw;
+  height: 14.5vw;
+  /* margin-left: 436px;
   margin-top: 124px;
-  margin-right: 43px;
+  margin-right: 43px; */
 }
 
 .page7-heading {
-  margin-top: 124px;
+  /* margin-top: 124px; */
+  max-width: 583px;
 }
 
 .user-info7 {
@@ -28,16 +40,26 @@
   justify-content: center;
 }
 
+.user-info7__form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1418px;
+  width: 100%;
+  gap: 95px;
+}
+
 .common-style7 {
-  width: 314px;
-  height: 62px;
+  /* max-width: 314px; */
+  /* width: 100%; */
+  /* height: 62px; */
   background-color: rgba(236, 236, 236, 1);
   color: rgba(157, 157, 157, 1);
   border-radius: 29px;
   border: none;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
   font-size: 22px;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
+  padding: 18px 45px;
 }
 
 .send-input {
@@ -46,9 +68,13 @@
   background-color: black;
   color: white;
 }
+.fsubmit-input {
+  width: 100%;
+  max-width: 597px;
+}
 
 .subject-input {
-  width: 597px;
+  width: 100%;
 }
 
 .links ul {
@@ -76,4 +102,92 @@
   color: rgb(63, 61, 61);
   transform: scale(1.5);
   text-decoration: underline;
+}
+
+.nirman-logo-7 img {
+  margin: 0;
+}
+.nirman-logo-7 {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  gap: 30px;
+}
+
+.fsubmit-input {
+  position: relative;
+}
+.send-input {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 1440px) {
+  .user-info7__form {
+    max-width: 1010px;
+  }
+  .common-style7 {
+    font-size: 18px;
+    padding: 9px 32px;
+  }
+  .page7-heading {
+    height: 204px;
+  }
+  .send-input {
+    width: 123px;
+  }
+  .name-input,
+  .email-input {
+    width: 223px;
+  }
+  .links{
+    margin-top: 28px;
+    margin-bottom: 40px;
+  }
+  .nirman-logo-7{
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .user-info7__form {
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .nirman-logo-7{
+    flex-direction: column;
+    align-items: center;
+  }
+  .page7-heading{
+    height: 120px;
+    width: 340px;
+  }
+  .user-info7__form {
+    padding: 0 75px;
+  }
+  .name-input,
+  .email-input,
+  .subject-input {
+    width: 100%;
+  }
+  .links ul{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .fsubmit-input{
+    position: relative;
+    margin-bottom: 6rem;
+  }
+  .send-input{
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    /* transform: translateX(-50%); */
+    margin: 0 auto;
+  }
 }

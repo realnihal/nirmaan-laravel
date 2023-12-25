@@ -5,13 +5,8 @@
 }
 
 .team-jour {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(102, 187, 106, 0) 40%,
-    rgba(120, 120, 120, 0.2)
-  );
-  height: 45vh;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(102, 187, 106, 0) 40%, rgba(120, 120, 120, 0.2));
+  /* height: 45vh; */
   position: relative;
 }
 
@@ -19,6 +14,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #e4e4e4;
 }
 
 .dotted-line img {
@@ -30,11 +26,16 @@
 }
 
 .nirmaan-numerical {
-  width: 85vw;
+  width: 81.6vw;
   display: flex;
-  margin-left: 8rem;
-  position: absolute;
-  margin-top: -30rem;
+  gap: 1rem;
+  /* margin-left: 8rem; */
+  /* position: absolute; */
+  /* margin-top: -30rem; */
+
+  padding: 36px 0 30px;
+
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -58,25 +59,28 @@
   border-radius: 40px 0px 40px 0px;
   text-align: right;
   padding-right: 2rem;
+  transition: transform 0.3s ease;
 }
 
 .journey {
   box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 40px 0px 40px;
   padding-left: 2rem;
+  transition: transform 0.3s ease;
 }
 
 .numbers-fourthPage {
-  width: 1058px;
-  height: 226px;
+  max-width: 1058px;
+  width: 100%;
+  /* height: 226px; */
   border-radius: 30px;
   background-color: rgba(102, 187, 106, 1);
 }
 
 .nir-num-wrapper4 {
-  width: 676px;
-  height: 183px;
-  margin-left: 13rem;
+  /* width: 676px; */
+  /* height: 183px; */
+  /* margin-left: 13rem; */
   white-space: pre-line;
   box-sizing: border-box;
 }
@@ -87,6 +91,7 @@
   font-weight: 900;
   text-align: center;
   box-sizing: border-box;
+  letter-spacing: 22px;
 }
 
 .num-fourthPage {
@@ -95,12 +100,22 @@
   font-style: italic;
   font-size: 80px;
   text-align: center;
+  letter-spacing: 20px;
 }
-
+.info-num .images {
+  height: 580px;
+  width: 100%;
+  background-image: url("../images/fourth-bg-bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .iitmlogo-2 {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
   margin-top: -14rem;
-  margin-left: 51rem;
+  margin-left: 51rem; */
 }
 
 /* last section  */
@@ -166,4 +181,161 @@
   top: -0.3rem;
   left: 34.8rem;
   z-index: 20;
+}
+
+.images__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 140px 0 140px;
+}
+
+.images__bottom {
+  display: flex;
+  justify-content: center;
+  padding: 100px 140px 0px;
+  gap: 100px;
+}
+
+.images__fourth {
+  margin-left: 4rem;
+}
+
+.our-team__mobile {
+  display: none;
+}
+.our-team__mobile:hover,
+.journey:hover,
+.our-team:hover {
+  
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+@media (max-width: 1440px) {
+  .nirmaan-numerical {
+    padding: 22px 0 20px;
+  }
+  .info-num .images {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/fourth-screen//fourth-bg-lap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 560px 262px;
+  }
+  .images__top {
+    padding: 50px 60px 0 60px;
+    padding: 19px 25px 0 60px;
+  }
+  .images__bottom {
+    justify-content: space-between;
+    padding: 37px 88px 0px;
+  }
+  .journey.common {
+    padding: 1rem;
+    font-size: 23px;
+    width: 152px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nirmaan-numerical {
+    align-items: stretch;
+  }
+  .nir-fourthPge,
+  .num-fourthPage {
+    font-size: 70px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .num-fourthPage {
+    letter-spacing: 8px;
+  }
+  .our-team {
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iitmlogo-2 img {
+    max-width: 193px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info-num .images {
+    background-position: top 30px center;
+    background-size: 220px 100px;
+    padding-top: 7rem;
+    height: auto;
+  }
+  .images__top,
+  .images__bottom {
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+  }
+  .images__fourth {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .team-jour,
+  .fourth-page-container {
+    background: none;
+  }
+  .fourth-page-container {
+    height: auto;
+    overflow: visible;
+  }
+  .our-team__mobile {
+    display: block;
+  }
+  .our-team__desktop {
+    display: none;
+  }
+  .nirmaan-numerical {
+    flex-wrap: wrap;
+    row-gap: 6rem;
+  }
+  .numbers-fourthPage {
+    width: 100%;
+    order: -1;
+    padding: 15px 50px 20px;
+  }
+  .nir-fourthPge,
+  .num-fourthPage {
+    font-size: 8vw;
+    letter-spacing: 4px;
+  }
+  .numbers-fourthPage {
+    border-radius: 1rem;
+  }
+  .our-team,
+  .journey.common {
+    font-size: 22px;
+  }
+  .common {
+    width: auto;
+  }
+
+  .iitmlogo-2 {
+    position: relative;
+    top: -11rem;
+  }
+  .iitmlogo-2 img {
+    max-width: 123px;
+  }
+}
+
+@media (max-width: 576px) {
+  .images__top,
+  .images__bottom {
+    flex-direction: column;
+    gap: 35px;
+  }
 }

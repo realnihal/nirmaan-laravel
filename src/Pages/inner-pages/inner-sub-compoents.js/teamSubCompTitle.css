@@ -1,20 +1,36 @@
 .first-sutitle-div {
-  width: 741px;
+  /* max-width: 38.6vw; */
+  max-width: 741px;
+  width: 100%;
   height: 25px;
   background-color: rgba(102, 187, 106, 1);
 }
 
 .second-sutitle-div {
-  width: 741px;
-  height: 220px;
+  max-width: 741px;
+  /* max-width: 38.6vw; */
+  position: relative;
+  width: 100%;
+  /* max-height: 220px;
+  height: 100%; */
   background-color: rgba(121, 216, 127, 1);
   border-radius: 0px 0px 110px 0px;
   font-family: Inter;
   font-size: 50px;
   font-weight: 700;
   line-height: 44px;
-  padding: 2rem 6rem 6rem 4rem;
+  padding: 3rem 4rem 2.6rem 6.5rem;
   box-sizing: border-box;
+}
+
+.second-sutitle-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(102, 187, 106, 1);
 }
 
 .team-sub-main {
@@ -27,7 +43,8 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
-  padding: 5rem 15rem 0 4rem;
+  padding: 5rem 1rem 0 4rem;
+  max-width: 844px;
 }
 
 .conditional-class {
@@ -97,4 +114,50 @@
 .right-padding {
   padding-right: 7rem;
   text-align: left;
+}
+
+@media (max-width: 1440px) {
+  .conditional-class {
+    align-items: center;
+  }
+  .conditional-class-content {
+    padding: 0 3vw;
+  }
+}
+
+@media (max-width: 998px) {
+  .team-sub-main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .first-sutitle-div,
+  .second-sutitle-div {
+    max-width: 100%;
+    padding: 0;
+  }
+  .conditional-class {
+    flex-direction: column;
+  }
+  .sub-content,
+  .conditional-class-content {
+    padding: 3rem 1rem 0 1rem;
+  }
+  .about-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .about-title,
+  .about-topic {
+    font-size: 3rem;
+  }
+  .team-sub-main #fame-title {
+    padding: 3rem 4rem 2.6rem 6.5rem;
+  }
+  .media-title,
+  .media-topic {
+    font-size: 55px;
+    padding-left: 0;
+  }
 }

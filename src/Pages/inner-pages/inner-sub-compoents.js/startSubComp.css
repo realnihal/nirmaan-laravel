@@ -31,8 +31,9 @@
 
 .startup-content {
   margin-top: 0.5rem;
-  width: 503px;
-  height: 102px;
+  max-width: 503px;
+  width: 100%;
+  min-height: 102px;
   font-family: "GT America";
   font-size: 28px;
   font-weight: 400;
@@ -42,5 +43,32 @@
 }
 
 .third-sub-comp-prop{
-  width: 700px;
+  width:700px;
+}
+
+@media (max-width:1200px){
+  .strat-up-heading{
+    font-size: 28px;
+  }
+  .startup-content{
+    font-size: 22px;
+  }
+
+  .green-sp{
+    height: 90px;
+    width: 90px
+  }
+  .green-sp img{
+    width: 60px;
+  }
+  .third-sub-comp-prop{
+    width: 100%;
+  }
+}
+
+@media (max-width:768px){
+  .strat-up-heading{
+    font-size: 15px;
+  }
+ 
 }
