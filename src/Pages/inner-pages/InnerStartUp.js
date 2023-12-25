@@ -27,6 +27,7 @@ function InnerStartUp() {
         teamMembers={teamMembers}
         subTitle="Lorem Ipsum"
         name={project.start_up_name}
+        project = {project}
         inr="INR 20 Cr"
       />
       <Footer />

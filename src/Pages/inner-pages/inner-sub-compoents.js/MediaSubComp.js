@@ -80,7 +80,7 @@ function MediaSubComp({imgArray}) {
             )
           })
         } */}
-        <div className="media-sub-comp__img-box" onClick={() => handlePopup(chessImg, 'description')}>
+        {/* <div className="media-sub-comp__img-box" onClick={() => handlePopup(chessImg, 'description')}>
           <img src={chessImg} />
         </div>
   
@@ -102,7 +102,7 @@ function MediaSubComp({imgArray}) {
   
         <div className="media-sub-comp__img-box" onClick={() => handlePopup(chessImg, 'description')}>
           <img src={chessImg} />
-        </div>
+        </div> */}
   
       </motion.div>
     );

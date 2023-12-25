@@ -15,7 +15,9 @@ function InnerStartUpComp({
   subTitle,
   name,
   inr,
+  project
 }) {
+  console.log(project.photo_1);
   return (
     <div
 
@@ -68,7 +70,7 @@ function InnerStartUpComp({
             <div className="startup-title-is">{subTitle}</div>
             <div className="start-main-name">{name}</div>
           </div>
-          <img src={img} className="is-image" />
+          <img src={'http://127.0.0.1:8000/api/images/'+project.description_photo} className="is-image" />
           <div className="funds-raised">
             <div className="inr">{inr}</div>
             <div className="funds-heading">Funds Raised</div>
@@ -105,7 +107,7 @@ function InnerStartUpComp({
       </motion.div>
       <TeamSubCompTitle MediaSubtitle="SEE OUR" topic="GALLERY" />
       <div className="gallery-comp">
-        <MediaSubComp />
+        <MediaSubComp imgArray={[project.photo_1,project.photo_2,project.photo_3,project.photo_4,project.photo_5,project.photo_6]}/>
       </div>
     </div>
   );
