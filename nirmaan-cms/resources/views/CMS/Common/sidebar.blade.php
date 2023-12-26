@@ -33,6 +33,47 @@
                                 Teams Page</a>
                         </li>
                         <li
+                            @php if ($activepage == "startups_main") {
+                            echo "class=active";
+                        } @endphp>
+                            <a href="{{ route('startups.main') }}"><i class="icon-material-outline-dashboard"></i>
+                                Startups Main Page</a>
+                        </li>
+                        <li
+                            @php if ($activepage == "media") {
+                            echo "class=active";
+                        } @endphp>
+                            <a href="{{ route('media') }}"><i class="icon-material-outline-dashboard"></i>
+                                Media Page</a>
+                        </li>
+                        <li
+                            @php if ($activepage == "about-stats") {
+                            echo "class=active";
+                        } @endphp>
+                            <a href="{{ route('about.stats') }}"><i class="icon-material-outline-dashboard"></i>
+                                Stats Page</a>
+                        </li>
+                        <li
+                            @php if ($activepage == "add-project" || $activepage == "manage-projects") {
+								echo "class=active-submenu";
+							} @endphp>
+                            <a href="#"><i class="icon-material-outline-business-center"></i> Projects</a>
+                            <ul>
+                                <li><a href="{{route('add.project')}}">Add Project</a></li>
+                                <li><a href="{{route('manage.projects')}}">Manage Projects </a></li>
+                            </ul>
+                        </li>
+                        <li
+                            @php if ($activepage == "add-startup-jobs") {
+								echo "class=active-submenu";
+							} @endphp>
+                            <a href="#"><i class="icon-material-outline-business-center"></i>Jobs</a>
+                            <ul>
+                                <li><a href="{{route('add.jobs')}}">Add Jobs</a></li>
+                                <li><a href="{{route('manage.jobs')}}">Manage Jobs</a></li>
+                            </ul>
+                        </li>
+                        <li
                             @php if ($activepage == "this_is_nirmaan" || $activepage == "they_are_talking" || $activepage == "what_happens") {
 								echo "class=active-submenu";
 							} @endphp>
@@ -46,13 +87,6 @@
                     </ul>
 
                     <ul data-submenu-title="Account">
-                        <li
-                            @php if ($activepage == "settings") {
-                            echo "class=active";
-                        } @endphp>
-                            <a href="{{ route('settings') }}"><i class="icon-material-outline-settings"></i>
-                                Settings</a>
-                        </li>
                         <li><a href="{{ route('logout') }}"><i class="icon-material-outline-power-settings-new"></i>
                                 Logout</a></li>
                     </ul>
@@ -62,3 +96,5 @@
         </div>
     </div>
 </div>
+
+{{-- about.stats --}}

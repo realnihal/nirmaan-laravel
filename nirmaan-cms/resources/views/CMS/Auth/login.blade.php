@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Ebani Tech</title>
+    <title>Nirmaan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -48,7 +48,6 @@
                                             <label for="chekcbox2"><span class="checkbox-icon"></span> Show
                                                 Password</label>
                                         </div>
-                                        <a href="{{ route('forget-password') }}">Forget Password</a>
                                     </div>
                                     <a href="{{ route('login') }}"><button
                                             class="button full-width button-sliding-icon ripple-effect margin-top-10"

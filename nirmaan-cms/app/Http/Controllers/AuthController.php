@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     function getLogin()
     {
-        if (Session::has('user')) {
+        if (Session::has('user_id')) {
             return redirect('/dashboard');
         } else {
             return view('CMS.Auth.login');

@@ -4,14 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class IntroPageController extends Controller
 {
     //=============== page 1 functtions ==================//
 
     public function homePage1View(){
+        if (Session::has('user_id')) {
         $events=DB::select("SELECT *  FROM home_page_1");
         return view('cms.dashboard.this_is_nirmaan',compact('events'));
+        }
+        else {
+            return redirect('/login');
+        }
+        
     }
     public function addEvent(Request $request){
         DB::table('home_page_1')->insert([

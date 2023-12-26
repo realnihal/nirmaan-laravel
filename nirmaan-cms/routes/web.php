@@ -1,11 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\JobsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\TeamsController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IntroPageController;
+use App\Http\Controllers\AboutStatsController;
+use App\Http\Controllers\AddProjectController;
+use App\Http\Controllers\StartupsMainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +34,7 @@ Route::get('/', function () {
 Route::get('/login', [AuthController::class, 'getLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'postLoginUser'])->name('login');
 Route::get('/forget-password', [AuthController::class, 'getForgetPassword'])->name('forget-password');
-Route::post('/logout', [AuthController::class, 'postLogout'])->name('logout');
+Route::get('/logout', [AuthController::class, 'postLogout'])->name('logout');
 
 
 // Dashboard Routes
@@ -53,6 +60,52 @@ Route::get('/what_happens', [IntroPageController::class, 'homePage6View'])->name
 Route::post('/what_happens', [IntroPageController::class, 'addContent'])->name('add.content');
 Route::post('/what_happens/{contentId}', [IntroPageController::class, 'deleteContent'])->name('delete.content');
 
+//startups main page
+Route::get('/startups_main', [StartupsMainController::class, 'startupsMainView'])->name('startups.main');
+Route::post('/startups_main', [StartupsMainController::class, 'addLinks'])->name('add.links');
+
+//startups media page
+Route::get('/media', [GalleryController::class, 'galleryView'])->name('media');
+Route::post('/media', [GalleryController::class, 'addImages'])->name('add.images');
+
+//projects
+Route::get('/add-project', [ProjectsController::class, 'viewAddProjects'])->name('add.project');
+Route::post('/add-project', [ProjectsController::class, 'addProject'])->name('add.project.post');
+Route::post('/update-project',[ProjectsController::class, 'updateProject'])->name('update.project');
+
+Route::get('/manage-projects', [ProjectsController::class, 'viewManageProjects'])->name('manage.projects');
+Route::post('/manage-projects', [ProjectsController::class, 'deleteProject'])->name('delete.project');
+Route::post('/filter-projects/{filter_fields}', [ProjectsController::class, 'filterProjects'])->name('filter.projects');
+
+Route::get('/edit-projects/{id}', [ProjectsController::class, 'viewEditProjects'])->name('edit.project');
+
+
+//jobs
+Route::get('/add-jobs', [JobsController::class,'viewAddJobs'])->name('add.jobs');
+Route::post('/add-jobs', [JobsController::class,'addJob'])->name('post.add.jobs');
+
+Route::get('/manage-jobs', [JobsController::class,'manageJobs'])->name('manage.jobs');
+Route::post('/filter-jobs/{filter_fields}', [JobsController::class, 'filterJobs'])->name('filter.jobs');
+
+//about stats
+Route::get('/about-stats', [AboutStatsController::class,'index'])->name('about.stats');
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Route::get('/settings', [DashboardController::class, 'getSettings'])->name('settings');
+Route::get('/unlink', function () {
+    dd(Storage::exists("Pin.png"));
+    // dd(Storage::exists("C:\MyProjects\nirmaan-cms\storage\/app/new_circle.png"));
+});
+

@@ -22,13 +22,16 @@ class TeamsController extends Controller
             'tagline'=>$request->tagline,
             'designation'=>$request->designation,
             'description'=>$request->description,
+            'team'=>$request->team,
             'profile_image'=>$filePath,
         ]);
         return redirect()->back();
     }
 
     public function deleteTeamMate($teamMateId){
-        $teamMates= DB::select("DELETE FROM team_mates WHERE id=$teamMateId");
+        $teamMates = DB::select("SELECT * FROM team_mates WHERE id=$teamMateId");
+        unlink(storage_path('app/'.$teamMates[0]->profile_image));
+        DB::select("DELETE FROM team_mates WHERE id=$teamMateId");  
         return redirect()->back();
     }
 }

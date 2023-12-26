@@ -48,20 +48,30 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-4">
                                                 <div class="submit-field">
                                                     <h5>Designation</h5>
                                                     <input name='designation' type="text" class="client-name with-border"  required>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-4">
                                                 <div class="submit-field">
                                                     <h5>Profile Image</h5>
                                                     <div class="uploadButton ">
-                                                        <input name="profile_image" class="uploadButton-input" type="file" accept="image/*" id="upload" />
+                                                        <input name="profile_image" class="uploadButton-input" type="file" accept="image/*" id="upload" required/>
                                                         <label class="uploadButton-button ripple-effect" for="upload">Upload Image</label>
                                                         <span class="uploadButton-file-name">Please upload Image of the Team Mate</span>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="submit-field">
+                                                    <h5>Team</h5>
+                                                    <select name="team" class="selectpicker" required>
+                                                        <option value="student team">Student Team</option>
+                                                        <option value="faculty advisors">Faculty Advisors</option>
+                                                        <option value="board advisors">Board Advisors</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,8 +114,10 @@
     
                                                                 <!-- Job Listing Footer -->
                                                                 <div class="job-listing-footer">
-                                                                    <p><b>designation :</b> {{$teamMate->designation}}</p>
-                                                                    <p><b>description :</b> {{$teamMate->description}}</p>
+                                                                    <p><b>Designation :</b> {{$teamMate->designation}}</p>
+                                                                    <div style="max-width: 70%">
+                                                                        <p><b>Team :</b> {{$teamMate->team}}</p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>

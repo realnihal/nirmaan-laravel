@@ -164,6 +164,23 @@ input {
     transition: all 0.1s ease-in-out;
 }
 
+.file-name {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-left: 18px;
+    min-height: 42px;
+    top: 1px;
+    position: relative;
+    color: #888;
+    background-color: transparent;
+    overflow: hidden;
+    line-height: 22px;
+}
+
 input:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
