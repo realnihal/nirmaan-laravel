@@ -89,6 +89,8 @@ Route::post('/filter-jobs/{filter_fields}', [JobsController::class, 'filterJobs'
 
 //about stats
 Route::get('/about-stats', [AboutStatsController::class,'index'])->name('about.stats');
+Route::post('/about-stats', [AboutStatsController::class,'updateAboutStats']);
+
 
 
 

@@ -309,13 +309,11 @@
 
                                                 <!-- Buttons -->
                                                 <div class="row">
-                                                        <form action="{{route("delete.project")}}" method="post">
-                                                            @csrf
-                                                            <input type="hidden" name="id" value="{{$project->id}}"/>
-                                                                <button type="submit"
-                                                                    class="button ripple-effect"><i
-                                                                        class="icon-line-awesome-times-circle-o"></i> Delete Project</button>
-                                                        </form>
+                                                        {{-- <form action="{{route("delete.project")}}" method="post"> --}}
+                                                                <a href="#small-dialog-1"
+                                                                    class="popup-with-zoom-anim button ripple-effect"><i
+                                                                        class="icon-line-awesome-times-circle-o"></i> Delete Project</a>
+                                                        {{-- </form> --}}
                                                         <form action="{{route("edit.project",['id' => $project->id])}}" method="get">
                                                                 <button type="submit"
                                                                     class="button ripple-effect" style="margin-left: 20px"> <i
@@ -325,6 +323,44 @@
 
                                             </li>
                                         </ul>
+                                    </div>
+                                    <div id="small-dialog-1" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+
+                                        <!--Tabs -->
+                                        <div class="sign-in-form">
+                                    
+                                            <ul class="popup-tabs-nav">
+                                            </ul>
+                                    
+                                            <div class="popup-tabs-container">
+                                    
+                                                <!-- Tab -->
+                                                <div class="popup-tab-content" id="tab">
+                                                    
+                                                    <!-- Welcome Text -->
+                                                    <div class="welcome-text">
+                                                        <h3>Are You Sure You Want To Delete ?</h3>
+                                    
+                                                    </div>
+                                    
+                                                    <!-- Button -->
+                                                    <div class="row">
+                                                        <div class="col-xl-6">
+                                                            <form action="{{route("delete.project")}}" method="post">
+                                                                @csrf
+                                                                <input type="hidden" name="id" value="{{$project->id}}">
+                                                                <button class="button ripple-effect" type="submit" >Yes</i></button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <button class="button ripple-effect" id="no" >No</i></button>
+                                                        </div>
+                                                    </div>
+                                    
+                                                </div>
+                                    
+                                            </div>
+                                        </div>
                                     </div>
                                 @endforeach
                                     @else
@@ -440,6 +476,9 @@
                 backgroundColor: '#383838'
             });
         });
+        $('#no').on('click', function () {
+            $('.mfp-close').trigger("click");
+        })
     </script>
 
 </body>

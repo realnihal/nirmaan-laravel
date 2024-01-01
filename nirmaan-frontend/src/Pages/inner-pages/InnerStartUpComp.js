@@ -17,7 +17,7 @@ function InnerStartUpComp({
   inr,
   project
 }) {
-  console.log(project.photo_1);
+  console.log( project.members_name.split(",")[0]);
   return (
     <div
 
@@ -47,16 +47,17 @@ function InnerStartUpComp({
             className="is-member-main">
             <div className="is-member-heading">MEMBERS OF THIS PROJECT</div>
             <div className="is-members-name">
-              {teamMembers.map((item,index) => (
+              {project.members_name.split(",").map((item,index) => (
                 <div key={index} className="is-name-wrapper">
-                  <div className="is-name">{item.name}</div>
+                  <div className="is-name">{item}</div>
                   <div>
-                    <a href={item.link}>
+                    <a href={project.members_linkedin.split(",")[index]}>
                       <img src={linkedIn} />
                     </a>
                   </div>
                 </div>
               ))}
+
             </div>
           </motion.div>
         </div>

@@ -65,23 +65,23 @@
   margin-bottom: 7rem;
 }
 
-.second-comp-teams-content-2 {
+.comp-2-teams-content-2 {
   margin-top: -7rem;
 }
 
-.third-comp-teams-content-2 {
+.comp-3-teams-content-2 {
   margin-top: -14rem;
 }
 
-.fourth-comp-teams-content-2 {
+.comp-4-teams-content-2 {
   margin-top: 5rem;
 }
 
-.fifth-comp-teams-content-2 {
+.comp-5-teams-content-2 {
   margin-top: -1rem;
 }
 
-.sixth-comp-teams-content-2 {
+.comp-6-teams-content-2 {
   margin-top: -9rem;
 }
 
@@ -96,14 +96,14 @@
   .left-ro-right .fourth-comp-teams-content {
     margin-top: 6vw;
   }
-  .right-to-left .third-comp-teams-content-2,
-  .fifth-comp-teams-content-2 {
+  .right-to-left .comp-3-teams-content-2,
+  .comp-5-teams-content-2 {
     margin-top: 6.54vw;
   }
 
-  .right-to-left .fourth-comp-teams-content-2,
-  .right-to-left .sixth-comp-teams-content-2,
-  .right-to-left .sixth-comp-teams-content-2 {
+  .right-to-left .comp-4-teams-content-2,
+  .right-to-left .comp-6-teams-content-2,
+  .right-to-left .comp-6-teams-content-2 {
     margin-top: -3vw;
   }
 }
@@ -126,11 +126,11 @@
     padding-top: 0;
   }
 
-  .right-to-left .second-comp-teams-content-2,
-  .right-to-left .third-comp-teams-content-2,
-  .right-to-left .fourth-comp-teams-content-2,
-  .right-to-left .fifth-comp-teams-content-2,
-  .right-to-left .sixth-comp-teams-content-2 {
+  .right-to-left .comp-2-teams-content-2,
+  .right-to-left .comp-3-teams-content-2,
+  .right-to-left .comp-4-teams-content-2,
+  .right-to-left .comp-5-teams-content-2,
+  .right-to-left .comp-6-teams-content-2 {
     margin-top: 0;
   }
 

@@ -10,12 +10,6 @@ function InnerStartUp() {
   const location = useLocation();
   const project = location.state.project;
   console.log(project);
-  const teamMembers = [
-    { name: "Sanjay Krishnan", link: "sanjay-profile-link" },
-    { name: "Siraj Valeti", link: "siraj-profile-link" },
-    { name: "Pranav Singh", link: "pranav-profile-link" },
-    { name: "Teja S", link: "teja-profile-link" },
-  ];
 
   return (
     <>
@@ -24,7 +18,6 @@ function InnerStartUp() {
         content={project.description}
         title={project.sector}
         projectName={project.project_name}
-        teamMembers={teamMembers}
         subTitle="Lorem Ipsum"
         name={project.start_up_name}
         project = {project}

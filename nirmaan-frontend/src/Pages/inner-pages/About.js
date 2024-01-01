@@ -10,7 +10,8 @@ import aboutVect from "../../images/teams-vect.png";
 import aboutVectLeft from "../../images/teamsVectLeft.png";
 import { motion } from "framer-motion";
 
-function About() {
+function About({stats}) {
+  console.log(stats);
   return (
     <>
       <TeamSubCompTitle
@@ -50,24 +51,24 @@ function About() {
           <div className="numbers-5">
             <div className="num-heading">
               TEAMS TRAINED
-              <div className="num-info trained">141</div>
+              <div className="num-info trained">{stats.teams_trained}</div>
             </div>
             <div className="num-heading">
               GRADUATED TEAMS
-              <div className="num-info grad">21</div>
+              <div className="num-info grad">{stats.graduated_teams}</div>
             </div>
             <div className="num-heading">
               ACTIVE TEAMS
-              <div className="num-info active">48</div>
+              <div className="num-info active">{stats.active_teams}</div>
             </div>
             <div className="num-heading">
               FUNDS RAISED
-              <div className="num-info funds">60+ Cr</div>
+              <div className="num-info funds">{stats.funds_raised}+ Cr</div>
             </div>
           </div>
           <div className="num-heading total-margin">
             TOTAL VALUATION
-            <div className="num-info total">405+ Cr</div>
+            <div className="num-info total">{stats.total_valuation}+ Cr</div>
           </div>
         </motion.div>
       </div>

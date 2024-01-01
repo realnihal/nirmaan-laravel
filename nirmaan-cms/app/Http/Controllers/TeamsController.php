@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class TeamsController extends Controller
 {
@@ -30,7 +31,9 @@ class TeamsController extends Controller
 
     public function deleteTeamMate($teamMateId){
         $teamMates = DB::select("SELECT * FROM team_mates WHERE id=$teamMateId");
+        if(Storage::exists($teamMates[0]->profile_image)){
         unlink(storage_path('app/'.$teamMates[0]->profile_image));
+        }
         DB::select("DELETE FROM team_mates WHERE id=$teamMateId");  
         return redirect()->back();
     }
