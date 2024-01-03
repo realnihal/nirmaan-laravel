@@ -256,7 +256,7 @@
                             <!-- Breadcrumbs -->
                             <nav id="breadcrumbs" class="dark">
                                 <ul>
-                                    <li><a href="">Home</a></li>
+                                    <li><a href="{{ route('dashboard') }}">Home</a></li>
                                     <li>Manage Projects</li>
                                 </ul>
                             </nav>
