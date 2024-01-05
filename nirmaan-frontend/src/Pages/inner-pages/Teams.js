@@ -7,13 +7,14 @@ import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
 import TeamsFirstComp from "./inner-sub-compoents.js/TeamsFirstComp.js";
 import TeamsSecondComp from "./inner-sub-compoents.js/TeamsSecondComp.js";
 import teamsVect from "../../images/teams-vect.png";
+import API_BASE_URL from '../../config.js';
 
 function Teams() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
     // Fetch users from Laravel API
-    fetch('http://127.0.0.1:8000/api/teams')
+    fetch(API_BASE_URL+'/teams')
       .then((response) => response.json())
       .then((data) => setUsers(data))
       .catch((error) => console.error(error));
@@ -41,7 +42,7 @@ function Teams() {
                   designer={user.designation}
                   name={user.name}
                   tagLine={user.tagline}
-                  image = {'http://127.0.0.1:8000/api/images/'+user.profile_image}
+                  image = {API_BASE_URL+'/images/'+user.profile_image}
                 />
                 </div>
                 )
@@ -68,7 +69,7 @@ function Teams() {
                   designer={user.designation}
                   name={user.name}
                   tagLine={user.tagline}
-                  image = {'http://127.0.0.1:8000/api/images/'+user.profile_image}
+                  image = {API_BASE_URL+'/images/'+user.profile_image}
                 />
                 </div>
                 )
@@ -93,7 +94,7 @@ function Teams() {
                   designer={user.designation}
                   name={user.name}
                   tagLine={user.tagline}
-                  image = {'http://127.0.0.1:8000/api/images/'+user.profile_image}
+                  image = {API_BASE_URL+'/images/'+user.profile_image}
                 />
                 </div>
                 )

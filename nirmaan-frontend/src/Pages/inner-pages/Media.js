@@ -6,13 +6,14 @@ import Footer from "../Footer";
 
 import TeamSubCompTitle from "../inner-pages/inner-sub-compoents.js/TeamSubCompTitle";
 import MediaSubComp from "./inner-sub-compoents.js/MediaSubComp";
+import API_BASE_URL from '../../config';
 
 function Media() {
   const [media, setMedia] = useState([]);
 
   useEffect(() => {
     // Fetch Media from Laravel API
-    fetch('http://127.0.0.1:8000/api/media')
+    fetch(API_BASE_URL+'/media')
       .then((response) => response.json())
       .then((data) => setMedia(data))
       .catch((error) => console.error(error));

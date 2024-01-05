@@ -11,6 +11,7 @@ import SearchBar from "./inner-sub-compoents.js/SearchBar";
 import demoImg from "../../images/chess.png";
 import filterToggle from "../../images/icons/filter-icon.png";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import API_BASE_URL from "../../config";
 
 
 function StartUpInteraction1() {
@@ -25,7 +26,7 @@ function StartUpInteraction1() {
 
   useEffect(() => {
     // Fetch projects from Laravel API
-    fetch('http://127.0.0.1:8000/api/projects')
+    fetch(API_BASE_URL+'/projects')
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.error(error));
@@ -39,7 +40,7 @@ function StartUpInteraction1() {
     const data = {
       search : searchTerm,
     }
-    axios.post("http://127.0.0.1:8000/api/search-projects", data)
+    axios.post(API_BASE_URL+"/search-projects", data)
       .then(response => {
         // Handle successful API response
         setProjects(response.data);

@@ -9,13 +9,14 @@ import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
 
 import NavBar from "./NavBar";
 import Footer from "../Footer";
+import API_BASE_URL from '../../config';
 
 function AboutUs() {
   const [stats, setStats] = useState([]);
 
   useEffect(() => {
     // Fetch stats from Laravel API
-    fetch('http://127.0.0.1:8000/api/about_stats')
+    fetch(API_BASE_URL+'/about_stats')
       .then((response) => response.json())
       .then((data) => setStats(data))
       .catch((error) => console.error(error));
@@ -48,7 +49,7 @@ function AboutUs() {
           tagLine="Tagline"
           designer="Designer"
           content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga"
-          image={"http://127.0.0.1:8000/api/images/"+stats.photo_1}
+          image={API_BASE_URL+"/images/"+stats.photo_1}
         />
         <div className="fame-second">
           <TeamsFirstComp
@@ -56,7 +57,7 @@ function AboutUs() {
             designer="Designer"
             content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga"
             tagLine="Tagline"
-            image={"http://127.0.0.1:8000/api/images/"+stats.photo_2}
+            image={API_BASE_URL+"/images/"+stats.photo_2}
           />
 
         </div>
@@ -66,7 +67,7 @@ function AboutUs() {
             tagLine="Tagline"
             designer="Designer"
             content="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga"
-            image={"http://127.0.0.1:8000/api/images/"+stats.photo_3}
+            image={API_BASE_URL+"/images/"+stats.photo_3}
           />
         </div>
       </div>

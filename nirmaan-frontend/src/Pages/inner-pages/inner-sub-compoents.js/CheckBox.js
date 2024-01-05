@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import hcLine from "../../../images/hLine.png";
+import API_BASE_URL from "../../../config";
 
 function CheckBox({
   years,
@@ -131,7 +132,7 @@ function CheckBox({
       cohort_months:selectedMonths,
       sectors:selectedSectors
     }
-    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+    axios.post(API_BASE_URL+"/get-projects", data)
       .then(response => {
         // Handle successful API response
         setProjects(response.data);
@@ -149,7 +150,7 @@ function CheckBox({
       cohort_months:selectedMonths,
       sectors:selectedSectors
     }
-    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+    axios.post(API_BASE_URL+"/get-projects", data)
       .then(response => {
         // Handle successful API response
         setProjects(response.data);
@@ -167,7 +168,7 @@ function CheckBox({
       cohort_months:selectedMonths,
       sectors:selectedSectors
     }
-    axios.post("http://127.0.0.1:8000/api/get-projects", data)
+    axios.post(API_BASE_URL+"/get-projects", data)
       .then(response => {
         // Handle successful API response
         setProjects(response.data);
@@ -186,7 +187,7 @@ function CheckBox({
       remuneration:selectedRemuneration,
       sectors:selectedSectors2
     }
-    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+    axios.post(API_BASE_URL+"/get-jobs", data)
       .then(response => {
         // Handle successful API response
         setJobs(response.data);
@@ -204,7 +205,7 @@ function CheckBox({
       remuneration:selectedRemuneration,
       sectors:selectedSectors2
     }
-    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+    axios.post(API_BASE_URL+"/get-jobs", data)
       .then(response => {
         // Handle successful API response
         setJobs(response.data);
@@ -222,7 +223,7 @@ function CheckBox({
       remuneration:selectedRemuneration,
       sectors:selectedSectors2
     }
-    axios.post("http://127.0.0.1:8000/api/get-jobs", data)
+    axios.post(API_BASE_URL+"/get-jobs", data)
       .then(response => {
         // Handle successful API response
         setJobs(response.data);

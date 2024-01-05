@@ -7,6 +7,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 import rect from "../images/Rectangle.png";
 import vect from "../images/Vector.png";
 import thisIsImg from "../images/THIS IS.png";
+import API_BASE_URL from "../config";
 
 
 function HomeFirstPage() {
@@ -83,7 +84,7 @@ function HomeFirstPage() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
     // Fetch users from Laravel API
-    fetch('http://127.0.0.1:8000/api/events')
+    fetch(API_BASE_URL+'/events')
       .then((response) => response.json())
       .then((data) => setEvents(data))
       .catch((error) => console.error(error));

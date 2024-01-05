@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import {  BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "./searchedResult.css";
+import API_BASE_URL from "../../../config";
 
 function SearchedResult({ demoImg, projectName, projectContent, project}) {
   return (
@@ -12,7 +13,7 @@ function SearchedResult({ demoImg, projectName, projectContent, project}) {
       exit={{ opacity: 1 }}
       className="searched-result-main">
       <div>
-        <img src={'http://127.0.0.1:8000/api/images/'+demoImg} className="searched-img" />
+        <img src={API_BASE_URL+'/images/'+demoImg} className="searched-img" />
       </div>
       <div className="searched-project-content-main">
         <div>

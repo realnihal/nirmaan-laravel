@@ -20,6 +20,7 @@ import halfLeft from "../../images/half-first.png";
 import halfRight from "../../images/halfRight.png";
 import secondImg from "../../images/middleimg.png";
 import { motion } from "framer-motion";
+import API_BASE_URL from '../../config';
 
 function StartUps() {
   // http://127.0.0.1:8000/api/startups_main
@@ -27,7 +28,7 @@ function StartUps() {
 
   useEffect(() => {
     // Fetch Links from Laravel API
-    fetch('http://127.0.0.1:8000/api/startups_main')
+    fetch(API_BASE_URL+'/startups_main')
       .then((response) => response.json())
       .then((data) => setLinks(data))
       .catch((error) => console.error(error));

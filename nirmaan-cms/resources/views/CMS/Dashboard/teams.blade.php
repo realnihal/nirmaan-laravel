@@ -122,7 +122,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="job-listing-company-logo" style="max-width: 10%; max-height:100%">
-                                                            <img src="{{url('http://127.0.0.1:8000/api/images/'.$teamMate->profile_image)}}" >
+                                                            <img src="{{url(env('API_BASE_URL').'/images/'.$teamMate->profile_image)}}" >
                                                         </div>
                                                     </div>
     

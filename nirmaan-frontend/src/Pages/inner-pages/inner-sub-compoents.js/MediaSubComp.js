@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import chessImg from "../../../images/chess.png";
 import GalleryPopup from "../../sub-components/GalleryPopup";
+import API_BASE_URL from "../../../config";
 
 // const imgArr = Array.from({ length: 6 }, (_, index) => index);
 function MediaSubComp({imgArray}) {
@@ -46,8 +47,8 @@ function MediaSubComp({imgArray}) {
   
         {
           imgArray.map((img) => (
-            <div className="media-sub-comp__img-box" onClick={() => handlePopup('http://127.0.0.1:8000/api/images/'+img, 'description')} key={img}>
-              <img src={'http://127.0.0.1:8000/api/images/'+img} />
+            <div className="media-sub-comp__img-box" onClick={() => handlePopup(API_BASE_URL+'/images/'+img, 'description')} key={img}>
+              <img src={API_BASE_URL+'/images/'+img} />
             </div>
           ))
         }

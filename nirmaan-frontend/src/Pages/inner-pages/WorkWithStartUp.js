@@ -7,7 +7,8 @@ import CheckBox from "./inner-sub-compoents.js/CheckBox";
 import SearchBar from "./inner-sub-compoents.js/SearchBar";
 import axios from "axios";
 import WorkWithNirman from "./inner-sub-compoents.js/WorkWithNirman";
-import filterToggle from '../../images/icons/filter-icon.png'
+import filterToggle from '../../images/icons/filter-icon.png';
+import API_BASE_URL from "../../config";
 
 function WorkWithStartUp() {
   const [toggleFilter, setToggleFilter] = useState(false);
@@ -17,7 +18,7 @@ function WorkWithStartUp() {
 
   useEffect(() => {
     // Fetch projects from Laravel API
-    fetch('http://127.0.0.1:8000/api/jobs')
+    fetch(API_BASE_URL+'/jobs')
       .then((response) => response.json())
       .then((data) => {
         setJobs(data)
@@ -70,7 +71,7 @@ function WorkWithStartUp() {
     const data = {
       search : searchTerm,
     }
-    axios.post("http://127.0.0.1:8000/api/search-jobs", data)
+    axios.post(API_BASE_URL+"/search-jobs", data)
       .then(response => {
         // Handle successful API response
         setJobs(response.data);

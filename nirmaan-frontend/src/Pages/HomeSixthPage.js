@@ -9,14 +9,15 @@ import vectSmall from "../images/sixth-vector-3.png";
 import dottedLineSixth from "../images/Group 137.png";
 import whatImg from "../images/WHAT HAPPENS IN.png";
 import SixScreenContent from "./sub-components/SixScreenContent";
-import logo from '../images/six-screen-logo.png'
-import logoMobile from '../images/six-logo-mb.png'
+import logo from '../images/six-screen-logo.png';
+import logoMobile from '../images/six-logo-mb.png';
+import API_BASE_URL from "../config";
 
 function HomeSixthPage() {
   const [contents, setContents] = useState([]);
   useEffect(() => {
     // Fetch users from Laravel API
-    fetch('http://127.0.0.1:8000/api/contents')
+    fetch(API_BASE_URL+'/contents')
       .then((response) => response.json())
       .then((data) => setContents(data))
       .catch((error) => console.error(error));

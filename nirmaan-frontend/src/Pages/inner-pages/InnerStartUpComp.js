@@ -6,6 +6,7 @@ import img from "../../images/innerStartUpImg.png";
 import mail from "../../images/mail-nir-2.png";
 import TeamSubCompTitle from "./inner-sub-compoents.js/TeamSubCompTitle";
 import MediaSubComp from "./inner-sub-compoents.js/MediaSubComp";
+import API_BASE_URL from "../../config";
 
 function InnerStartUpComp({
   content,
@@ -71,7 +72,7 @@ function InnerStartUpComp({
             <div className="startup-title-is">{subTitle}</div>
             <div className="start-main-name">{name}</div>
           </div>
-          <img src={'http://127.0.0.1:8000/api/images/'+project.description_photo} className="is-image" />
+          <img src={API_BASE_URL+'/images/'+project.description_photo} className="is-image" />
           <div className="funds-raised">
             <div className="inr">{inr}</div>
             <div className="funds-heading">Funds Raised</div>

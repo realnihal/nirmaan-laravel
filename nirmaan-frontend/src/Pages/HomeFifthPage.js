@@ -6,12 +6,13 @@ import vectSmall from "../images/vecto3-small.png";
 import dottedLineFifth from "../images/Group 137.png";
 import greenLogo from '../images/fifth-screen-logo.png'
 import FifthScreenContent from "./sub-components/FifthScreenContent";
+import API_BASE_URL from "../config";
 
 function HomeFifthPage() {
   const [stories, setStories] = useState([]);
   useEffect(() => {
     // Fetch users from Laravel API
-    fetch('http://127.0.0.1:8000/api/stories')
+    fetch(API_BASE_URL+'/stories')
       .then((response) => response.json())
       .then((data) => setStories(data))
       .catch((error) => console.error(error));
