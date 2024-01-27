@@ -23,7 +23,7 @@ function SearchedResult({ demoImg, projectName, projectContent, project}) {
           </div>
         </div>
         <div className="button-div" >
-          <Link to="/inner-start-up-pratham" state={{project:project}}>SEE THIS PROJECT</Link>
+          <Link to="/inner-start-up" state={{project:project}}>SEE THIS PROJECT</Link>
         </div>
       </div>
     </motion.div>

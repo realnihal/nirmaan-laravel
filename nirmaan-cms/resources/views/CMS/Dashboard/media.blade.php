@@ -189,7 +189,6 @@
     <script>
         // Snackbar for user status switcher
         $('#snackbar-user-status label').click(function() {
-            console.log('image');
             Snackbar.show({
                 text: 'Your status has been changed!',
                 pos: 'bottom-center',

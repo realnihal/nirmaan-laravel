@@ -19,7 +19,6 @@ function Teams() {
       .then((data) => setUsers(data))
       .catch((error) => console.error(error));
   }, []);
-  console.log(users);
   return (
     <div className="teams-container">
       <NavBar />

@@ -26,8 +26,7 @@ function App() {
         <Route path="/blog" element={<BlogsComp />} />
         <Route path="/start-ups-interaction" element={<InteractionComp />} />
         <Route path="/work-with-start-ups" element={<WWStartUps />} />
-        <Route path="/inner-start-up-pratham" element={<InnerStartUp1 />} />
-        <Route path="/inner-start-up-akshar" element={<InnertartUp2 />} />
+        <Route path="/inner-start-up" element={<InnerStartUp1 />} />
       </Routes>
     </>
   );

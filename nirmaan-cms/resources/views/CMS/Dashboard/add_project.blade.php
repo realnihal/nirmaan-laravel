@@ -44,8 +44,8 @@
                                                 <div class="submit-field">
                                                     <h5>Start Up Name</h5>
                                                     <select name="start_up_name" class="selectpicker with-border">
-                                                        <option value="pratham">Pratham</option>
-                                                    <option value="akshar">Akshar</option>
+                                                        <option value="Pratham">Pratham</option>
+                                                    <option value="Akshar">Akshar</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -220,7 +220,7 @@
                                 <input id="memberLinkedIn" type="text" class="with-border" required>
                             </div>
                             <div class="submit-field">
-                                <h5>LinkedIn Profile Link</h5>
+                                <h5>Member Email</h5>
                                 <input id="memberEmail" type="text" class="with-border" required>
                             </div>
                         </div>

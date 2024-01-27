@@ -21,7 +21,6 @@ function AboutUs() {
       .then((data) => setStats(data))
       .catch((error) => console.error(error));
   }, []);
-  console.log(stats);
   return (
     <>
       <NavBar />

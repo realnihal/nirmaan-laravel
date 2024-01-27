@@ -11,7 +11,6 @@ import aboutVectLeft from "../../images/teamsVectLeft.png";
 import { motion } from "framer-motion";
 
 function About({stats}) {
-  console.log(stats);
   return (
     <>
       <TeamSubCompTitle

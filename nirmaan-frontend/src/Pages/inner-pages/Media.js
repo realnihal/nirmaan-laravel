@@ -18,7 +18,6 @@ function Media() {
       .then((data) => setMedia(data))
       .catch((error) => console.error(error));
   }, []);
-  console.log(media);
   return (
     <>
       <NavBar />

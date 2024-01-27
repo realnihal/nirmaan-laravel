@@ -69,16 +69,6 @@ function NavBar() {
                   <div>
                     <Link to="/work-with-start-ups">Work with Startups</Link>
                   </div>
-                  <div>
-                    <Link to="/inner-start-up-pratham">
-                      Inner startUp - Pratham
-                    </Link>
-                  </div>
-                  <div>
-                    <Link to="/inner-start-up-akshar">
-                      Inner startUp - Akshar
-                    </Link>
-                  </div>
                 </div>
               </li>
               <li>

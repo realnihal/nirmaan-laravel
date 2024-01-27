@@ -18,7 +18,6 @@ function InnerStartUpComp({
   inr,
   project
 }) {
-  console.log( project.members_name.split(",")[0]);
   return (
     <div
 
