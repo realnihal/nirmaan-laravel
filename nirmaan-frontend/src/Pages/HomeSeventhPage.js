@@ -84,16 +84,16 @@ function HomeSeventhPage() {
       <div className="links">
         <ul>
           <li>
-            <Link to="/teams">Teams</Link>
+            <a href="/teams">Teams</a>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="/about-us">About</a>
           </li>
           <li>
-            <Link to="/start-ups">Startups</Link>
+            <a href="/work-with-start-ups">Startups</a>
           </li>
           <li>
-            <Link to="/media">Media</Link>
+            <a href="/media">Media</a>
           </li>
         </ul>
       </div>

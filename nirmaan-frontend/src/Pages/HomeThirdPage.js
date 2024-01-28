@@ -9,7 +9,10 @@ import StartUpSUbComp from "./inner-pages/inner-sub-compoents.js/StartUpSUbComp"
 
 function HomeThirdPage() {
   const handleApplyToNirman = () => {
-    console.log("handled");
+    window.location.href = "/join-us";
+  };
+  const handleAboutUs = () => {
+    window.location.href = "/about-us";
   };
   return (
     <>
@@ -99,11 +102,11 @@ function HomeThirdPage() {
               />
             </div>
             <div className="offer-btn__wrapper">
-            <div className="offer-list__more-btn">
+            <button className="offer-list__more-btn" onClick={handleAboutUs}>
               SEE MORE ABOUT US
+            </button>
             </div>
-            </div>
-            <div className="offer-list__more-btn mobile-about">ABOUT US</div>
+            <button className="offer-list__more-btn mobile-about" onClick={handleAboutUs}>ABOUT US</button>
           </div>
 
         </div>

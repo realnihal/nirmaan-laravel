@@ -9,6 +9,12 @@ import whoWeAreImg from "../images/WHO WE ARE.png";
 import CarouselSecondPage from "./sub-components/CarouselSecondPage";
 
 function HomeSecondPage() {
+  const handleMeetOurTeam = () => {
+    window.location.href = "/teams";
+  };
+  const handleSeeProjects = () => {
+    window.location.href = "/projects";
+  };
   return (
     <>
 
@@ -24,7 +30,7 @@ function HomeSecondPage() {
                   {/* <img src={whoWeAreImg} /> */}
                 </div>
                 <div className="meetOurTeam-div">
-                  <div className="team-heading">MEET OUR TEAM</div>
+                  <div className="team-heading" onClick={handleMeetOurTeam}>MEET OUR TEAM</div>
                   {/* <img src={vect2} className="vect2-logo" /> */}
                 </div>
                 <img className="nirmaanlogo-second" src={nirmaanLogo} alt="" />
@@ -45,7 +51,7 @@ function HomeSecondPage() {
                     <br></br> them technically sound and economically viable.
                   </div>
                 </div>
-                <div className="projects">
+                <div className="projects" onClick={handleSeeProjects}>
                   <b>SEE OUR</b> <span className="projects-breacker">PROJECTS{" "}</span>
                   <FontAwesomeIcon
                     icon={faArrowRight}

@@ -12,7 +12,7 @@ import API_BASE_URL from "../config";
 
 function HomeFirstPage() {
   const handleClickApplyTo = () => {
-    window.location.href = "www.google.com";
+    window.location.href = "/join-us";
   };
 
 

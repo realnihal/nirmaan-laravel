@@ -17,6 +17,12 @@ import forthBgLaptop from '../images/fourth-screen/fourth-bg-lap.png'
 import Highlights from "./sub-components/Highlights";
 
 function HomeFourthPage() {
+  const handleSeeTeam = () => {
+    window.location.href = "/teams";
+  };
+  const handleSeeJourney = () => {
+    window.location.href = "/about-interaction";
+  };
   return (
     <div className="fourth-page-container">
       <div className="team-jour">
@@ -25,7 +31,7 @@ function HomeFourthPage() {
           <img src={dotted} alt="pattern" />
         </div> */}
         <div className="nirmaan-numerical">
-          <div className="our-team common">
+          <div className="our-team common" onClick={handleSeeTeam}>
           <span className="our-team__desktop">
             SEE<br></br>OUR<br></br>TEAM
           </span>
@@ -39,7 +45,7 @@ function HomeFourthPage() {
               <div className="num-fourthPage">IN NUMBERS</div>
             </div>
           </div>
-          <div className="journey common">
+          <div className="journey common" onClick={handleSeeJourney}>
           <span className="our-team__desktop">
           SEE<br></br>OUR<br></br>JOURNEY
           </span>

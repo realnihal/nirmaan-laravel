@@ -42,29 +42,26 @@ function NavBar() {
           </div>
           <div className="links-nav">
             <ul>
-              <li>
-                <Link to="/teams">Team</Link>
-              </li>
-              <li className="drop-down-nav">
+            <li className="drop-down-nav">
                 <Link to="/about-us">About</Link>
                 <div className="dropdown-content">
                   <div>
                     <Link to="/about-us">About</Link>
                   </div>
                   <div>
-                    <Link to="/about-interaction">Interaction</Link>
+                    <Link to="/about-interaction">Timelines</Link>
                   </div>
                 </div>
               </li>
+              <li>
+                <Link to="/teams">Team</Link>
+              </li>
               <li className="drop-down-nav">
-                <Link to="/start-ups-main">Startups</Link>
+                <Link to="/join-us">Startups</Link>
 
                 <div className="dropdown-content">
                   <div>
-                    <Link to="/start-ups-main">startUps</Link>
-                  </div>
-                  <div>
-                    <Link to="/start-ups-interaction">Interaction</Link>
+                    <Link to="/projects">Projects</Link>
                   </div>
                   <div>
                     <Link to="/work-with-start-ups">Work with Startups</Link>
@@ -75,7 +72,7 @@ function NavBar() {
                 <Link to="/media">Media</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <Link to="/join-us">Join us</Link>
               </li>
               <li className="login-mobile">
                 <img src={userIcon} />

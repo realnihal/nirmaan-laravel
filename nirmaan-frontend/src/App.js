@@ -20,11 +20,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/teams" element={<TeamsComp />} />
         <Route path="/about-us" element={<AboutComp />} />
-        <Route path="/about-interaction" element={<AboutInteraction />} />
-        <Route path="/start-ups-main" element={<StartupsComp />} />
+        <Route path="/timelines" element={<AboutInteraction />} />
+        <Route path="/join-us" element={<StartupsComp />} />
         <Route path="/media" element={<Media />} />
         <Route path="/blog" element={<BlogsComp />} />
-        <Route path="/start-ups-interaction" element={<InteractionComp />} />
+        <Route path="/projects" element={<InteractionComp />} />
         <Route path="/work-with-start-ups" element={<WWStartUps />} />
         <Route path="/inner-start-up" element={<InnerStartUp1 />} />
       </Routes>
