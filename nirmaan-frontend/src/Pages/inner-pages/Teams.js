@@ -28,7 +28,7 @@ function Teams() {
           <div className="main-teams-container">
             <TeamSubCompTitle
               subtitle="THIS IS YOUR SUBTITLE"
-              subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
+              subContent=""
             />
           </div>
           <div className="teams-content left-ro-right margin-1">
@@ -77,13 +77,13 @@ function Teams() {
 
           {/* thirst set-------------------------- */}
 
-          <div className="main-teams-container">
+          <div className="main-teams-container-2">
             <TeamSubCompTitle
               subtitle="THIS IS YOUR SUBTITLE"
               subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
             />
           </div>
-          <div className="teams-content left-ro-right margin-bottom-3">
+          <div className="teams-content left-to-right margin-bottom-3">
             {
             users.filter((user) => user.team === 'board advisors').map((user,index)=>{
                 return(

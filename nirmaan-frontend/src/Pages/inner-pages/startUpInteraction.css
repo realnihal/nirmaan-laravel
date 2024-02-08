@@ -18,3 +18,8 @@
 .searched-container-div{
   margin-left: 4rem;
 }
+
+a:link, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
