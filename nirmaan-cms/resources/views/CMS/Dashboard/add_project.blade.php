@@ -96,7 +96,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="profile_photo" class="uploadButton-input " type="file" accept="image/*"  id="profile_photo" required/>
                                                         <label class="uploadButton-button ripple-effect" for="profile_photo">Upload Image</label>
-                                                        <span id="profile_photo_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="profile_photo_span" class="file-name ">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -106,7 +106,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="description_photo" class="uploadButton-input " type="file" accept="image/*"  id="description_photo" required/>
                                                         <label class="uploadButton-button ripple-effect" for="description_photo">Upload Image</label>
-                                                        <span id="description_photo_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="description_photo_span" class="file-name ">Please upload Images For Your Project in 830 x 890 dimensions</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,7 +118,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="photo_1" class="uploadButton-input " type="file" accept="image/*"  id="photo_1" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_1">Upload Image</label>
-                                                        <span id="photo_1_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_1_span" class="file-name ">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,7 +128,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="photo_2" class="uploadButton-input " type="file" accept="image/*"  id="photo_2" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_2">Upload Image</label>
-                                                        <span id="photo_2_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_2_span" class="file-name ">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -140,7 +140,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="photo_3" class="uploadButton-input " type="file" accept="image/*"  id="photo_3" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_3">Upload Image</label>
-                                                        <span id="photo_3_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_3_span" class="file-name ">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -150,7 +150,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="photo_4" class="uploadButton-input " type="file" accept="image/*"  id="photo_4" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_4">Upload Image</label>
-                                                        <span id="photo_4_span" class="file-name ">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_4_span" class="file-name ">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,7 +162,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="photo_5" class="uploadButton-input" type="file" accept="image/*"  id="photo_5" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_5">Upload Image</label>
-                                                        <span id="photo_5_span" class="file-name">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_5_span" class="file-name">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -172,7 +172,7 @@
                                                     <div class="uploadButton">
                                                         <input name="photo_6" class="uploadButton-input" type="file" accept="image/*"  id="photo_6" required/>
                                                         <label class="uploadButton-button ripple-effect" for="photo_6">Upload Image</label>
-                                                        <span id="photo_6_span" class="file-name">Please upload Images For Your Project (Multiple Images Can Be Uplaoded)</span>
+                                                        <span id="photo_6_span" class="file-name">Please upload Images For Your Project </span>
                                                     </div>
                                                 </div>
                                             </div>

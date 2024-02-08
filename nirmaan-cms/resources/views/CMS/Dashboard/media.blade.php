@@ -42,7 +42,7 @@
                                                     <div class="uploadButton ">
                                                         <input name="image" class="uploadButton-input" type="file" accept="image/*" id="image_gallery" required/>
                                                         <label class="uploadButton-button ripple-effect" for="image_gallery">Upload Image</label>
-                                                        <span class="uploadButton-file-name image_1">Please upload Image of the Team Mate</span>
+                                                        <span class="uploadButton-file-name image_1">Please upload Image of the Team Mate 560 x 340 dimensions</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -88,7 +88,7 @@
                                                         <div class="uploadButton ">
                                                             <input name="image" class="uploadButton-input " type="file" accept="image/*" id="image_event" required/>
                                                             <label class="uploadButton-button ripple-effect" for="image_event">Upload Image</label>
-                                                            <span class="uploadButton-file-name ">Please upload Image of the Team Mate</span>
+                                                            <span class="uploadButton-file-name ">Please upload Image of the Team Mate 560 x 340 dimensions</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -134,7 +134,7 @@
                                                             <div class="uploadButton ">
                                                                 <input name="image" class="uploadButton-input " type="file" accept="image/*" id="image_team" required/>
                                                                 <label class="uploadButton-button ripple-effect" for="image_team">Upload Image</label>
-                                                                <span class="uploadButton-file-name">Please upload Image of the Team Mate</span>
+                                                                <span class="uploadButton-file-name">Please upload Image of the Team Mate 560 x 340 dimensions</span>
                                                             </div>
                                                         </div>
                                                     </div>
