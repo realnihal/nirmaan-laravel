@@ -27,7 +27,7 @@ function Teams() {
         <div className="positioning-teams">
           <div className="main-teams-container">
             <TeamSubCompTitle
-              subtitle="THIS IS YOUR SUBTITLE"
+              subtitle="Student Team"
               subContent=""
             />
           </div>
@@ -52,7 +52,7 @@ function Teams() {
 
           <div className="main-teams-container-2">
             <TeamSubCompTitle
-              subtitle="THIS IS YOUR SUBTITLE"
+              subtitle="Faculty Advisors"
               subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
               flag="true"
             />
@@ -79,11 +79,11 @@ function Teams() {
 
           <div className="main-teams-container-2">
             <TeamSubCompTitle
-              subtitle="THIS IS YOUR SUBTITLE"
+              subtitle="Board Advisors"
               subContent="Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind dedicated pre-incubator on a college campus in the country."
             />
           </div>
-          <div className="teams-content left-to-right margin-bottom-3">
+          <div className="teams-content right-to-left margin-2">
             {
             users.filter((user) => user.team === 'board advisors').map((user,index)=>{
                 return(

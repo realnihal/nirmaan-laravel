@@ -84,22 +84,24 @@ function StartUps() {
               <div className="sp-sub-img">
                 <StartUpSUbComp
                   image={brief}
-                  heading="Worksops"
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+                  heading="Workshops"
+                  content="Seasoned professionals and Industry experts conduct workshops on various
+                  aspects of startup such as customer discovery…"
                 />
               </div>
               <div className="sp-sub-img">
                 <StartUpSUbComp
                   image={frame}
                   heading="Worspace"
-                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut."
+                  content="A place to interact, collaborate, and innovate, startups get access to a
+                  dedicated workspace at the Sudha & Shankar Innovation Hub"
                 />
               </div>
               <div className="sp-sub-img">
                 <StartUpSUbComp
                   image={setting}
                   heading="Tools & Resources"
-                  content="Wide vaariety of resources available at IITM, including advanced machining, characterisation and computing facilities"
+                  content="Access to AWS credit and machinery for fabrication."
                 />
               </div>
             </div>
@@ -123,7 +125,7 @@ function StartUps() {
             <StartUpCard
               heading="Startups"
               apply="WORK WITH US"
-              link1 = {links[1]}
+              link1 = {"https://docs.google.com/spreadsheets/d/1hPbCXKMoFnPTWuAAuiCgeV6BlC9g_8a48WdCDiQbmzY/edit#gid=1594600925"}
               content1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
               content2="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             />

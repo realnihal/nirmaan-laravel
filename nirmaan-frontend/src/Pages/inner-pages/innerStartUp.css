@@ -61,6 +61,7 @@
 }
 
 .is-member-main {
+  margin-top: auto;
   max-width: 719px;
   width: 100%;
   height: 370px;
@@ -171,7 +172,7 @@
 
 .contact-section {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 7rem;
 }
 
@@ -262,7 +263,6 @@
 }
 
 #fame-title{
-  display: none;
 }
 
 @media (max-width: 1570px) {

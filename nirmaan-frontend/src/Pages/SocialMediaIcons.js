@@ -13,33 +13,23 @@ function SocialMediaIcons() {
   return (
     <ul className="social-icons">
       <li>
-        <a href="https://www.youtube.com/">
+        <a href="https://www.youtube.com/@nirmaaniitm4437/featured">
           <img src={youTube} alt="youTube" />
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/i/flow/login?lang=en">
+        <a href="https://twitter.com/Nirmaan_IITM">
           <img src={twitter} alt="youTube" />
         </a>
       </li>
       <li>
-        <a href="https://in.linkedin.com/">
+        <a href="https://www.linkedin.com/in/nirmaan-iitm/">
           <img src={linkedIN} alt="youTube" />
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/">
+        <a href="https://www.instagram.com/nirmaan_iitm/">
           <img src={instagram} alt="youTube" />
-        </a>
-      </li>
-      <li>
-        <a href="https://mail.google.com/">
-          <img src={mail} alt="youTube" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/">
-          <img src={facebook} alt="youTube" />
         </a>
       </li>
     </ul>

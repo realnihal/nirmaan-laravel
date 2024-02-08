@@ -26,7 +26,7 @@ function HomeThirdPage() {
             <button className="main-page__apply-to" onClick={handleApplyToNirman}>
               APPLY TO NIRMAAN
             </button>
-            <h2 className="main-page__subtitle">THIS IS YOUR SUBTITLE</h2>
+            <h2 className="main-page__subtitle"></h2>
             <div className="main-page__logo">
               <img src={nirmaanLogo} alt="" />
             </div>
@@ -50,23 +50,18 @@ function HomeThirdPage() {
                 image={mentoring}
                 heading="Workshops"
                 thirdComp="true"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success "
+                content="Seasoned professionals and Industry experts conduct workshops on various
+                aspects of startup such as customer discovery…"
               />
             </div>
             <div className="white-inner-div-common-style">
               <StartUpSUbComp
                 image={mentoring}
-                heading="Workspace"
+                heading="Workspace - Participation"
                 thirdComp="true"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
-              />
-            </div>
-            <div className="white-inner-div-common-style">
-              <StartUpSUbComp
-                thirdComp="true"
-                image={mentoring}
-                heading="Participation"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                content="A place to interact, collaborate, and innovate, startups get access to a
+                dedicated workspace at the Sudha & Shankar Innovation Hub.
+                "
               />
             </div>
             <div className="white-inner-div-common-style">
@@ -74,7 +69,7 @@ function HomeThirdPage() {
                 thirdComp="true"
                 image={mentoring}
                 heading="Tools & Resources"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                content="Access to AWS credit and machinery for fabrication"
               />
             </div>
             <div className="white-inner-div-common-style">
@@ -82,23 +77,17 @@ function HomeThirdPage() {
                 thirdComp="true"
                 image={mentoring}
                 heading="Pre-Seed funding"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                content="Funding"
               />
             </div>
             <div className="white-inner-div-common-style">
               <StartUpSUbComp
                 thirdComp="true"
                 image={mentoring}
-                heading="Secure Facility"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
-              />
-            </div>
-            <div className="white-inner-div-common-style">
-              <StartUpSUbComp
-                thirdComp="true"
-                image={mentoring}
-                heading="OtherServices"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                heading="Networking"
+                content="Opportunity to interact with Industry leaders and Alumni of IIT and discuss
+                the start-up
+                "
               />
             </div>
             <div className="offer-btn__wrapper">

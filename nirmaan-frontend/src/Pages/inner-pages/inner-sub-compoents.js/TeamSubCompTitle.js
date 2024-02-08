@@ -20,7 +20,7 @@ function TeamSubCompTitle({
       className={flag ? "conditional-class" : "team-sub-main"}>
 
       <div className="second-sutitle-div">
-        <div id={flag ? "c-title" : "fame-title"}>{subtitle}</div>
+        <div id={flag ? "c-title" : ""}>{subtitle}</div>
         {MediaSubtitle ? (
           <div className="blog-titles">
             <div className="media-title">{MediaSubtitle}</div>

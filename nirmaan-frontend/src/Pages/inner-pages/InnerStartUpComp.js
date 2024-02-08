@@ -38,7 +38,7 @@ function InnerStartUpComp({
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             exit={{ opacity: 1 }}
-            className="is-content">{content}</motion.div>
+            className="is-content margin bottom-30">{content}</motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

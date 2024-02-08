@@ -78,9 +78,8 @@ function HomeSixthPage() {
       <div className="sixthpage-third-inner-div">
         <div className="what-happens">
           <h2 className="what-happens__title">
-            WHAT
-            <span className="what-happens__thin">HAPPENS</span>
-            IN
+            <span className="what-happens__thin">CONATCT</span>
+            US
           </h2>
           <div className="sixth-logo mobile-six-logo">
             <img src={logoMobile} id="sixth-page-vect" />
@@ -93,7 +92,6 @@ function HomeSixthPage() {
             <img src={logo} id="sixth-page-vect" />
           </div>
           <p className="like">DO YOU LIKE WHAT YOU SEE?</p>
-          <div className="contact"><b>CONTACT</b> <span className="us-content">US</span></div>
         </div>
       </div>
     </div>

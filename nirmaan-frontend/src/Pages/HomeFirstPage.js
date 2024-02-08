@@ -122,8 +122,8 @@ function HomeFirstPage() {
             </h3>
           </div>
           <div className="subtitle-content">
-            Nirmaan, The Pre-incubator, at IIT Madras is the first of its kind
-            dedicated pre-incubator on a college campus in the country.
+          ‘Nirmaan, The Pre-incubator, located at IIT
+          Madras is the country's first dedicated pre-incubator on a college campus
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@ function HomeFirstPage() {
       </div>
 
       <button className="apply mobile-apply" onClick={handleClickApplyTo}>
-        APPLY TO NIRMAAN
+        Engage with us?
       </button>
 
       {/* footer  */}
@@ -173,7 +173,7 @@ function HomeFirstPage() {
             <div className="inner-list-div__fifth" id="last-list">OUR MOST <span className="item-align-right">RECENT EVENTS</span></div>
           </div>
           <button className="apply" onClick={handleClickApplyTo}>
-            APPLY TO NIRMAAN
+          Engage with us?
           </button>
         </div>
       </div>

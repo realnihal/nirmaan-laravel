@@ -3,9 +3,27 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import "./carouselSecondPage.css";
+import im1 from "../../images/screen2/Copy of 2F994A92-D1A3-456D-BF5B-08EC031AD064.jpeg";
+import im2 from "../../images/screen2/Copy of 353615300_643094120726551_2010421274084970420_n.jpg";
+import im3 from "../../images/screen2/Copy of 364037949_662499245765726_4733660302928805658_n.webp";
+import im4 from "../../images/screen2/Copy of EHW 2022_2.jpg";
+import im5 from "../../images/screen2/Copy of F1tNDoyaEAELKe-.jpg";
+import im6 from "../../images/screen2/Copy of IMG_2467.jpg";
+import im7 from "../../images/screen2/Copy of Nancy Wang, Scott, Prof. Prabhu.jpeg";
+import im8 from "../../images/screen2/Copy of WhatsApp Image 2023-07-23 at 15.59.25 (1) (1).jpeg";
+import im9 from "../../images/screen2/Copy of WhatsApp Image 2023-07-23 at 15.59.25 (1).jpeg";
+import im10 from "../../images/screen2/Copy of WhatsApp Image 2023-07-27 at 18.05.51 (1).jpeg";
+import im11 from "../../images/screen2/Copy of WhatsApp Image 2023-07-30 at 11.37.43 (1).jpeg";
+import im12 from "../../images/screen2/Copy of WhatsApp Image 2023-08-26 at 17.04.26.jpeg";
+import im13 from "../../images/screen2/Copy of WhatsApp Image 2023-08-26 at 17.04.29.jpeg";
+import im14 from "../../images/screen2/Copy of WhatsApp Image 2023-10-02 at 20.01.05.jpeg";
+import im15 from "../../images/screen2/Copy of WhatsApp Image 2023-10-05 at 19.16.40 (1).jpeg";
+import im16 from "../../images/screen2/Copy of WhatsApp Image 2023-10-06 at 05.38.31.jpeg";
+import im17 from "../../images/screen2/Copy of WhatsApp Image 2023-10-15 at 12.07.35.jpeg";
+import im18 from "../../images/screen2/Copy of WhatsApp Image 2023-10-20 at 17.28.11 (2).jpeg";
+import im19 from "../../images/screen2/Copy of WhatsApp Image 2023-12-27 at 19.14.48.jpeg";
+import im20 from "../../images/screen2/Copy of WhatsApp Image 2024-01-09 at 12.08.59.jpeg";
 
-import cImg1 from "../../images/cimg1.png";
-import cImg2 from "../../images/cimg2.png";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
@@ -76,22 +94,102 @@ function CarouselSecondPage() {
 
       <SwiperSlide>
         <div className="vertical-carousel__img-box">
-          <img src={cImg1} />
+          <img src={im1} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="vertical-carousel__img-box">
-          <img src={cImg1} />
+          <img src={im2} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="vertical-carousel__img-box">
-          <img src={cImg1} />
+          <img src={im3} />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="vertical-carousel__img-box">
-          <img src={cImg1} />
+          <img src={im4} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im5} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im6} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im7} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im8} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im9} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im10} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im11} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im12} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im13} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im14} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im15} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im16} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im17} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im18} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im19} />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="vertical-carousel__img-box">
+          <img src={im20} />
         </div>
       </SwiperSlide>
 

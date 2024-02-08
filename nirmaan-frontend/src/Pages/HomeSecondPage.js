@@ -39,16 +39,12 @@ function HomeSecondPage() {
 
                 <div className="about-nirmaan">
                   <div className="about-nirman-first-content">
-                    Nirmaan, The Pre-incubator, at IIT Madras is the first of its
-                    kind dedicated pre-incubator on a college campus in the country.
-                  </div>
-                  <div className="about-nirman-second-content">
-                    It works with Atal Innovation Mission and provides technical
-                    support and business guidance/mentorship to enterprising student
-                    teams. NIRMAAN provides a sandbox space for the young aspiring
-                    entrepreneurs at IIT Madras to work on their business ideas and
-                    make
-                    <br></br> them technically sound and economically viable.
+                  Shaping Ideas, Shifting Paradigms! Immerse yourself in the realm of IIT Madras' visionary team,
+                  where every profile narrates a saga of conquering challenges and embracing innovation. Our
+                  members are the architects of transformation, weaving dreams into reality. We work with Atal
+                  Innovation Mission and provide technical support and business guidance/mentorship to rising
+                  entrepreneurial student teams. As you journey through their experiences, you'll witness how
+                  ordinary moments evolve into extraordinary achievements
                   </div>
                 </div>
                 <div className="projects" onClick={handleSeeProjects}>
