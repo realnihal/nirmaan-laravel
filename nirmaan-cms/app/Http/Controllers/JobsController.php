@@ -82,7 +82,11 @@ class JobsController extends Controller
     }
 
     public function manageJobs(){
-        $jobs = DB::select("SELECT * FROM jobs");
-        return view("CMS.Dashboard.manage_jobs",compact('jobs'));
+        if (Session::has('user_id')) {
+            $jobs = DB::select("SELECT * FROM jobs");
+            return view("CMS.Dashboard.manage_jobs",compact('jobs'));
+        } else {
+            return redirect('/login');
+        }
     }
 }

@@ -4,14 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 
 class TeamsController extends Controller
 {
     public function getTeams()
     {
-        $teamMates= DB::select("SELECT * FROM team_mates");
-        return view("cms.dashboard.teams",compact('teamMates'));
+        if(Session::has('user_id')){
+            $teamMates= DB::select("SELECT * FROM team_mates");
+            return view("cms.dashboard.teams",compact('teamMates'));
+        }
+        else {
+            return redirect('/login');
+        }
     }
     public function addTeamMate(Request $request){
         $file = $request->file('profile_image');

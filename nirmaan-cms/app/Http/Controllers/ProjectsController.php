@@ -65,8 +65,13 @@ class ProjectsController extends Controller
     }
 
     public function viewManageProjects(){
-        $projects = DB::select("SELECT * FROM projects");
-        return view('cms.dashboard.manage_projects',compact('projects'));
+        if(Session::has('user_id')){
+            $projects = DB::select("SELECT * FROM projects");
+            return view('cms.dashboard.manage_projects',compact('projects'));
+        }
+        else {
+            return redirect('/login');
+        }
     }
     public function filterProjects(Request $request,$filter_fields){
         $filter_fields = json_decode($filter_fields, true);

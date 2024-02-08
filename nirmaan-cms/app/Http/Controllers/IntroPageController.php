@@ -35,8 +35,12 @@ class IntroPageController extends Controller
 
     //=============== page 5 functions ====================//
     public function homePage5View(){
-        $stories = DB::select("SELECT * FROM home_page_5");
-        return view('cms.dashboard.they_are_talking',compact('stories'));
+        if (Session::has('user_id')) {
+            $stories = DB::select("SELECT * FROM home_page_5");
+            return view('cms.dashboard.they_are_talking',compact('stories'));
+        } else {
+            return redirect('/login');
+        }
     }
     public function addStory(Request $request){
         DB::table('home_page_5')->insert([
@@ -53,8 +57,12 @@ class IntroPageController extends Controller
     // ===================================================== //
 
     public function homePage6View(){
-        $contents = DB::select("SELECT * FROM home_page_6");
-        return view('cms.dashboard.what_happens_in_nirmaan',compact('contents'));
+        if (Session::has('user_id')) {
+            $contents = DB::select("SELECT * FROM home_page_6");
+            return view('cms.dashboard.what_happens_in_nirmaan',compact('contents'));
+        } else {
+            return redirect('/login');
+        }
     }
     public function addContent(Request $request){
         $file = $request->file('image');
