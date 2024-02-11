@@ -30,6 +30,7 @@ function Home() {
     const thirdPage = thirdPageRef.current;  // current element of the third component
 
     const initializeAnimation = () => {
+      console.log(window.innerHeight)
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: container,
@@ -46,7 +47,7 @@ function Home() {
         ease: "none",
       })
         .to(thirdPage, {
-          y: () => `-${thirdPage.scrollHeight - window.innerHeight}px`,
+          y: () => `-${window.innerHeight + window.innerHeight/2  }px`,
           ease: "power1.inOut",
         })
         .set(thirdPage, { autoAlpha: 0 })
