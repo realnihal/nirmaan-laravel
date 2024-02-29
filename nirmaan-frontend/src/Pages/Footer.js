@@ -11,13 +11,19 @@ function Footer() {
         <div className="common-footer-container">
           <div className="common-footer__wrapper">
             <div className="common-footer__col email-address">
-              <a href="" className="common-footer__address">
+              <a
+                href="mailto:nirmaan@smail.iitm.ac.in"
+                className="common-footer__address"
+              >
                 <div className="common-footer__img-box">
                   <img src={mailNnirmaan} />
                 </div>
                 nirmaan@smail.iitm.ac.in
               </a>
-              <a href="" className="common-footer__address">
+              <a
+                href="https://maps.app.goo.gl/zMA34y4bdVz5kYFs5"
+                className="common-footer__address"
+              >
                 <div className="common-footer__img-box">
                   <img src={location} className="location" />
                 </div>
