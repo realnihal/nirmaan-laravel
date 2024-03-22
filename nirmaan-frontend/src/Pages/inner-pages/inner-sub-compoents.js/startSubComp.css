@@ -19,12 +19,26 @@
 }
 
 .sub-right-sp {
-  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: last baseline;
+  margin-left: 45px;
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+  .sub-right-sp {
+    flex-direction: column; /* Change to column layout for mobile */
+    justify-content: flex-start; /* Align items to start vertically for mobile */
+    align-items: flex-start; /* Align items to start horizontally for mobile */
+    margin-left: 0; /* Remove margin for mobile */
+  }
 }
 
 .strat-up-heading {
   font-family: "GT America";
-  font-size: 36px;
+  font-size: 36px; /* Default font size for web */
   font-weight: 700;
   line-height: 43px;
 }
@@ -35,40 +49,43 @@
   width: 100%;
   min-height: 102px;
   font-family: "GT America";
-  font-size: 28px;
+  font-size: 28px; /* Default font size for web */
   font-weight: 400;
-  line-height: 34px;
-  padding-right: 3rem;
+  line-height: 28px;
+  padding-right: 3rem; /* Default padding for web */
   box-sizing: border-box;
 }
 
-.third-sub-comp-prop{
-  width:700px;
+.third-sub-comp-prop {
+  width: 100%; /* Default width for mobile */
 }
 
-@media (max-width:1200px){
-  .strat-up-heading{
-    font-size: 28px;
-  }
-  .startup-content{
-    font-size: 22px;
+/* Media query for tablets and larger devices */
+@media (min-width: 768px) {
+  .startup-content {
+    font-size: 28px; /* Increase font size for tablets */
+    padding-right: 4rem; /* Increase padding for tablets */
   }
 
-  .green-sp{
-    height: 90px;
-    width: 90px
-  }
-  .green-sp img{
-    width: 60px;
-  }
-  .third-sub-comp-prop{
-    width: 100%;
+  .third-sub-comp-prop {
+    width: 700px; /* Adjust width for tablets */
   }
 }
 
-@media (max-width:768px){
-  .strat-up-heading{
+/* Media query for desktops and larger devices */
+@media (min-width: 1024px) {
+  .startup-content {
+    font-size: 28px; /* Increase font size for desktops */
+    padding-right: 5rem; /* Increase padding for desktops */
+  }
+
+  .third-sub-comp-prop {
+    width: 700px; /* Adjust width for desktops */
+  }
+}
+
+@media (max-width: 768px) {
+  .strat-up-heading {
     font-size: 15px;
   }
- 
 }

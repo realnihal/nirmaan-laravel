@@ -67,10 +67,10 @@ function HomeThirdPage() {
             </div>
             <div className="white-inner-div-common-style">
               <StartUpSUbComp
-                thirdComp="true"
                 image={mentoring}
                 heading="Tools & Resources"
-                content="Access to AWS credit and machinery for fabrication"
+                thirdComp="true"
+                content="Access AWS credit and fabrication machinery, empowering innovation and production capabilities for startups"
               />
             </div>
             <div className="white-inner-div-common-style">
